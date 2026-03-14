@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "siteName": "Loftlyy",
+    "siteDescription": "ブランドアイデンティティ、ロゴ、カラー、デザインシステムを発見・探索"
+  },
+  "nav": {
+    "search": "ブランドを検索...",
+    "allBrands": "すべてのブランド",
+    "categories": "カテゴリ",
+    "filters": "フィルター",
+    "clearFilters": "すべてクリア",
+    "industry": "業界",
+    "styleTags": "スタイル",
+    "colorFamily": "カラー",
+    "typographyStyle": "タイポグラフィ",
+    "noBrandsFound": "ブランドが見つかりません"
+  },
+  "brand": {
+    "overview": "概要",
+    "colors": "カラー",
+    "typography": "タイポグラフィ",
+    "logoVariations": "ロゴバリエーション",
+    "assets": "アセット",
+    "visitWebsite": "ウェブサイトを訪問",
+    "industry": "業界",
+    "copyHex": "HEXをコピー",
+    "copied": "コピーしました！",
+    "download": "ダウンロード",
+    "selectBrand": "サイドバーからブランドを選択して、アイデンティティを探索してください",
+    "brandStory": "ブランドストーリー",
+    "founded": "設立",
+    "headquarters": "本社",
+    "identityDesigner": "アイデンティティデザイナー",
+    "lastRebranded": "最終リブランド",
+    "philosophy": "デザイン哲学",
+    "similarBrands": "類似ブランド",
+    "copyFontName": "フォント名をコピー",
+    "fontCopied": "コピーしました！",
+    "legalNotice": "このページに表示されているすべての商標、ロゴ、ブランドアセット、ビジュアルアイデンティティ要素は、{brandName}およびその関連会社の独占的な財産です。情報提供および教育目的でのみ表示されています。",
+    "viewGuidelines": "公式ブランドガイドラインを見る",
+    "brandGuidelines": "ブランド使用ガイドライン",
+    "dos": "許可",
+    "donts": "禁止",
+    "downloadSvg": "SVGをダウンロード",
+    "downloadPng": "PNGをダウンロード",
+    "copyImage": "画像をコピー"
+  },
+  "category": {
+    "title": "{category}ブランド",
+    "description": "{category}カテゴリの{count}ブランドを探索",
+    "browseAll": "すべてのカテゴリを閲覧",
+    "noBrandsInCategory": "このカテゴリにはまだブランドがありません。"
+  },
+  "seo": {
+    "brandTitle": "{brandName}のブランドアイデンティティとデザインシステム | Loftlyy",
+    "brandDescription": "ロゴ、カラー、タイポグラフィ、デザインシステムを含む{brandName}のブランドアイデンティティを探索。{brandName}は{industry}企業です。",
+    "categoryTitle": "{category}ブランドアイデンティティ | Loftlyy",
+    "categoryDescription": "{count}の{category}ブランドアイデンティティを発見。トップ{category}企業のロゴ、カラーパレット、デザインシステムを探索。"
+  },
+  "categories": {
+    "fintech": "フィンテック",
+    "saas": "SaaS",
+    "social-media": "ソーシャルメディア",
+    "e-commerce": "Eコマース",
+    "minimal-logos": "ミニマルロゴ",
+    "gradient-brands": "グラデーションブランド",
+    "wordmark-logos": "ワードマークロゴ",
+    "geometric-logos": "ジオメトリックロゴ"
+  },
+  "brands": {
+    "discord": {
+      "description": "Discordは、コミュニティ構築のために設計された音声・ビデオ・テキストコミュニケーションプラットフォームです。元々はゲーマー向けに作られましたが、現在は勉強会からアートコレクティブ、オープンソースプロジェクトまで、あらゆる種類のコミュニティに対応しています。Discordの使命は、誰もが居場所を見つけられる空間を作ることです。",
+      "philosophy": "遊び心があり、親しみやすく、包括的。Discordのアイデンティティは、象徴的なマスコット「Clyde」とブラープルを認知の核として、コミュニケーションプラットフォームに必要な明快さと若々しいエネルギーのバランスを取っています。"
+    }
+  },
+  "tags": {
+    "communication": "コミュニケーション",
+    "community": "コミュニティ",
+    "gaming": "ゲーミング",
+    "voice-chat": "ボイスチャット",
+    "messaging": "メッセージング"
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "notFound": "見つかりません",
+    "notFoundDescription": "お探しのページは存在しません。",
+    "backToHome": "ホームに戻る"
+  }
+}

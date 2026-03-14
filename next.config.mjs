@@ -1,4 +1,14 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+import createNextIntlPlugin from "next-intl/plugin"
 
-export default nextConfig
+const withNextIntl = createNextIntlPlugin("./i18n/request.ts")
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    formats: ["image/avif", "image/webp"],
+    deviceSizes: [640, 750, 828, 1080, 1200],
+    imageSizes: [64, 128, 200, 400],
+  },
+}
+
+export default withNextIntl(nextConfig)

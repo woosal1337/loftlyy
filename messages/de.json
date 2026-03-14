@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "siteName": "Loftlyy",
+    "siteDescription": "Entdecken und erkunden Sie Markenidentitaeten, Logos, Farben und Designsysteme"
+  },
+  "nav": {
+    "search": "Marken suchen...",
+    "allBrands": "Alle Marken",
+    "categories": "Kategorien",
+    "filters": "Filter",
+    "clearFilters": "Alle loeschen",
+    "industry": "Branche",
+    "styleTags": "Stil",
+    "colorFamily": "Farbe",
+    "typographyStyle": "Typografie",
+    "noBrandsFound": "Keine Marken gefunden"
+  },
+  "brand": {
+    "overview": "Uebersicht",
+    "colors": "Farben",
+    "typography": "Typografie",
+    "logoVariations": "Logo-Variationen",
+    "assets": "Assets",
+    "visitWebsite": "Website besuchen",
+    "industry": "Branche",
+    "copyHex": "Hex kopieren",
+    "copied": "Kopiert!",
+    "download": "Herunterladen",
+    "selectBrand": "Waehlen Sie eine Marke in der Seitenleiste aus, um ihre Identitaet zu erkunden",
+    "brandStory": "Markengeschichte",
+    "founded": "Gegruendet",
+    "headquarters": "Hauptsitz",
+    "identityDesigner": "Identitaetsdesigner",
+    "lastRebranded": "Letztes Rebranding",
+    "philosophy": "Designphilosophie",
+    "similarBrands": "Aehnliche Marken",
+    "copyFontName": "Schriftname kopieren",
+    "fontCopied": "Kopiert!",
+    "legalNotice": "Alle Marken, Logos, Markenressourcen und visuelle Identitaetselemente auf dieser Seite sind ausschliessliches Eigentum von {brandName} und seinen verbundenen Unternehmen. Sie werden hier nur zu Informations- und Bildungszwecken angezeigt.",
+    "viewGuidelines": "Offizielle Markenrichtlinien ansehen",
+    "brandGuidelines": "Markennutzungsrichtlinien",
+    "dos": "Erlaubt",
+    "donts": "Nicht erlaubt",
+    "downloadSvg": "SVG herunterladen",
+    "downloadPng": "PNG herunterladen",
+    "copyImage": "Bild kopieren"
+  },
+  "category": {
+    "title": "{category} Marken",
+    "description": "Entdecken Sie {count} Marken in der Kategorie {category}",
+    "browseAll": "Alle Kategorien durchsuchen",
+    "noBrandsInCategory": "Keine Marken in dieser Kategorie gefunden."
+  },
+  "seo": {
+    "brandTitle": "{brandName} Markenidentitaet & Designsystem | Loftlyy",
+    "brandDescription": "Entdecken Sie die Markenidentitaet von {brandName} einschliesslich Logo, Farben, Typografie und Designsystem. {brandName} ist ein {industry}-Unternehmen.",
+    "categoryTitle": "{category} Markenidentitaeten | Loftlyy",
+    "categoryDescription": "Entdecken Sie {count} {category} Markenidentitaeten. Erkunden Sie Logos, Farbpaletten und Designsysteme der besten {category}-Unternehmen."
+  },
+  "categories": {
+    "fintech": "Fintech",
+    "saas": "SaaS",
+    "social-media": "Soziale Medien",
+    "e-commerce": "E-Commerce",
+    "minimal-logos": "Minimalistische Logos",
+    "gradient-brands": "Farbverlauf-Marken",
+    "wordmark-logos": "Wortmarken",
+    "geometric-logos": "Geometrische Logos"
+  },
+  "brands": {
+    "discord": {
+      "description": "Discord ist eine Sprach-, Video- und Textkommunikationsplattform, die fuer den Aufbau von Gemeinschaften entwickelt wurde. Urspruenglich fuer Gamer gebaut, hat sie sich erweitert, um Gemeinschaften aller Art zu bedienen — von Lerngruppen ueber Kuenstlerkollektive bis hin zu Open-Source-Projekten. Discords Mission ist es, einen Raum zu schaffen, in dem jeder seinen Platz finden kann.",
+      "philosophy": "Verspielt, zugaenglich und inklusiv. Discords Identitaet balanciert jugendliche Energie mit der Klarheit, die fuer eine Kommunikationsplattform erforderlich ist, wobei das ikonische Clyde-Maskottchen und Blurple als Ankerpunkte der Wiedererkennung dienen."
+    }
+  },
+  "tags": {
+    "communication": "Kommunikation",
+    "community": "Gemeinschaft",
+    "gaming": "Gaming",
+    "voice-chat": "Sprachchat",
+    "messaging": "Nachrichtenversand"
+  },
+  "common": {
+    "loading": "Wird geladen...",
+    "notFound": "Nicht gefunden",
+    "notFoundDescription": "Die Seite, die Sie suchen, existiert nicht.",
+    "backToHome": "Zurueck zur Startseite"
+  }
+}

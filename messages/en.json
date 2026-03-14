@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "siteName": "Loftlyy",
+    "siteDescription": "Discover and explore brand identities, logos, colors, and design systems"
+  },
+  "nav": {
+    "search": "Search brands...",
+    "allBrands": "All Brands",
+    "categories": "Categories",
+    "filters": "Filters",
+    "clearFilters": "Clear all",
+    "industry": "Industry",
+    "styleTags": "Style",
+    "colorFamily": "Color",
+    "typographyStyle": "Typography",
+    "noBrandsFound": "No brands found"
+  },
+  "brand": {
+    "overview": "Overview",
+    "colors": "Colors",
+    "typography": "Typography",
+    "logoVariations": "Logo Variations",
+    "assets": "Assets",
+    "visitWebsite": "Visit Website",
+    "industry": "Industry",
+    "copyHex": "Copy hex",
+    "copied": "Copied!",
+    "download": "Download",
+    "selectBrand": "Select a brand from the sidebar to explore its identity",
+    "brandStory": "Brand Story",
+    "founded": "Founded",
+    "headquarters": "Headquarters",
+    "identityDesigner": "Identity Designer",
+    "lastRebranded": "Last Rebranded",
+    "philosophy": "Design Philosophy",
+    "similarBrands": "Similar Brands",
+    "copyFontName": "Copy font name",
+    "fontCopied": "Copied!",
+    "legalNotice": "All trademarks, logos, brand assets, and visual identity elements shown on this page are the exclusive property of {brandName} and its affiliates. They are displayed here for informational and educational purposes only.",
+    "viewGuidelines": "View official brand guidelines",
+    "brandGuidelines": "Brand usage guidelines",
+    "dos": "Do",
+    "donts": "Don't",
+    "downloadSvg": "Download SVG",
+    "downloadPng": "Download PNG",
+    "copyImage": "Copy image"
+  },
+  "category": {
+    "title": "{category} Brands",
+    "description": "Explore {count} brands in the {category} category",
+    "browseAll": "Browse all categories",
+    "noBrandsInCategory": "No brands found in this category yet."
+  },
+  "seo": {
+    "brandTitle": "{brandName} Brand Identity & Design System | Loftlyy",
+    "brandDescription": "Explore {brandName}'s brand identity including logo, colors, typography, and design system. {brandName} is a {industry} company.",
+    "categoryTitle": "{category} Brand Identities | Loftlyy",
+    "categoryDescription": "Discover {count} {category} brand identities. Explore logos, color palettes, and design systems from top {category} companies."
+  },
+  "categories": {
+    "fintech": "Fintech",
+    "saas": "SaaS",
+    "social-media": "Social Media",
+    "e-commerce": "E-Commerce",
+    "minimal-logos": "Minimal Logos",
+    "gradient-brands": "Gradient Brands",
+    "wordmark-logos": "Wordmark Logos",
+    "geometric-logos": "Geometric Logos"
+  },
+  "brands": {
+    "discord": {
+      "description": "Discord is a voice, video, and text communication platform designed for creating communities. Originally built for gamers, it has expanded to serve communities of all kinds — from study groups to art collectives to open-source projects. Discord's mission is to create space for everyone to find belonging.",
+      "philosophy": "Playful, approachable, and inclusive. Discord's identity balances youthful energy with the clarity needed for a communication platform, using the iconic Clyde mascot and Blurple as anchors of recognition."
+    }
+  },
+  "tags": {
+    "communication": "Communication",
+    "community": "Community",
+    "gaming": "Gaming",
+    "voice-chat": "Voice Chat",
+    "messaging": "Messaging"
+  },
+  "common": {
+    "loading": "Loading...",
+    "notFound": "Not Found",
+    "notFoundDescription": "The page you're looking for doesn't exist.",
+    "backToHome": "Back to Home"
+  }
+}

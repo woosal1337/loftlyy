@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "siteName": "Loftlyy",
+    "siteDescription": "Decouvrez et explorez les identites de marque, logos, couleurs et systemes de design"
+  },
+  "nav": {
+    "search": "Rechercher des marques...",
+    "allBrands": "Toutes les marques",
+    "categories": "Categories",
+    "filters": "Filtres",
+    "clearFilters": "Tout effacer",
+    "industry": "Industrie",
+    "styleTags": "Style",
+    "colorFamily": "Couleur",
+    "typographyStyle": "Typographie",
+    "noBrandsFound": "Aucune marque trouvee"
+  },
+  "brand": {
+    "overview": "Apercu",
+    "colors": "Couleurs",
+    "typography": "Typographie",
+    "logoVariations": "Variations du logo",
+    "assets": "Ressources",
+    "visitWebsite": "Visiter le site",
+    "industry": "Industrie",
+    "copyHex": "Copier hex",
+    "copied": "Copie!",
+    "download": "Telecharger",
+    "selectBrand": "Selectionnez une marque dans la barre laterale pour explorer son identite",
+    "brandStory": "Histoire de la marque",
+    "founded": "Fondee",
+    "headquarters": "Siege",
+    "identityDesigner": "Designer d'identite",
+    "lastRebranded": "Dernier rebranding",
+    "philosophy": "Philosophie de design",
+    "similarBrands": "Marques similaires",
+    "copyFontName": "Copier le nom de la police",
+    "fontCopied": "Copie!",
+    "legalNotice": "Toutes les marques, logos, actifs de marque et elements d'identite visuelle affiches sur cette page sont la propriete exclusive de {brandName} et de ses filiales. Ils sont presentes ici a des fins informatives et educatives uniquement.",
+    "viewGuidelines": "Voir les directives officielles de la marque",
+    "brandGuidelines": "Directives d'utilisation de la marque",
+    "dos": "A faire",
+    "donts": "A ne pas faire",
+    "downloadSvg": "Telecharger SVG",
+    "downloadPng": "Telecharger PNG",
+    "copyImage": "Copier l'image"
+  },
+  "category": {
+    "title": "Marques {category}",
+    "description": "Explorez {count} marques dans la categorie {category}",
+    "browseAll": "Parcourir toutes les categories",
+    "noBrandsInCategory": "Aucune marque trouvee dans cette categorie."
+  },
+  "seo": {
+    "brandTitle": "Identite de marque et systeme de design {brandName} | Loftlyy",
+    "brandDescription": "Explorez l'identite de marque de {brandName} incluant logo, couleurs, typographie et systeme de design. {brandName} est une entreprise {industry}.",
+    "categoryTitle": "Identites de marque {category} | Loftlyy",
+    "categoryDescription": "Decouvrez {count} identites de marque {category}. Explorez logos, palettes de couleurs et systemes de design des meilleures entreprises {category}."
+  },
+  "categories": {
+    "fintech": "Fintech",
+    "saas": "SaaS",
+    "social-media": "Reseaux sociaux",
+    "e-commerce": "E-Commerce",
+    "minimal-logos": "Logos minimalistes",
+    "gradient-brands": "Marques en degrade",
+    "wordmark-logos": "Logotypes",
+    "geometric-logos": "Logos geometriques"
+  },
+  "brands": {
+    "discord": {
+      "description": "Discord est une plateforme de communication vocale, video et textuelle concue pour creer des communautes. Initialement concu pour les joueurs, il s'est etendu pour servir des communautes de toutes sortes — des groupes d'etude aux collectifs artistiques en passant par les projets open source. La mission de Discord est de creer un espace ou chacun peut trouver sa place.",
+      "philosophy": "Ludique, accessible et inclusif. L'identite de Discord equilibre une energie juvenile avec la clarte necessaire pour une plateforme de communication, en utilisant l'emblematique mascotte Clyde et le Blurple comme reperes de reconnaissance."
+    }
+  },
+  "tags": {
+    "communication": "Communication",
+    "community": "Communaute",
+    "gaming": "Jeux video",
+    "voice-chat": "Chat vocal",
+    "messaging": "Messagerie"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "notFound": "Non trouve",
+    "notFoundDescription": "La page que vous recherchez n'existe pas.",
+    "backToHome": "Retour a l'accueil"
+  }
+}

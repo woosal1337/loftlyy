@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "siteName": "Loftlyy",
+    "siteDescription": "Descubre y explora identidades de marca, logotipos, colores y sistemas de diseno"
+  },
+  "nav": {
+    "search": "Buscar marcas...",
+    "allBrands": "Todas las marcas",
+    "categories": "Categorias",
+    "filters": "Filtros",
+    "clearFilters": "Limpiar todo",
+    "industry": "Industria",
+    "styleTags": "Estilo",
+    "colorFamily": "Color",
+    "typographyStyle": "Tipografia",
+    "noBrandsFound": "No se encontraron marcas"
+  },
+  "brand": {
+    "overview": "Resumen",
+    "colors": "Colores",
+    "typography": "Tipografia",
+    "logoVariations": "Variaciones del logotipo",
+    "assets": "Recursos",
+    "visitWebsite": "Visitar sitio web",
+    "industry": "Industria",
+    "copyHex": "Copiar hex",
+    "copied": "Copiado!",
+    "download": "Descargar",
+    "selectBrand": "Selecciona una marca de la barra lateral para explorar su identidad",
+    "brandStory": "Historia de la marca",
+    "founded": "Fundada",
+    "headquarters": "Sede",
+    "identityDesigner": "Disenador de identidad",
+    "lastRebranded": "Ultimo rediseno",
+    "philosophy": "Filosofia de diseno",
+    "similarBrands": "Marcas similares",
+    "copyFontName": "Copiar nombre de fuente",
+    "fontCopied": "Copiado!",
+    "legalNotice": "Todas las marcas comerciales, logotipos, activos de marca y elementos de identidad visual mostrados en esta pagina son propiedad exclusiva de {brandName} y sus afiliados. Se muestran aqui con fines informativos y educativos unicamente.",
+    "viewGuidelines": "Ver directrices oficiales de marca",
+    "brandGuidelines": "Directrices de uso de marca",
+    "dos": "Permitido",
+    "donts": "No permitido",
+    "downloadSvg": "Descargar SVG",
+    "downloadPng": "Descargar PNG",
+    "copyImage": "Copiar imagen"
+  },
+  "category": {
+    "title": "Marcas de {category}",
+    "description": "Explora {count} marcas en la categoria {category}",
+    "browseAll": "Ver todas las categorias",
+    "noBrandsInCategory": "No se encontraron marcas en esta categoria."
+  },
+  "seo": {
+    "brandTitle": "Identidad de marca y sistema de diseno de {brandName} | Loftlyy",
+    "brandDescription": "Explora la identidad de marca de {brandName} incluyendo logotipo, colores, tipografia y sistema de diseno. {brandName} es una empresa de {industry}.",
+    "categoryTitle": "Identidades de marca {category} | Loftlyy",
+    "categoryDescription": "Descubre {count} identidades de marca {category}. Explora logotipos, paletas de colores y sistemas de diseno de las mejores empresas de {category}."
+  },
+  "categories": {
+    "fintech": "Fintech",
+    "saas": "SaaS",
+    "social-media": "Redes sociales",
+    "e-commerce": "Comercio electronico",
+    "minimal-logos": "Logotipos minimalistas",
+    "gradient-brands": "Marcas con degradado",
+    "wordmark-logos": "Logotipos tipograficos",
+    "geometric-logos": "Logotipos geometricos"
+  },
+  "brands": {
+    "discord": {
+      "description": "Discord es una plataforma de comunicacion por voz, video y texto disenada para crear comunidades. Originalmente creada para jugadores, se ha expandido para servir a comunidades de todo tipo, desde grupos de estudio hasta colectivos artisticos y proyectos de codigo abierto. La mision de Discord es crear un espacio donde todos puedan encontrar su lugar.",
+      "philosophy": "Jugueton, accesible e inclusivo. La identidad de Discord equilibra la energia juvenil con la claridad necesaria para una plataforma de comunicacion, utilizando la iconica mascota Clyde y el Blurple como pilares de reconocimiento."
+    }
+  },
+  "tags": {
+    "communication": "Comunicacion",
+    "community": "Comunidad",
+    "gaming": "Videojuegos",
+    "voice-chat": "Chat de voz",
+    "messaging": "Mensajeria"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "notFound": "No encontrado",
+    "notFoundDescription": "La pagina que buscas no existe.",
+    "backToHome": "Volver al inicio"
+  }
+}
