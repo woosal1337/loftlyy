@@ -1,7 +1,12 @@
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
+import Script from "next/script"
 import { NextIntlClientProvider, hasLocale } from "next-intl"
-import { getMessages, getTranslations, setRequestLocale } from "next-intl/server"
+import {
+  getMessages,
+  getTranslations,
+  setRequestLocale,
+} from "next-intl/server"
 import { notFound } from "next/navigation"
 
 import "../globals.css"
@@ -95,16 +100,35 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       suppressHydrationWarning
-      className={cn("antialiased", fontMono.variable, "font-sans", fontSans.variable)}
+      className={cn(
+        "antialiased",
+        fontMono.variable,
+        "font-sans",
+        fontSans.variable
+      )}
     >
       <head>
-        <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
-        <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)" />
+        <meta
+          name="theme-color"
+          content="#ffffff"
+          media="(prefers-color-scheme: light)"
+        />
+        <meta
+          name="theme-color"
+          content="#0a0a0a"
+          media="(prefers-color-scheme: dark)"
+        />
         <SiteStructuredData
           siteName={t("siteName")}
           siteDescription={t("siteDescription")}
           url={`${BASE_URL}/${locale}`}
         />
+        <Script
+          defer
+          src="https://assets.onedollarstats.com/stonks.js"
+          strategy="afterInteractive"
+        />
+
       </head>
       <body>
         <NextIntlClientProvider locale={locale} messages={clientMessages}>
