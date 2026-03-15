@@ -1,5 +1,6 @@
 import type { Brand } from "@/lib/types"
 import { assetUrl } from "@/lib/assets"
+import { hexToColorFamily } from "@/lib/filters"
 import { airbnb } from "./airbnb"
 import { amazon } from "./amazon"
 import { anthropic } from "./anthropic"
@@ -101,4 +102,48 @@ export function getBrandsByCategory(categorySlug: string) {
 
 export function getRawBrands() {
   return rawBrands
+}
+
+export function getBrandsByTag(tag: string): Brand[] {
+  return brands.filter((b) => b.tags?.includes(tag))
+}
+
+export function getBrandsByColorFamily(colorFamily: string): Brand[] {
+  return brands.filter((b) =>
+    b.colors.some((c) => hexToColorFamily(c.hex) === colorFamily)
+  )
+}
+
+export function getBrandsByTypographyStyle(style: string): Brand[] {
+  return brands.filter((b) => b.typography.some((t) => t.category === style))
+}
+
+export function getAllTags(): string[] {
+  const tags = new Set<string>()
+  for (const brand of brands) {
+    for (const tag of brand.tags ?? []) {
+      tags.add(tag)
+    }
+  }
+  return Array.from(tags).sort()
+}
+
+export function getAllColorFamilies(): string[] {
+  const families = new Set<string>()
+  for (const brand of brands) {
+    for (const color of brand.colors) {
+      families.add(hexToColorFamily(color.hex))
+    }
+  }
+  return Array.from(families).sort()
+}
+
+export function getAllTypographyStyles(): string[] {
+  const styles = new Set<string>()
+  for (const brand of brands) {
+    for (const typo of brand.typography) {
+      if (typo.category) styles.add(typo.category)
+    }
+  }
+  return Array.from(styles).sort()
 }

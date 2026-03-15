@@ -162,6 +162,46 @@ export function getSimilarBrands(
   return scored.map((s) => s.brand)
 }
 
+export function getRelatedCategoriesForBrands(brands: Brand[]): string[] {
+  const categories = new Set<string>()
+  for (const brand of brands) {
+    for (const cat of brand.categories) {
+      categories.add(cat)
+    }
+  }
+  return Array.from(categories).sort()
+}
+
+export function getRelatedTagsForBrands(brands: Brand[]): string[] {
+  const tags = new Set<string>()
+  for (const brand of brands) {
+    for (const tag of brand.tags ?? []) {
+      tags.add(tag)
+    }
+  }
+  return Array.from(tags).sort()
+}
+
+export function getRelatedColorFamiliesForBrands(brands: Brand[]): string[] {
+  const families = new Set<string>()
+  for (const brand of brands) {
+    for (const color of brand.colors) {
+      families.add(hexToColorFamily(color.hex))
+    }
+  }
+  return Array.from(families).sort()
+}
+
+export function getRelatedTypographyForBrands(brands: Brand[]): string[] {
+  const styles = new Set<string>()
+  for (const brand of brands) {
+    for (const typo of brand.typography) {
+      if (typo.category) styles.add(typo.category)
+    }
+  }
+  return Array.from(styles).sort()
+}
+
 /** Returns slim brand cards for the similar-brands section (minimal serialization). */
 export function getSimilarBrandCards(
   current: Brand,

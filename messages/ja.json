@@ -67,7 +67,21 @@
     "brandTitle": "{brandName}のブランドアイデンティティとデザインシステム | Loftlyy",
     "brandDescription": "ロゴ、カラー、タイポグラフィ、デザインシステムを含む{brandName}のブランドアイデンティティを探索。{brandName}は{industry}企業です。",
     "categoryTitle": "{category}ブランドアイデンティティ | Loftlyy",
-    "categoryDescription": "{count}の{category}ブランドアイデンティティを発見。トップ{category}企業のロゴ、カラーパレット、デザインシステムを探索。"
+    "categoryDescription": "{count}の{category}ブランドアイデンティティを発見。トップ{category}企業のロゴ、カラーパレット、デザインシステムを探索。",
+    "tagTitle": "{tag}ブランド | Loftlyy",
+    "tagDescription": "{tag}タグの{count}ブランドを発見。ロゴ、カラーパレット、デザインシステムを探索。",
+    "colorTitle": "{color}ブランド | Loftlyy",
+    "colorDescription": "{color}を使用する{count}ブランドを発見。",
+    "typographyTitle": "{style}タイポグラフィブランド | Loftlyy",
+    "typographyDescription": "{style}タイポグラフィを使用する{count}ブランドを発見。",
+    "faqColorQuestion": "{brandName}はどんな色を使っていますか？",
+    "faqColorAnswer": "{brandName}はブランドアイデンティティに{colors}を使用しています。",
+    "faqFontQuestion": "{brandName}はどんなフォントを使っていますか？",
+    "faqFontAnswer": "{brandName}はブランドアイデンティティに{fonts}を使用しています。",
+    "faqIndustryQuestion": "{brandName}はどの業界ですか？",
+    "faqIndustryAnswer": "{brandName}は{industry}業界で事業を展開しています。",
+    "faqFoundedQuestion": "{brandName}はいつ設立されましたか？",
+    "faqFoundedAnswer": "{brandName}は{year}年に設立されました。"
   },
   "categories": {
     "fintech": "フィンテック",
@@ -250,6 +264,42 @@
     "data-center": "データセンター",
     "autonomous-vehicles": "自動運転車",
     "logistics": "ロジスティクス"
+  },
+  "tag": {
+    "title": "「{tag}」タグのブランド",
+    "description": "{tag}タグの{count}ブランドを探索",
+    "noBrands": "このタグのブランドは見つかりませんでした。"
+  },
+  "color": {
+    "title": "{color}ブランド",
+    "description": "{color}をカラーパレットに持つ{count}ブランドを探索",
+    "noBrands": "この色のブランドは見つかりませんでした。"
+  },
+  "typographyPage": {
+    "title": "{style}タイポグラフィのブランド",
+    "description": "{style}フォントを使用する{count}ブランドを探索",
+    "noBrands": "このタイポグラフィスタイルのブランドは見つかりませんでした。"
+  },
+  "colorFamilies": {
+    "red": "レッド",
+    "orange": "オレンジ",
+    "yellow": "イエロー",
+    "green": "グリーン",
+    "blue": "ブルー",
+    "purple": "パープル",
+    "pink": "ピンク",
+    "neutral": "ニュートラル"
+  },
+  "typographyStyles": {
+    "sans-serif": "サンセリフ",
+    "serif": "セリフ",
+    "monospace": "モノスペース"
+  },
+  "browseBy": {
+    "relatedCategories": "関連カテゴリ",
+    "relatedTags": "関連タグ",
+    "relatedColors": "関連カラー",
+    "relatedTypography": "関連タイポグラフィ"
   },
   "common": {
     "loading": "読み込み中",

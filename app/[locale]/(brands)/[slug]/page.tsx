@@ -6,10 +6,18 @@ import { routing } from "@/i18n/routing"
 import { BrandHeader } from "@/components/brand-header"
 import { BrandColors } from "@/components/brand-colors"
 import { BrandTypography } from "@/components/brand-typography"
-import { BrandStructuredData } from "@/components/structured-data"
+import {
+  BrandStructuredData,
+  BreadcrumbStructuredData,
+  FAQStructuredData,
+} from "@/components/structured-data"
 import { BrandStory } from "@/components/brand-story"
 import { AdBanner } from "@/components/ad-banner"
-import { getSimilarBrandCards } from "@/lib/filters"
+import { getSimilarBrandCards, getBrandColorFamilies } from "@/lib/filters"
+import type { Brand } from "@/lib/types"
+import { BrowseBySection } from "@/components/browse-by-section"
+
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://loftlyy.com"
 
 const BrandAssets = dynamic(() =>
   import("@/components/brand-assets").then((m) => ({ default: m.BrandAssets }))
@@ -58,15 +66,6 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      images: brand.assets[0]
-        ? [
-            {
-              url: brand.assets[0].src,
-              width: brand.assets[0].width,
-              height: brand.assets[0].height,
-            },
-          ]
-        : [],
       type: "website",
       locale,
     },
@@ -74,9 +73,58 @@ export async function generateMetadata({
       card: "summary_large_image",
       title,
       description,
-      images: brand.assets[0] ? [brand.assets[0].src] : [],
     },
   }
+}
+
+function generateFAQ(
+  brand: Brand,
+  t: (key: string, values?: Record<string, string | number>) => string
+) {
+  const questions: { question: string; answer: string }[] = []
+
+  if (brand.colors.length > 0) {
+    const colorNames = brand.colors
+      .map((c) => `${c.name} (${c.hex})`)
+      .join(", ")
+    questions.push({
+      question: t("faqColorQuestion", { brandName: brand.name }),
+      answer: t("faqColorAnswer", {
+        brandName: brand.name,
+        colors: colorNames,
+      }),
+    })
+  }
+
+  if (brand.typography.length > 0) {
+    const fontNames = brand.typography
+      .map((f) => `${f.name} (${f.role})`)
+      .join(", ")
+    questions.push({
+      question: t("faqFontQuestion", { brandName: brand.name }),
+      answer: t("faqFontAnswer", { brandName: brand.name, fonts: fontNames }),
+    })
+  }
+
+  questions.push({
+    question: t("faqIndustryQuestion", { brandName: brand.name }),
+    answer: t("faqIndustryAnswer", {
+      brandName: brand.name,
+      industry: brand.industry,
+    }),
+  })
+
+  if (brand.founded) {
+    questions.push({
+      question: t("faqFoundedQuestion", { brandName: brand.name }),
+      answer: t("faqFoundedAnswer", {
+        brandName: brand.name,
+        year: brand.founded,
+      }),
+    })
+  }
+
+  return questions
 }
 
 export default async function BrandPage({
@@ -90,9 +138,32 @@ export default async function BrandPage({
   const brand = getBrandBySlug(slug)
   if (!brand) notFound()
 
+  const [tSeo, tTags, tColors, tTypo, tBrowse] = await Promise.all([
+    getTranslations({ locale, namespace: "seo" }),
+    getTranslations({ locale, namespace: "tags" }),
+    getTranslations({ locale, namespace: "colorFamilies" }),
+    getTranslations({ locale, namespace: "typographyStyles" }),
+    getTranslations({ locale, namespace: "browseBy" }),
+  ])
+  const faqQuestions = generateFAQ(brand, tSeo)
+
+  const colorFamilies = getBrandColorFamilies(brand)
+  const typoStyles = [
+    ...new Set(
+      brand.typography.map((t) => t.category).filter(Boolean) as string[]
+    ),
+  ]
+
   return (
     <article className="flex flex-col gap-10 px-8 py-7">
       <BrandStructuredData brand={brand} />
+      <BreadcrumbStructuredData
+        items={[
+          { name: "Home", url: `${BASE_URL}/${locale}` },
+          { name: brand.name, url: `${BASE_URL}/${locale}/${brand.slug}` },
+        ]}
+      />
+      <FAQStructuredData questions={faqQuestions} />
       <BrandHeader brand={brand} />
       <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:gap-6">
         <BrandStory brand={brand} />
@@ -102,6 +173,31 @@ export default async function BrandPage({
       <BrandColors colors={brand.colors} />
       <BrandTypography typography={brand.typography} />
       <SimilarBrands brands={getSimilarBrandCards(brand, getAllBrands())} />
+      <div className="flex flex-col gap-6">
+        {brand.tags && brand.tags.length > 0 && (
+          <BrowseBySection
+            title={tBrowse("relatedTags")}
+            links={brand.tags.map((tag) => ({
+              href: `/tag/${tag}`,
+              label: tTags(tag),
+            }))}
+          />
+        )}
+        <BrowseBySection
+          title={tBrowse("relatedColors")}
+          links={colorFamilies.map((color) => ({
+            href: `/color/${color}`,
+            label: tColors(color),
+          }))}
+        />
+        <BrowseBySection
+          title={tBrowse("relatedTypography")}
+          links={typoStyles.map((style) => ({
+            href: `/typography/${style}`,
+            label: tTypo(style),
+          }))}
+        />
+      </div>
       <BrandLegal brand={brand} />
     </article>
   )

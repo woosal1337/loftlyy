@@ -67,7 +67,21 @@
     "brandTitle": "{brandName} 品牌识别与设计系统 | Loftlyy",
     "brandDescription": "探索 {brandName} 的品牌识别，包括标志、色彩、字体和设计系统。{brandName} 是一家 {industry} 公司。",
     "categoryTitle": "{category} 品牌识别 | Loftlyy",
-    "categoryDescription": "发现 {count} 个 {category} 品牌识别。探索顶尖 {category} 公司的标志、色彩方案和设计系统。"
+    "categoryDescription": "发现 {count} 个 {category} 品牌识别。探索顶尖 {category} 公司的标志、色彩方案和设计系统。",
+    "tagTitle": "{tag}品牌 | Loftlyy",
+    "tagDescription": "发现{count}个标记为{tag}的品牌。探索标志、调色板和设计系统。",
+    "colorTitle": "{color}品牌 | Loftlyy",
+    "colorDescription": "发现{count}个在品牌标识中使用{color}的品牌。",
+    "typographyTitle": "{style}字体品牌 | Loftlyy",
+    "typographyDescription": "发现{count}个在品牌标识中使用{style}字体的品牌。",
+    "faqColorQuestion": "{brandName}使用什么颜色？",
+    "faqColorAnswer": "{brandName}在品牌标识中使用{colors}。",
+    "faqFontQuestion": "{brandName}使用什么字体？",
+    "faqFontAnswer": "{brandName}在品牌标识中使用{fonts}。",
+    "faqIndustryQuestion": "{brandName}属于什么行业？",
+    "faqIndustryAnswer": "{brandName}在{industry}行业运营。",
+    "faqFoundedQuestion": "{brandName}何时成立？",
+    "faqFoundedAnswer": "{brandName}成立于{year}年。"
   },
   "categories": {
     "fintech": "金融科技",
@@ -250,6 +264,42 @@
     "gpu": "GPU",
     "data-center": "数据中心",
     "autonomous-vehicles": "自动驾驶汽车"
+  },
+  "tag": {
+    "title": "标记为\"{tag}\"的品牌",
+    "description": "探索{count}个标记为{tag}的品牌",
+    "noBrands": "未找到带有此标签的品牌。"
+  },
+  "color": {
+    "title": "{color}品牌",
+    "description": "探索{count}个使用{color}色调的品牌",
+    "noBrands": "未找到此颜色的品牌。"
+  },
+  "typographyPage": {
+    "title": "使用{style}字体的品牌",
+    "description": "探索{count}个使用{style}字体的品牌",
+    "noBrands": "未找到此字体风格的品牌。"
+  },
+  "colorFamilies": {
+    "red": "红色",
+    "orange": "橙色",
+    "yellow": "黄色",
+    "green": "绿色",
+    "blue": "蓝色",
+    "purple": "紫色",
+    "pink": "粉色",
+    "neutral": "中性色"
+  },
+  "typographyStyles": {
+    "sans-serif": "无衬线体",
+    "serif": "衬线体",
+    "monospace": "等宽体"
+  },
+  "browseBy": {
+    "relatedCategories": "相关分类",
+    "relatedTags": "相关标签",
+    "relatedColors": "相关颜色",
+    "relatedTypography": "相关字体"
   },
   "common": {
     "loading": "加载中",

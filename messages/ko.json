@@ -67,7 +67,21 @@
     "brandTitle": "{brandName} 브랜드 아이덴티티 및 디자인 시스템 | Loftlyy",
     "brandDescription": "로고, 컬러, 타이포그래피, 디자인 시스템을 포함한 {brandName}의 브랜드 아이덴티티를 탐색하세요. {brandName}는 {industry} 기업입니다.",
     "categoryTitle": "{category} 브랜드 아이덴티티 | Loftlyy",
-    "categoryDescription": "{count}개의 {category} 브랜드 아이덴티티를 발견하세요. 주요 {category} 기업의 로고, 컬러 팔레트, 디자인 시스템을 탐색할 수 있습니다."
+    "categoryDescription": "{count}개의 {category} 브랜드 아이덴티티를 발견하세요. 주요 {category} 기업의 로고, 컬러 팔레트, 디자인 시스템을 탐색할 수 있습니다.",
+    "tagTitle": "{tag} 브랜드 | Loftlyy",
+    "tagDescription": "{tag} 태그가 있는 {count}개 브랜드를 발견하세요. 로고, 색상 팔레트, 디자인 시스템을 탐색하세요.",
+    "colorTitle": "{color} 브랜드 | Loftlyy",
+    "colorDescription": "브랜드 아이덴티티에 {color}을 사용하는 {count}개 브랜드를 발견하세요.",
+    "typographyTitle": "{style} 타이포그래피 브랜드 | Loftlyy",
+    "typographyDescription": "브랜드 아이덴티티에 {style} 타이포그래피를 사용하는 {count}개 브랜드를 발견하세요.",
+    "faqColorQuestion": "{brandName}는 어떤 색상을 사용하나요?",
+    "faqColorAnswer": "{brandName}는 브랜드 아이덴티티에 {colors}을 사용합니다.",
+    "faqFontQuestion": "{brandName}는 어떤 폰트를 사용하나요?",
+    "faqFontAnswer": "{brandName}는 브랜드 아이덴티티에 {fonts}을 사용합니다.",
+    "faqIndustryQuestion": "{brandName}는 어떤 산업에 있나요?",
+    "faqIndustryAnswer": "{brandName}는 {industry} 산업에서 운영됩니다.",
+    "faqFoundedQuestion": "{brandName}는 언제 설립되었나요?",
+    "faqFoundedAnswer": "{brandName}는 {year}년에 설립되었습니다."
   },
   "categories": {
     "fintech": "핀테크",
@@ -250,6 +264,42 @@
     "data-center": "데이터 센터",
     "autonomous-vehicles": "자율주행차",
     "logistics": "물류"
+  },
+  "tag": {
+    "title": "\"{tag}\" 태그 브랜드",
+    "description": "{tag} 태그가 있는 {count}개 브랜드 탐색",
+    "noBrands": "이 태그의 브랜드를 찾을 수 없습니다."
+  },
+  "color": {
+    "title": "{color} 브랜드",
+    "description": "색상 팔레트에 {color}이 있는 {count}개 브랜드 탐색",
+    "noBrands": "이 색상의 브랜드를 찾을 수 없습니다."
+  },
+  "typographyPage": {
+    "title": "{style} 타이포그래피 브랜드",
+    "description": "{style} 폰트를 사용하는 {count}개 브랜드 탐색",
+    "noBrands": "이 타이포그래피 스타일의 브랜드를 찾을 수 없습니다."
+  },
+  "colorFamilies": {
+    "red": "레드",
+    "orange": "오렌지",
+    "yellow": "옐로우",
+    "green": "그린",
+    "blue": "블루",
+    "purple": "퍼플",
+    "pink": "핑크",
+    "neutral": "뉴트럴"
+  },
+  "typographyStyles": {
+    "sans-serif": "산세리프",
+    "serif": "세리프",
+    "monospace": "모노스페이스"
+  },
+  "browseBy": {
+    "relatedCategories": "관련 카테고리",
+    "relatedTags": "관련 태그",
+    "relatedColors": "관련 색상",
+    "relatedTypography": "관련 타이포그래피"
   },
   "common": {
     "loading": "불러오는 중",

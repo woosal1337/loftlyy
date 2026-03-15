@@ -67,7 +67,21 @@
     "brandTitle": "{brandName} Brand Identity & Design System | Loftlyy",
     "brandDescription": "Explore {brandName}'s brand identity including logo, colors, typography, and design system. {brandName} is a {industry} company.",
     "categoryTitle": "{category} Brand Identities | Loftlyy",
-    "categoryDescription": "Discover {count} {category} brand identities. Explore logos, color palettes, and design systems from top {category} companies."
+    "categoryDescription": "Discover {count} {category} brand identities. Explore logos, color palettes, and design systems from top {category} companies.",
+    "tagTitle": "{tag} Brands | Loftlyy",
+    "tagDescription": "Discover {count} brands tagged with {tag}. Explore logos, color palettes, and design systems.",
+    "colorTitle": "{color} Brands | Loftlyy",
+    "colorDescription": "Discover {count} brands that use {color} in their brand identity.",
+    "typographyTitle": "{style} Typography Brands | Loftlyy",
+    "typographyDescription": "Discover {count} brands using {style} typography in their brand identity.",
+    "faqColorQuestion": "What colors does {brandName} use?",
+    "faqColorAnswer": "{brandName} uses {colors} in their brand identity.",
+    "faqFontQuestion": "What font does {brandName} use?",
+    "faqFontAnswer": "{brandName} uses {fonts} in their brand identity.",
+    "faqIndustryQuestion": "What industry is {brandName} in?",
+    "faqIndustryAnswer": "{brandName} operates in the {industry} industry.",
+    "faqFoundedQuestion": "When was {brandName} founded?",
+    "faqFoundedAnswer": "{brandName} was founded in {year}."
   },
   "categories": {
     "fintech": "Fintech",
@@ -250,6 +264,42 @@
     "gpu": "GPU",
     "data-center": "Data Center",
     "autonomous-vehicles": "Autonomous Vehicles"
+  },
+  "tag": {
+    "title": "Brands tagged \"{tag}\"",
+    "description": "Explore {count} brands tagged with {tag}",
+    "noBrands": "No brands found with this tag."
+  },
+  "color": {
+    "title": "{color} Brands",
+    "description": "Explore {count} brands featuring {color} in their color palette",
+    "noBrands": "No brands found with this color."
+  },
+  "typographyPage": {
+    "title": "Brands using {style} typography",
+    "description": "Explore {count} brands that use {style} fonts in their identity",
+    "noBrands": "No brands found with this typography style."
+  },
+  "colorFamilies": {
+    "red": "Red",
+    "orange": "Orange",
+    "yellow": "Yellow",
+    "green": "Green",
+    "blue": "Blue",
+    "purple": "Purple",
+    "pink": "Pink",
+    "neutral": "Neutral"
+  },
+  "typographyStyles": {
+    "sans-serif": "Sans-Serif",
+    "serif": "Serif",
+    "monospace": "Monospace"
+  },
+  "browseBy": {
+    "relatedCategories": "Related Categories",
+    "relatedTags": "Related Tags",
+    "relatedColors": "Related Colors",
+    "relatedTypography": "Related Typography"
   },
   "common": {
     "loading": "Loading",

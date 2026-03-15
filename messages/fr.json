@@ -67,7 +67,21 @@
     "brandTitle": "Identite de marque et systeme de design {brandName} | Loftlyy",
     "brandDescription": "Explorez l'identite de marque de {brandName} incluant logo, couleurs, typographie et systeme de design. {brandName} est une entreprise {industry}.",
     "categoryTitle": "Identites de marque {category} | Loftlyy",
-    "categoryDescription": "Decouvrez {count} identites de marque {category}. Explorez logos, palettes de couleurs et systemes de design des meilleures entreprises {category}."
+    "categoryDescription": "Decouvrez {count} identites de marque {category}. Explorez logos, palettes de couleurs et systemes de design des meilleures entreprises {category}.",
+    "tagTitle": "Marques {tag} | Loftlyy",
+    "tagDescription": "Decouvrez {count} marques taguees {tag}. Explorez logos, palettes de couleurs et systemes de design.",
+    "colorTitle": "Marques {color} | Loftlyy",
+    "colorDescription": "Decouvrez {count} marques utilisant {color} dans leur identite de marque.",
+    "typographyTitle": "Marques typographie {style} | Loftlyy",
+    "typographyDescription": "Decouvrez {count} marques utilisant la typographie {style} dans leur identite de marque.",
+    "faqColorQuestion": "Quelles couleurs utilise {brandName} ?",
+    "faqColorAnswer": "{brandName} utilise {colors} dans son identite de marque.",
+    "faqFontQuestion": "Quelle police utilise {brandName} ?",
+    "faqFontAnswer": "{brandName} utilise {fonts} dans son identite de marque.",
+    "faqIndustryQuestion": "Dans quel secteur se trouve {brandName} ?",
+    "faqIndustryAnswer": "{brandName} opere dans le secteur {industry}.",
+    "faqFoundedQuestion": "Quand a ete fondee {brandName} ?",
+    "faqFoundedAnswer": "{brandName} a ete fondee en {year}."
   },
   "categories": {
     "fintech": "Fintech",
@@ -250,6 +264,42 @@
     "data-center": "Centre de Donnees",
     "autonomous-vehicles": "Vehicules Autonomes",
     "logistics": "Logistique"
+  },
+  "tag": {
+    "title": "Marques taguees \"{tag}\"",
+    "description": "Explorez {count} marques taguees {tag}",
+    "noBrands": "Aucune marque trouvee avec ce tag."
+  },
+  "color": {
+    "title": "Marques {color}",
+    "description": "Explorez {count} marques avec {color} dans leur palette",
+    "noBrands": "Aucune marque trouvee avec cette couleur."
+  },
+  "typographyPage": {
+    "title": "Marques en typographie {style}",
+    "description": "Explorez {count} marques utilisant des polices {style}",
+    "noBrands": "Aucune marque trouvee avec ce style typographique."
+  },
+  "colorFamilies": {
+    "red": "Rouge",
+    "orange": "Orange",
+    "yellow": "Jaune",
+    "green": "Vert",
+    "blue": "Bleu",
+    "purple": "Violet",
+    "pink": "Rose",
+    "neutral": "Neutre"
+  },
+  "typographyStyles": {
+    "sans-serif": "Sans-Serif",
+    "serif": "Serif",
+    "monospace": "Monospace"
+  },
+  "browseBy": {
+    "relatedCategories": "Categories associees",
+    "relatedTags": "Tags associes",
+    "relatedColors": "Couleurs associees",
+    "relatedTypography": "Typographie associee"
   },
   "common": {
     "loading": "Chargement",

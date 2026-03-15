@@ -1,12 +1,15 @@
-import Image from "next/image"
 import { notFound } from "next/navigation"
 import { setRequestLocale, getTranslations } from "next-intl/server"
 import { getAllCategories, getCategoryBySlug } from "@/data/categories"
 import { getBrandsByCategory } from "@/data/brands"
 import { routing } from "@/i18n/routing"
-import { Link } from "@/i18n/navigation"
-import { Badge } from "@/components/ui/badge"
-import { CategoryStructuredData } from "@/components/structured-data"
+import {
+  CategoryStructuredData,
+  BreadcrumbStructuredData,
+} from "@/components/structured-data"
+import { BrandListingCard } from "@/components/brand-listing-card"
+
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://loftlyy.com"
 
 export async function generateStaticParams() {
   const categories = getAllCategories()
@@ -90,6 +93,15 @@ export default async function CategoryPage({
         brands={brands}
         locale={locale}
       />
+      <BreadcrumbStructuredData
+        items={[
+          { name: "Home", url: `${BASE_URL}/${locale}` },
+          {
+            name: categoryName,
+            url: `${BASE_URL}/${locale}/category/${categorySlug}`,
+          },
+        ]}
+      />
       <div className="flex flex-col gap-2">
         <h1 className="text-3xl font-bold text-pretty">
           {t("title", { category: categoryName })}
@@ -100,30 +112,7 @@ export default async function CategoryPage({
       </div>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {brands.map((brand) => (
-          <Link
-            key={brand.slug}
-            href={`/${brand.slug}`}
-            className="group flex flex-col gap-3 rounded-lg border border-border p-4 transition-colors hover:bg-muted"
-          >
-            <div className="flex h-20 items-center justify-center rounded-md bg-background p-3">
-              <Image
-                src={brand.thumbnail.src}
-                alt={brand.name}
-                width={brand.thumbnail.width}
-                height={brand.thumbnail.height}
-                className="max-h-full object-contain"
-              />
-            </div>
-            <div className="flex flex-col gap-1.5">
-              <h2 className="font-semibold">{brand.name}</h2>
-              <p className="line-clamp-2 text-sm text-muted-foreground">
-                {brand.description}
-              </p>
-              <div className="flex flex-wrap gap-1.5">
-                <Badge variant="secondary">{brand.industry}</Badge>
-              </div>
-            </div>
-          </Link>
+          <BrandListingCard key={brand.slug} brand={brand} />
         ))}
       </div>
       {brands.length === 0 && (
