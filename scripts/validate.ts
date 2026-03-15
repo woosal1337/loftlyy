@@ -8,11 +8,11 @@
 import { existsSync } from "node:fs"
 import { readFile, readdir } from "node:fs/promises"
 import { join } from "node:path"
+import { locales } from "@/i18n/locales"
 
 const ROOT = process.cwd()
 const PUBLIC = join(ROOT, "public")
 const MESSAGES_DIR = join(ROOT, "messages")
-const LOCALES = ["en", "es", "fr", "de", "ja"]
 const HEX_RE = /^#[0-9A-Fa-f]{6}$/
 
 let errors: string[] = []
@@ -117,7 +117,9 @@ async function checkBrandData() {
       for (const color of brand.colors) {
         if (!color.name?.trim()) error(`${prefix} Color missing name`)
         if (!HEX_RE.test(color.hex)) {
-          error(`${prefix} Invalid hex "${color.hex}" for color "${color.name}"`)
+          error(
+            `${prefix} Invalid hex "${color.hex}" for color "${color.name}"`
+          )
         }
       }
     }
@@ -127,8 +129,7 @@ async function checkBrandData() {
       error(`${prefix} No typography defined`)
     } else {
       for (const typo of brand.typography) {
-        if (!typo.name?.trim())
-          error(`${prefix} Typography entry missing name`)
+        if (!typo.name?.trim()) error(`${prefix} Typography entry missing name`)
         if (!typo.role?.trim())
           error(`${prefix} Typography "${typo.name}" missing role`)
       }
@@ -282,13 +283,13 @@ async function checkTranslations() {
   const brands = await loadBrands()
   const messages: Record<string, Record<string, unknown>> = {}
 
-  for (const locale of LOCALES) {
+  for (const locale of locales) {
     messages[locale] = await loadMessages(locale)
   }
 
   // Check all locales have same keys
   const enKeys = getKeys(messages.en)
-  for (const locale of LOCALES) {
+  for (const locale of locales) {
     if (locale === "en") continue
     const localeKeys = getKeys(messages[locale])
 
@@ -325,9 +326,7 @@ async function checkTranslations() {
       categoryTranslations &&
       !(brand.industry in (categoryTranslations as Record<string, unknown>))
     ) {
-      error(
-        `[en] Missing category translation: categories.${brand.industry}`
-      )
+      error(`[en] Missing category translation: categories.${brand.industry}`)
     }
   }
 
@@ -346,7 +345,7 @@ async function checkTranslations() {
     }
   }
 
-  ok(`Translations checked across ${LOCALES.length} locales`)
+  ok(`Translations checked across ${locales.length} locales`)
 }
 
 // ─── Check 6: SVG quality ───────────────────────────────────────────
@@ -372,9 +371,7 @@ async function checkSvgQuality() {
 
       // Check for width/height attributes
       if (!content.includes("width=") || !content.includes("height=")) {
-        error(
-          `${prefix} SVG "${asset.label}" missing width/height attributes`
-        )
+        error(`${prefix} SVG "${asset.label}" missing width/height attributes`)
       }
 
       // Check for <text> elements (likely fabricated wordmarks)

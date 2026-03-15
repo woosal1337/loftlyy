@@ -15,6 +15,8 @@
     "check": "ultracite check",
     "fix": "ultracite fix",
     "validate": "tsx scripts/validate.ts",
+    "translations:status": "tsx scripts/translation-agent.ts status",
+    "translations:scaffold": "tsx scripts/translation-agent.ts scaffold",
     "prebuild": "tsx scripts/validate.ts",
     "prepare": "husky"
   },
