@@ -7,7 +7,7 @@ import {
   IconChevronRight,
   IconExternalLink,
 } from "@tabler/icons-react"
-import { cn } from "@/lib/utils"
+import { cn, buildUtmUrl } from "@/lib/utils"
 import type { Brand } from "@/lib/types"
 
 export function BrandLegal({ brand }: { brand: Brand }) {
@@ -26,7 +26,7 @@ export function BrandLegal({ brand }: { brand: Brand }) {
       <div className="mt-2 flex flex-wrap items-center gap-4">
         {brand.legal?.guidelinesUrl && (
           <a
-            href={brand.legal.guidelinesUrl}
+            href={buildUtmUrl(brand.legal.guidelinesUrl, brand.slug)}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex min-h-11 items-center gap-1 text-[11px] text-neutral-500 transition-colors hover:text-neutral-700 focus-visible:ring-2 focus-visible:ring-ring dark:text-neutral-400 dark:hover:text-neutral-200"

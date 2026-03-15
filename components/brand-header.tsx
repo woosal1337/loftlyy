@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { useTranslations } from "next-intl"
-import { cn } from "@/lib/utils"
+import { cn, buildUtmUrl } from "@/lib/utils"
 import type { Brand } from "@/lib/types"
 
 export function BrandHeader({ brand }: { brand: Brand }) {
@@ -74,7 +74,7 @@ export function BrandHeader({ brand }: { brand: Brand }) {
               &middot;
             </span>
             <a
-              href={brand.url}
+              href={buildUtmUrl(brand.url, brand.slug)}
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-900 underline decoration-neutral-400 underline-offset-2 transition-colors hover:decoration-neutral-500 dark:text-neutral-300 dark:decoration-neutral-600"
