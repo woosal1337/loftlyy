@@ -13,7 +13,10 @@
     "typecheck": "tsc --noEmit",
     "optimize": "tsx scripts/optimize-images.ts",
     "check": "ultracite check",
-    "fix": "ultracite fix"
+    "fix": "ultracite fix",
+    "validate": "tsx scripts/validate.ts",
+    "prebuild": "tsx scripts/validate.ts",
+    "prepare": "husky"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",
@@ -39,6 +42,7 @@
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.2",
     "eslint-config-next": "16.1.6",
+    "husky": "^9.1.7",
     "oxfmt": "^0.40.0",
     "oxlint": "^1.55.0",
     "postcss": "^8",

@@ -4,7 +4,16 @@ Follow these steps in order. Do not skip any step. Use parallel tool calls where
 
 ## Step 1: Research
 
-Use WebFetch to visit the brand's official website and gather:
+First, use the OpenBrand API to extract brand assets automatically:
+
+```bash
+curl "https://openbrand.sh/api/extract?url=https://<brand-domain>" \
+  -H "Authorization: Bearer ob_live_1a240388814bb0741a32eed36af867323fb8ef2ebebecfd634f42b8a373f2caf"
+```
+
+This returns colors, fonts, logos, and other brand data. Use WebFetch to call the API and parse the JSON response.
+
+Then supplement with WebFetch to the brand's official website and gather anything missing:
 - Brand description (2-3 sentences)
 - Official colors with hex values and usage descriptions
 - Typography: font names, roles, weights, designer, foundry
@@ -68,6 +77,8 @@ Create `data/brands/<slug>.ts` following the `Brand` type from `lib/types.ts`.
 Key rules:
 - `width`/`height` in assets and thumbnail MUST exactly match the SVG's `width`/`height` attributes
 - Asset labels containing "white", "ivory", or "light" (case-insensitive) get dark backgrounds automatically
+- Asset labels containing "black", "dark", "slate", or "navy" (case-insensitive) get light backgrounds in dark mode automatically
+- Set `thumbnailDark` to a white/light variant of the logo for dark mode visibility (if the brand has one)
 - `fontUrl` must be a local path like `/brands/<slug>/fonts/file.woff2`
 - `industry` must match a slug in `data/categories.ts`
 - Use today's date for `dateAdded`
@@ -91,20 +102,18 @@ Add under `brands.<slug>.description`. If the industry or tags are new, add thos
 
 ## Step 7: Verify
 
-Run these checks:
+Run the validation suite:
 
 ```bash
-# All asset files exist
-for f in <list-all-src-paths>; do test -f "public$f" && echo "OK: $f" || echo "MISSING: $f"; done
-
-# All SVGs have width/height
-for f in public/brands/<slug>/*.svg; do head -1 "$f" | grep -q 'width=' && echo "OK: $(basename $f)" || echo "MISSING w/h: $(basename $f)"; done
-
-# All fonts valid
-file public/brands/<slug>/fonts/*.woff2
-
-# Type check passes
-pnpm typecheck
+pnpm validate && pnpm typecheck
 ```
+
+This checks:
+- All brand data fields are complete and valid
+- All asset/thumbnail/font files exist on disk
+- All SVGs have proper width/height attributes
+- All translations are consistent across all 5 locales
+- Brand categories and tags have matching translations
+- No orphaned brand directories
 
 Report the verification results. If anything fails, fix it before finishing.
