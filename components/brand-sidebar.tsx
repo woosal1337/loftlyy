@@ -1,6 +1,7 @@
 import { Suspense } from "react"
 import Image from "next/image"
 import { IconHeart } from "@tabler/icons-react"
+import { Link } from "@/i18n/navigation"
 import { getAllBrands } from "@/data/brands"
 import { LocaleSwitcher } from "./locale-switcher"
 import { BrandSidebarSearch } from "./brand-sidebar-search"
@@ -16,7 +17,7 @@ export function BrandSidebar() {
       <div className="flex flex-col gap-4">
         {/* Header */}
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2.5">
+          <Link href="/" className="flex items-center gap-2.5">
             <Image
               src="/logo.webp"
               alt="Loftlyy"
@@ -28,16 +29,11 @@ export function BrandSidebar() {
               <span className="text-[15px] font-semibold tracking-tight text-neutral-900 dark:text-neutral-100">
                 Loftlyy
               </span>
-              <a
-                href="https://hanoa.studio"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[11px] font-medium text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300"
-              >
+              <span className="text-[11px] font-medium text-neutral-500 dark:text-neutral-400">
                 by Hanoa Studio
-              </a>
+              </span>
             </div>
-          </div>
+          </Link>
           <LocaleSwitcher />
         </div>
       </div>

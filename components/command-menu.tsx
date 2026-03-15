@@ -18,19 +18,12 @@ import {
 } from "@tabler/icons-react"
 import { useLocale } from "next-intl"
 import { useTheme } from "next-themes"
+import { localeMetadata } from "@/i18n/locales"
 import { useRouter, usePathname } from "@/i18n/navigation"
 import { routing } from "@/i18n/routing"
 import { cn } from "@/lib/utils"
 import { getAvailableFilters, type FilterState } from "@/lib/filters"
 import type { Brand } from "@/lib/types"
-
-const localeNames: Record<string, string> = {
-  en: "English",
-  es: "Español",
-  fr: "Français",
-  de: "Deutsch",
-  ja: "日本語",
-}
 
 interface CommandMenuProps {
   brands: Brand[]
@@ -137,7 +130,7 @@ export function CommandMenu({
         <div className="fixed inset-0 z-50">
           {/* Backdrop */}
           <div
-            className="fixed inset-0 animate-in fade-in-0 bg-black/10 backdrop-blur-xs duration-150"
+            className="fixed inset-0 animate-in bg-black/10 backdrop-blur-xs duration-150 fade-in-0"
             onClick={() => setOpen(false)}
             onKeyDown={(e) => {
               if (e.key === "Escape") setOpen(false)
@@ -146,7 +139,7 @@ export function CommandMenu({
 
           {/* Panel */}
           <div
-            className="fixed top-[20%] left-1/2 z-50 w-full max-w-md -translate-x-1/2 animate-in fade-in-0 zoom-in-95 slide-in-from-top-2 overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-2xl duration-150 dark:border-neutral-800 dark:bg-neutral-950"
+            className="fixed top-[20%] left-1/2 z-50 w-full max-w-md -translate-x-1/2 animate-in overflow-hidden rounded-xl border border-neutral-200 bg-white shadow-2xl duration-150 fade-in-0 zoom-in-95 slide-in-from-top-2 dark:border-neutral-800 dark:bg-neutral-950"
             role="dialog"
             aria-label="Search brands and filters"
           >
@@ -165,226 +158,228 @@ export function CommandMenu({
                   {t("noBrandsFound")}
                 </Command.Empty>
 
-            {/* Brands */}
-            <Command.Group
-              heading={t("allBrands")}
-              className="[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-[11px] [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:tracking-widest [&_[cmdk-group-heading]]:text-neutral-400 [&_[cmdk-group-heading]]:uppercase"
-            >
-              {brands.map((brand) => (
-                <Command.Item
-                  key={brand.slug}
-                  value={brand.name}
-                  onSelect={() => navigateToBrand(brand.slug)}
-                  className="flex cursor-pointer items-center gap-3 rounded-lg px-2 py-2 text-sm text-neutral-600 data-[selected=true]:bg-neutral-100 dark:text-neutral-400 dark:data-[selected=true]:bg-neutral-800/50"
+                {/* Brands */}
+                <Command.Group
+                  heading={t("allBrands")}
+                  className="[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-[11px] [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:tracking-widest [&_[cmdk-group-heading]]:text-neutral-400 [&_[cmdk-group-heading]]:uppercase"
                 >
-                  <div
-                    className={cn(
-                      "flex size-7 shrink-0 items-center justify-center overflow-hidden rounded-[10px]",
-                      /black|dark|slate|navy/i.test(brand.thumbnail.label)
-                        ? "dark:bg-neutral-200"
-                        : /ivory|white|light/i.test(brand.thumbnail.label)
-                          ? "bg-neutral-800"
-                          : ""
-                    )}
+                  {brands.map((brand) => (
+                    <Command.Item
+                      key={brand.slug}
+                      value={brand.name}
+                      onSelect={() => navigateToBrand(brand.slug)}
+                      className="flex cursor-pointer items-center gap-3 rounded-lg px-2 py-2 text-sm text-neutral-600 data-[selected=true]:bg-neutral-100 dark:text-neutral-400 dark:data-[selected=true]:bg-neutral-800/50"
+                    >
+                      <div
+                        className={cn(
+                          "flex size-7 shrink-0 items-center justify-center overflow-hidden rounded-[10px]",
+                          /black|dark|slate|navy/i.test(brand.thumbnail.label)
+                            ? "dark:bg-neutral-200"
+                            : /ivory|white|light/i.test(brand.thumbnail.label)
+                              ? "bg-neutral-800"
+                              : ""
+                        )}
+                      >
+                        <Image
+                          src={brand.thumbnail.src}
+                          alt={brand.name}
+                          width={36}
+                          height={36}
+                          className="size-full object-contain p-1"
+                        />
+                      </div>
+                      <span className="font-medium">{brand.name}</span>
+                      <span className="ml-auto text-[11px] text-neutral-400">
+                        {brand.industry}
+                      </span>
+                    </Command.Item>
+                  ))}
+                </Command.Group>
+
+                {/* Industry filters */}
+                {available.industries.length > 0 && (
+                  <Command.Group
+                    heading={t("industry")}
+                    className="[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-[11px] [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:tracking-widest [&_[cmdk-group-heading]]:text-neutral-400 [&_[cmdk-group-heading]]:uppercase"
                   >
-                    <Image
-                      src={brand.thumbnail.src}
-                      alt={brand.name}
-                      width={36}
-                      height={36}
-                      className="size-full object-contain p-1"
-                    />
-                  </div>
-                  <span className="font-medium">{brand.name}</span>
-                  <span className="ml-auto text-[11px] text-neutral-400">
-                    {brand.industry}
-                  </span>
-                </Command.Item>
-              ))}
-            </Command.Group>
+                    {available.industries.map((v) => {
+                      const isActive = filters.industries.includes(v)
+                      return (
+                        <Command.Item
+                          key={v}
+                          value={`industry ${v}`}
+                          onSelect={() => onToggleFilter("industries", v)}
+                          className="flex cursor-pointer items-center gap-3 rounded-lg px-2 py-2 text-sm text-neutral-600 data-[selected=true]:bg-neutral-100 dark:text-neutral-400 dark:data-[selected=true]:bg-neutral-800/50"
+                        >
+                          <IconCategory className="size-4 text-neutral-400" />
+                          <span>{v}</span>
+                          {isActive && (
+                            <span className="ml-auto size-2 rounded-full bg-neutral-900 dark:bg-neutral-100" />
+                          )}
+                        </Command.Item>
+                      )
+                    })}
+                  </Command.Group>
+                )}
 
-            {/* Industry filters */}
-            {available.industries.length > 0 && (
-              <Command.Group
-                heading={t("industry")}
-                className="[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-[11px] [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:tracking-widest [&_[cmdk-group-heading]]:text-neutral-400 [&_[cmdk-group-heading]]:uppercase"
-              >
-                {available.industries.map((v) => {
-                  const isActive = filters.industries.includes(v)
-                  return (
-                    <Command.Item
-                      key={v}
-                      value={`industry ${v}`}
-                      onSelect={() => onToggleFilter("industries", v)}
-                      className="flex cursor-pointer items-center gap-3 rounded-lg px-2 py-2 text-sm text-neutral-600 data-[selected=true]:bg-neutral-100 dark:text-neutral-400 dark:data-[selected=true]:bg-neutral-800/50"
-                    >
-                      <IconCategory className="size-4 text-neutral-400" />
-                      <span>{v}</span>
-                      {isActive && (
-                        <span className="ml-auto size-2 rounded-full bg-neutral-900 dark:bg-neutral-100" />
-                      )}
-                    </Command.Item>
-                  )
-                })}
-              </Command.Group>
-            )}
+                {/* Style filters */}
+                {available.tags.length > 0 && (
+                  <Command.Group
+                    heading={t("styleTags")}
+                    className="[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-[11px] [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:tracking-widest [&_[cmdk-group-heading]]:text-neutral-400 [&_[cmdk-group-heading]]:uppercase"
+                  >
+                    {available.tags.map((v) => {
+                      const isActive = filters.tags.includes(v)
+                      return (
+                        <Command.Item
+                          key={v}
+                          value={`style ${v}`}
+                          onSelect={() => onToggleFilter("tags", v)}
+                          className="flex cursor-pointer items-center gap-3 rounded-lg px-2 py-2 text-sm text-neutral-600 data-[selected=true]:bg-neutral-100 dark:text-neutral-400 dark:data-[selected=true]:bg-neutral-800/50"
+                        >
+                          <IconTag className="size-4 text-neutral-400" />
+                          <span>{v}</span>
+                          {isActive && (
+                            <span className="ml-auto size-2 rounded-full bg-neutral-900 dark:bg-neutral-100" />
+                          )}
+                        </Command.Item>
+                      )
+                    })}
+                  </Command.Group>
+                )}
 
-            {/* Style filters */}
-            {available.tags.length > 0 && (
-              <Command.Group
-                heading={t("styleTags")}
-                className="[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-[11px] [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:tracking-widest [&_[cmdk-group-heading]]:text-neutral-400 [&_[cmdk-group-heading]]:uppercase"
-              >
-                {available.tags.map((v) => {
-                  const isActive = filters.tags.includes(v)
-                  return (
-                    <Command.Item
-                      key={v}
-                      value={`style ${v}`}
-                      onSelect={() => onToggleFilter("tags", v)}
-                      className="flex cursor-pointer items-center gap-3 rounded-lg px-2 py-2 text-sm text-neutral-600 data-[selected=true]:bg-neutral-100 dark:text-neutral-400 dark:data-[selected=true]:bg-neutral-800/50"
-                    >
-                      <IconTag className="size-4 text-neutral-400" />
-                      <span>{v}</span>
-                      {isActive && (
-                        <span className="ml-auto size-2 rounded-full bg-neutral-900 dark:bg-neutral-100" />
-                      )}
-                    </Command.Item>
-                  )
-                })}
-              </Command.Group>
-            )}
+                {/* Color filters */}
+                {available.colorFamilies.length > 0 && (
+                  <Command.Group
+                    heading={t("colorFamily")}
+                    className="[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-[11px] [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:tracking-widest [&_[cmdk-group-heading]]:text-neutral-400 [&_[cmdk-group-heading]]:uppercase"
+                  >
+                    {available.colorFamilies.map((v) => {
+                      const isActive = filters.colorFamilies.includes(v)
+                      return (
+                        <Command.Item
+                          key={v}
+                          value={`color ${v}`}
+                          onSelect={() => onToggleFilter("colorFamilies", v)}
+                          className="flex cursor-pointer items-center gap-3 rounded-lg px-2 py-2 text-sm text-neutral-600 data-[selected=true]:bg-neutral-100 dark:text-neutral-400 dark:data-[selected=true]:bg-neutral-800/50"
+                        >
+                          <span
+                            className="size-4 rounded-full shadow-[inset_0_0_0_1px_rgba(0,0,0,0.08)]"
+                            style={{
+                              backgroundColor: colorFamilyMap[v] ?? "#9CA3AF",
+                            }}
+                          />
+                          <span>{v}</span>
+                          {isActive && (
+                            <span className="ml-auto size-2 rounded-full bg-neutral-900 dark:bg-neutral-100" />
+                          )}
+                        </Command.Item>
+                      )
+                    })}
+                  </Command.Group>
+                )}
 
-            {/* Color filters */}
-            {available.colorFamilies.length > 0 && (
-              <Command.Group
-                heading={t("colorFamily")}
-                className="[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-[11px] [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:tracking-widest [&_[cmdk-group-heading]]:text-neutral-400 [&_[cmdk-group-heading]]:uppercase"
-              >
-                {available.colorFamilies.map((v) => {
-                  const isActive = filters.colorFamilies.includes(v)
-                  return (
-                    <Command.Item
-                      key={v}
-                      value={`color ${v}`}
-                      onSelect={() => onToggleFilter("colorFamilies", v)}
-                      className="flex cursor-pointer items-center gap-3 rounded-lg px-2 py-2 text-sm text-neutral-600 data-[selected=true]:bg-neutral-100 dark:text-neutral-400 dark:data-[selected=true]:bg-neutral-800/50"
-                    >
-                      <span
-                        className="size-4 rounded-full shadow-[inset_0_0_0_1px_rgba(0,0,0,0.08)]"
-                        style={{
-                          backgroundColor: colorFamilyMap[v] ?? "#9CA3AF",
+                {/* Typography filters */}
+                {available.typographyStyles.length > 0 && (
+                  <Command.Group
+                    heading={t("typographyStyle")}
+                    className="[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-[11px] [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:tracking-widest [&_[cmdk-group-heading]]:text-neutral-400 [&_[cmdk-group-heading]]:uppercase"
+                  >
+                    {available.typographyStyles.map((v) => {
+                      const isActive = filters.typographyStyles.includes(v)
+                      return (
+                        <Command.Item
+                          key={v}
+                          value={`typography ${v}`}
+                          onSelect={() => onToggleFilter("typographyStyles", v)}
+                          className="flex cursor-pointer items-center gap-3 rounded-lg px-2 py-2 text-sm text-neutral-600 data-[selected=true]:bg-neutral-100 dark:text-neutral-400 dark:data-[selected=true]:bg-neutral-800/50"
+                        >
+                          <IconTypography className="size-4 text-neutral-400" />
+                          <span>{v}</span>
+                          {isActive && (
+                            <span className="ml-auto size-2 rounded-full bg-neutral-900 dark:bg-neutral-100" />
+                          )}
+                        </Command.Item>
+                      )
+                    })}
+                  </Command.Group>
+                )}
+
+                {/* Language */}
+                <Command.Group
+                  heading={t("language")}
+                  className="[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-[11px] [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:tracking-widest [&_[cmdk-group-heading]]:text-neutral-400 [&_[cmdk-group-heading]]:uppercase"
+                >
+                  {routing.locales.map((loc) => {
+                    const isActive = loc === currentLocale
+                    return (
+                      <Command.Item
+                        key={loc}
+                        value={`language ${localeMetadata[loc].displayName} ${localeMetadata[loc].nativeName} ${loc}`}
+                        onSelect={() => {
+                          router.replace(pathname, { locale: loc })
+                          setOpen(false)
                         }}
-                      />
-                      <span>{v}</span>
-                      {isActive && (
-                        <span className="ml-auto size-2 rounded-full bg-neutral-900 dark:bg-neutral-100" />
-                      )}
-                    </Command.Item>
-                  )
-                })}
-              </Command.Group>
-            )}
+                        className="flex cursor-pointer items-center gap-3 rounded-lg px-2 py-2 text-sm text-neutral-600 data-[selected=true]:bg-neutral-100 dark:text-neutral-400 dark:data-[selected=true]:bg-neutral-800/50"
+                      >
+                        <IconLanguage className="size-4 text-neutral-400" />
+                        <span>{localeMetadata[loc].nativeName}</span>
+                        <span className="text-[11px] text-neutral-400 uppercase">
+                          {loc}
+                        </span>
+                        {isActive && (
+                          <span className="ml-auto size-2 rounded-full bg-neutral-900 dark:bg-neutral-100" />
+                        )}
+                      </Command.Item>
+                    )
+                  })}
+                </Command.Group>
 
-            {/* Typography filters */}
-            {available.typographyStyles.length > 0 && (
-              <Command.Group
-                heading={t("typographyStyle")}
-                className="[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-[11px] [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:tracking-widest [&_[cmdk-group-heading]]:text-neutral-400 [&_[cmdk-group-heading]]:uppercase"
-              >
-                {available.typographyStyles.map((v) => {
-                  const isActive = filters.typographyStyles.includes(v)
-                  return (
+                {/* Theme */}
+                <Command.Group
+                  heading={t("theme")}
+                  className="[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-[11px] [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:tracking-widest [&_[cmdk-group-heading]]:text-neutral-400 [&_[cmdk-group-heading]]:uppercase"
+                >
+                  {(
+                    [
+                      { value: "light", icon: IconSun },
+                      { value: "dark", icon: IconMoon },
+                      { value: "system", icon: IconDeviceDesktop },
+                    ] as const
+                  ).map(({ value, icon: Icon }) => (
                     <Command.Item
-                      key={v}
-                      value={`typography ${v}`}
-                      onSelect={() => onToggleFilter("typographyStyles", v)}
+                      key={value}
+                      value={`theme ${value}`}
+                      onSelect={() => {
+                        setTheme(value)
+                        setOpen(false)
+                      }}
                       className="flex cursor-pointer items-center gap-3 rounded-lg px-2 py-2 text-sm text-neutral-600 data-[selected=true]:bg-neutral-100 dark:text-neutral-400 dark:data-[selected=true]:bg-neutral-800/50"
                     >
-                      <IconTypography className="size-4 text-neutral-400" />
-                      <span>{v}</span>
-                      {isActive && (
+                      <Icon className="size-4 text-neutral-400" />
+                      <span className="capitalize">{value}</span>
+                      {theme === value && (
                         <span className="ml-auto size-2 rounded-full bg-neutral-900 dark:bg-neutral-100" />
                       )}
                     </Command.Item>
-                  )
-                })}
-              </Command.Group>
-            )}
+                  ))}
+                </Command.Group>
 
-            {/* Language */}
-            <Command.Group
-              heading={t("language")}
-              className="[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-[11px] [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:tracking-widest [&_[cmdk-group-heading]]:text-neutral-400 [&_[cmdk-group-heading]]:uppercase"
-            >
-              {routing.locales.map((loc) => {
-                const isActive = loc === currentLocale
-                return (
-                  <Command.Item
-                    key={loc}
-                    value={`language ${localeNames[loc]} ${loc}`}
-                    onSelect={() => {
-                      router.replace(pathname, { locale: loc })
-                      setOpen(false)
-                    }}
-                    className="flex cursor-pointer items-center gap-3 rounded-lg px-2 py-2 text-sm text-neutral-600 data-[selected=true]:bg-neutral-100 dark:text-neutral-400 dark:data-[selected=true]:bg-neutral-800/50"
-                  >
-                    <IconLanguage className="size-4 text-neutral-400" />
-                    <span>{localeNames[loc]}</span>
-                    <span className="text-[11px] text-neutral-400 uppercase">
-                      {loc}
-                    </span>
-                    {isActive && (
-                      <span className="ml-auto size-2 rounded-full bg-neutral-900 dark:bg-neutral-100" />
-                    )}
-                  </Command.Item>
-                )
-              })}
-            </Command.Group>
-
-            {/* Theme */}
-            <Command.Group
-              heading={t("theme")}
-              className="[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-[11px] [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:tracking-widest [&_[cmdk-group-heading]]:text-neutral-400 [&_[cmdk-group-heading]]:uppercase"
-            >
-              {([
-                { value: "light", icon: IconSun },
-                { value: "dark", icon: IconMoon },
-                { value: "system", icon: IconDeviceDesktop },
-              ] as const).map(({ value, icon: Icon }) => (
-                <Command.Item
-                  key={value}
-                  value={`theme ${value}`}
-                  onSelect={() => {
-                    setTheme(value)
-                    setOpen(false)
-                  }}
-                  className="flex cursor-pointer items-center gap-3 rounded-lg px-2 py-2 text-sm text-neutral-600 data-[selected=true]:bg-neutral-100 dark:text-neutral-400 dark:data-[selected=true]:bg-neutral-800/50"
-                >
-                  <Icon className="size-4 text-neutral-400" />
-                  <span className="capitalize">{value}</span>
-                  {theme === value && (
-                    <span className="ml-auto size-2 rounded-full bg-neutral-900 dark:bg-neutral-100" />
-                  )}
-                </Command.Item>
-              ))}
-            </Command.Group>
-
-            {/* Clear filters */}
-            {hasActiveFilters && (
-              <Command.Group>
-                <Command.Item
-                  value="clear all filters"
-                  onSelect={() => {
-                    onClearFilters()
-                  }}
-                  className="flex cursor-pointer items-center gap-3 rounded-lg px-2 py-2 text-sm text-red-500 data-[selected=true]:bg-red-50 dark:data-[selected=true]:bg-red-950/20"
-                >
-                  <IconX className="size-4" />
-                  <span>{t("clearFilters")}</span>
-                </Command.Item>
-              </Command.Group>
-            )}
+                {/* Clear filters */}
+                {hasActiveFilters && (
+                  <Command.Group>
+                    <Command.Item
+                      value="clear all filters"
+                      onSelect={() => {
+                        onClearFilters()
+                      }}
+                      className="flex cursor-pointer items-center gap-3 rounded-lg px-2 py-2 text-sm text-red-500 data-[selected=true]:bg-red-50 dark:data-[selected=true]:bg-red-950/20"
+                    >
+                      <IconX className="size-4" />
+                      <span>{t("clearFilters")}</span>
+                    </Command.Item>
+                  </Command.Group>
+                )}
               </Command.List>
             </Command>
           </div>

@@ -17,13 +17,13 @@ export function BrandLegal({ brand }: { brand: Brand }) {
   return (
     <footer className="flex flex-col gap-0 border-t border-neutral-100 pt-6 dark:border-neutral-800/50">
       {/* Compact attribution line */}
-      <div className="flex items-center gap-2 text-[11.5px] text-neutral-500 dark:text-neutral-400">
-        <IconScale className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
+      <div className="flex items-start gap-2 text-[11.5px] text-neutral-500 dark:text-neutral-400">
+        <IconScale className="mt-0.5 h-3.5 w-3.5 shrink-0" aria-hidden="true" />
         <p>{t("legalNotice", { brandName: brand.name })}</p>
       </div>
 
       {/* Action row */}
-      <div className="mt-2 flex items-center gap-4">
+      <div className="mt-2 flex flex-wrap items-center gap-4">
         {brand.legal?.guidelinesUrl && (
           <a
             href={brand.legal.guidelinesUrl}

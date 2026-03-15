@@ -119,7 +119,7 @@ function TypeSpecimen({ font }: { font: BrandTypographyType }) {
 
       {/* Type scale specimen */}
       <div
-        className="flex flex-col gap-1"
+        className="flex min-w-0 flex-col gap-1 overflow-hidden"
         style={fontFamily ? { fontFamily } : undefined}
       >
         <p className="text-[28px] leading-[1.1] tracking-tight text-neutral-800 sm:text-[36px] dark:text-neutral-200">
@@ -128,7 +128,7 @@ function TypeSpecimen({ font }: { font: BrandTypographyType }) {
         <p className="text-[17px] leading-snug text-neutral-600 sm:text-[20px] dark:text-neutral-400">
           over the lazy dog. 0123456789
         </p>
-        <p className="text-[13px] leading-relaxed text-neutral-500 dark:text-neutral-400">
+        <p className="break-all text-[13px] leading-relaxed text-neutral-500 sm:break-normal dark:text-neutral-400">
           ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz !@#$%&amp;*()
         </p>
       </div>

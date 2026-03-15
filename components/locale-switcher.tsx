@@ -1,16 +1,9 @@
 "use client"
 
 import { useLocale } from "next-intl"
+import { localeMetadata } from "@/i18n/locales"
 import { usePathname, useRouter } from "@/i18n/navigation"
 import { routing } from "@/i18n/routing"
-
-const localeLabels: Record<string, string> = {
-  en: "EN",
-  es: "ES",
-  fr: "FR",
-  de: "DE",
-  ja: "JA",
-}
 
 export function LocaleSwitcher() {
   const locale = useLocale()
@@ -31,7 +24,7 @@ export function LocaleSwitcher() {
     >
       {routing.locales.map((l) => (
         <option key={l} value={l}>
-          {localeLabels[l]}
+          {localeMetadata[l].shortLabel}
         </option>
       ))}
     </select>

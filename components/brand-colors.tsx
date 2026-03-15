@@ -15,8 +15,8 @@ export function BrandColors({ colors }: { colors: BrandColor[] }) {
       </h2>
 
       <div className="flex flex-col divide-y divide-neutral-100 dark:divide-neutral-800">
-        {colors.map((color) => (
-          <ColorRow key={color.hex} color={color} />
+        {colors.map((color, index) => (
+          <ColorRow key={`${color.hex}-${index}`} color={color} />
         ))}
       </div>
     </section>
