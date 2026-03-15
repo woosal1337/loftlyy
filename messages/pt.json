@@ -191,6 +191,10 @@
     "meta": {
       "description": "Meta Platforms é um conglomerado de tecnologia global que constrói produtos e tecnologias para ajudar as pessoas a se conectar, encontrar comunidades e fazer negócios crescerem. A empresa é dona do Facebook, Instagram, WhatsApp e Threads, e investe fortemente em realidade aumentada e virtual por meio de sua divisão Reality Labs.",
       "philosophy": "A identidade da Meta representa uma mudança além de um único produto. O símbolo do infinito — um loop 3D contínuo que funciona em contextos 2D e 3D — incorpora potencial ilimitado e conexão, usando um gradiente azul que honra a herança da empresa enquanto sinaliza seu futuro em tecnologia imersiva."
+    },
+    "shopify": {
+      "description": "Shopify é uma plataforma líder de e-commerce que permite a empresas de todos os tamanhos criar lojas online, gerenciar vendas e expandir suas marcas. Fundada em 2006 em Ottawa, Canadá, a Shopify capacita milhões de comerciantes em mais de 175 países, fornecendo ferramentas para pagamentos, envios, marketing e engajamento de clientes.",
+      "philosophy": "A identidade da marca Shopify é centrada em capacitar o empreendedorismo e tornar o comércio acessível a todos. O icônico símbolo da sacola de compras e a vibrante paleta verde refletem crescimento e possibilidade, enquanto a tipografia limpa garante que a marca pareça confiável e moderna em cada ponto de contato com os comerciantes."
     }
   },
   "tags": {
@@ -264,7 +268,9 @@
     "gpu": "GPU",
     "data-center": "Data Center",
     "autonomous-vehicles": "Veiculos Autonomos",
-    "logistics": "Logistica"
+    "logistics": "Logistica",
+    "retail": "Varejo",
+    "platform": "Plataforma"
   },
   "tag": {
     "title": "Marcas com tag \"{tag}\"",

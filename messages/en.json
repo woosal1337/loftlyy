@@ -152,6 +152,10 @@
       "description": "Slack is a business communication platform that brings teams together with channels, messaging, and integrations. Acquired by Salesforce in 2021, Slack has become the central hub for workplace collaboration, connecting people to the tools and information they need.",
       "philosophy": "Slack's identity uses a vibrant four-color palette — blue, green, yellow, and red — arranged in a hashtag-inspired mark that represents connection and communication. The 2019 rebrand by Pentagram simplified the logo into a cohesive, geometric symbol anchored by the signature aubergine."
     },
+    "shopify": {
+      "description": "Shopify is a leading e-commerce platform that enables businesses of all sizes to create online stores, manage sales, and grow their brands. Founded in 2006 in Ottawa, Canada, Shopify powers millions of merchants in over 175 countries, providing tools for payments, shipping, marketing, and customer engagement.",
+      "philosophy": "Shopify's brand identity centers on empowering entrepreneurship and making commerce accessible to everyone. The iconic shopping bag symbol and vibrant green palette reflect growth and possibility, while clean typography ensures the brand feels trustworthy and modern across every merchant touchpoint."
+    },
     "stripe": {
       "description": "Stripe is a financial infrastructure platform that provides payment processing APIs and tools for internet businesses of every size. Founded in 2010, Stripe powers millions of companies worldwide, enabling them to accept payments and build financial products.",
       "philosophy": "Stripe's identity is built around developer-first clarity and refined simplicity. The brand uses a distinctive purple palette and clean typography to convey trust and sophistication in financial technology."
@@ -264,7 +268,9 @@
     "logistics": "Logistics",
     "gpu": "GPU",
     "data-center": "Data Center",
-    "autonomous-vehicles": "Autonomous Vehicles"
+    "autonomous-vehicles": "Autonomous Vehicles",
+    "retail": "Retail",
+    "platform": "Platform"
   },
   "tag": {
     "title": "Brands tagged \"{tag}\"",

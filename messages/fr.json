@@ -152,6 +152,10 @@
       "description": "Slack est une plateforme de communication professionnelle qui rassemble les equipes grace aux canaux, a la messagerie et aux integrations. Acquis par Salesforce en 2021, Slack est devenu le centre de la collaboration en entreprise, connectant les personnes aux outils et informations dont elles ont besoin.",
       "philosophy": "L'identite de Slack utilise une palette vibrante de quatre couleurs — bleu, vert, jaune et rouge — disposees en un symbole inspire du hashtag qui represente la connexion et la communication. Le rebranding de 2019 par Pentagram a simplifie le logo en un symbole geometrique coherent ancre par la signature aubergine."
     },
+    "shopify": {
+      "description": "Shopify est une plateforme de commerce electronique leader qui permet aux entreprises de toutes tailles de creer des boutiques en ligne, de gerer les ventes et de developper leurs marques. Fondee en 2006 a Ottawa, au Canada, Shopify soutient des millions de commercants dans plus de 175 pays, offrant des outils pour les paiements, l'expedition, le marketing et l'engagement client.",
+      "philosophy": "L'identite de marque de Shopify est centree sur l'autonomisation de l'entrepreneuriat et l'accessibilite du commerce pour tous. L'iconique symbole du sac de courses et la palette verte vibrante refletent la croissance et les possibilites, tandis que la typographie epuree garantit une marque fiable et moderne."
+    },
     "stripe": {
       "description": "Stripe est une plateforme d'infrastructure financiere qui fournit des APIs de traitement des paiements et des outils pour les entreprises internet de toutes tailles. Fondee en 2010, Stripe alimente des millions d'entreprises dans le monde entier.",
       "philosophy": "L'identite de Stripe repose sur la clarte orientee developpeur et la simplicite raffinee. La marque utilise une palette violette distinctive et une typographie epuree pour transmettre confiance et sophistication dans la technologie financiere."
@@ -191,6 +195,10 @@
     "meta": {
       "description": "Meta Platforms est un conglomérat technologique mondial qui crée des produits et des technologies pour aider les gens à se connecter, trouver des communautés et développer leurs entreprises. L'entreprise possède Facebook, Instagram, WhatsApp et Threads, et investit massivement dans la réalité augmentée et virtuelle via sa division Reality Labs.",
       "philosophy": "L'identité de Meta représente un dépassement au-delà d'un seul produit. Le symbole de l'infini — une boucle 3D continue fonctionnant en 2D et 3D — incarne un potentiel illimité et la connexion, utilisant un dégradé bleu qui honore l'héritage de l'entreprise tout en signalant son avenir dans la technologie immersive."
+    },
+    "shopify": {
+      "description": "Shopify est une plateforme de commerce électronique de premier plan qui permet aux entreprises de toutes tailles de créer des boutiques en ligne, de gérer les ventes et de développer leurs marques. Fondée en 2006 à Ottawa, au Canada, Shopify soutient des millions de marchands dans plus de 175 pays, en fournissant des outils pour les paiements, l'expédition, le marketing et l'engagement client.",
+      "philosophy": "L'identité de marque de Shopify est centrée sur l'autonomisation de l'entrepreneuriat et l'accessibilité du commerce pour tous. Le symbole emblématique du sac de courses et la palette verte vibrante reflètent la croissance et les possibilités, tandis que la typographie épurée garantit que la marque reste digne de confiance et moderne à chaque point de contact avec les marchands."
     }
   },
   "tags": {
@@ -264,7 +272,11 @@
     "gpu": "GPU",
     "data-center": "Centre de Donnees",
     "autonomous-vehicles": "Vehicules Autonomes",
-    "logistics": "Logistique"
+    "retail": "Commerce de Detail",
+    "platform": "Plateforme",
+    "logistics": "Logistique",
+    "retail": "Commerce de détail",
+    "platform": "Plateforme"
   },
   "tag": {
     "title": "Marques taguees \"{tag}\"",

@@ -17,6 +17,7 @@ import { nvidia } from "./nvidia"
 import { microsoft } from "./microsoft"
 import { openai } from "./openai"
 import { spotify } from "./spotify"
+import { shopify } from "./shopify"
 import { slack } from "./slack"
 import { stripe } from "./stripe"
 import { vercel } from "./vercel"
@@ -42,6 +43,7 @@ const rawBrands: Brand[] = [
   notion,
   openai,
   spotify,
+  shopify,
   slack,
   stripe,
   tesla,

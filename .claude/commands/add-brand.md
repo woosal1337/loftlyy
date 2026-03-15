@@ -113,15 +113,19 @@ Edit `data/brands/index.ts`:
 
 ## Step 6: Add Translations
 
-Add the brand's description to each locale file in `messages/`:
+Add the brand's description and philosophy to **all 9** locale files in `messages/`:
 
-- `messages/en.json` — English description
-- `messages/es.json` — Spanish translation
-- `messages/fr.json` — French translation
-- `messages/de.json` — German translation
-- `messages/ja.json` — Japanese translation
+- `messages/en.json` — English
+- `messages/es.json` — Spanish
+- `messages/fr.json` — French
+- `messages/de.json` — German
+- `messages/ja.json` — Japanese
+- `messages/it.json` — Italian
+- `messages/pt.json` — Portuguese
+- `messages/ko.json` — Korean
+- `messages/zh.json` — Chinese
 
-Add under `brands.<slug>.description`. If the industry or tags are new, add those translations under `categories` and `tags` too.
+Add under `brands.<slug>.description` and `brands.<slug>.philosophy`. If the industry or tags are new, add those translations under `categories` and `tags` too in **all 9 locales**.
 
 ## Step 7: Verify
 
@@ -134,7 +138,7 @@ pnpm validate && pnpm typecheck
 This checks:
 
 - All brand data fields are complete and valid
-- All translations are consistent across all 5 locales
+- All translations are consistent across all 9 locales
 - Brand categories and tags have matching translations
 
 Also verify that assets were uploaded to R2 by spot-checking a URL:
