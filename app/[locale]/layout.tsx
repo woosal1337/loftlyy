@@ -130,7 +130,11 @@ export default async function LocaleLayout({
         />
       </head>
       <body>
-        <NextIntlClientProvider locale={locale} messages={clientMessages}>
+        <NextIntlClientProvider
+          key={locale}
+          locale={locale}
+          messages={clientMessages}
+        >
           <ThemeProvider>{children}</ThemeProvider>
         </NextIntlClientProvider>
       </body>

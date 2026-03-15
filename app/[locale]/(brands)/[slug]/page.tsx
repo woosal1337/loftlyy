@@ -138,13 +138,16 @@ export default async function BrandPage({
   const brand = getBrandBySlug(slug)
   if (!brand) notFound()
 
-  const [tSeo, tTags, tColors, tTypo, tBrowse] = await Promise.all([
-    getTranslations({ locale, namespace: "seo" }),
-    getTranslations({ locale, namespace: "tags" }),
-    getTranslations({ locale, namespace: "colorFamilies" }),
-    getTranslations({ locale, namespace: "typographyStyles" }),
-    getTranslations({ locale, namespace: "browseBy" }),
-  ])
+  const [tSeo, tTags, tColors, tTypo, tBrowse, tBrands, tCategories] =
+    await Promise.all([
+      getTranslations({ locale, namespace: "seo" }),
+      getTranslations({ locale, namespace: "tags" }),
+      getTranslations({ locale, namespace: "colorFamilies" }),
+      getTranslations({ locale, namespace: "typographyStyles" }),
+      getTranslations({ locale, namespace: "browseBy" }),
+      getTranslations({ locale, namespace: "brands" }),
+      getTranslations({ locale, namespace: "categories" }),
+    ])
   const faqQuestions = generateFAQ(brand, tSeo)
 
   const colorFamilies = getBrandColorFamilies(brand)
@@ -153,6 +156,40 @@ export default async function BrandPage({
       brand.typography.map((t) => t.category).filter(Boolean) as string[]
     ),
   ]
+
+  // Resolve translations on the server so child components
+  // don't need access to namespaces missing from NextIntlClientProvider
+  function trBrand(key: string, fallback: string) {
+    try {
+      return tBrands(key)
+    } catch {
+      return fallback
+    }
+  }
+  function trCat(key: string, fallback: string) {
+    try {
+      return tCategories(key)
+    } catch {
+      return fallback
+    }
+  }
+
+  const translatedDescription = trBrand(
+    `${brand.slug}.description`,
+    brand.description
+  )
+  const translatedPhilosophy = brand.philosophy
+    ? trBrand(`${brand.slug}.philosophy`, brand.philosophy)
+    : undefined
+  const translatedIndustry = trCat(brand.industry, brand.industry)
+  const translatedTags: Record<string, string> = {}
+  for (const tag of brand.tags ?? []) {
+    try {
+      translatedTags[tag] = tTags(tag)
+    } catch {
+      translatedTags[tag] = tag
+    }
+  }
 
   return (
     <article className="flex flex-col gap-10 px-8 py-7">
@@ -164,9 +201,14 @@ export default async function BrandPage({
         ]}
       />
       <FAQStructuredData questions={faqQuestions} />
-      <BrandHeader brand={brand} />
+      <BrandHeader
+        brand={brand}
+        translatedDescription={translatedDescription}
+        translatedIndustry={translatedIndustry}
+        translatedTags={translatedTags}
+      />
       <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:gap-6">
-        <BrandStory brand={brand} />
+        <BrandStory brand={brand} translatedPhilosophy={translatedPhilosophy} />
         <AdBanner />
       </div>
       <BrandAssets assets={brand.assets} brandName={brand.name} />

@@ -3,23 +3,18 @@ import { useTranslations } from "next-intl"
 import { cn, buildUtmUrl } from "@/lib/utils"
 import type { Brand } from "@/lib/types"
 
-export function BrandHeader({ brand }: { brand: Brand }) {
+export function BrandHeader({
+  brand,
+  translatedDescription,
+  translatedIndustry,
+  translatedTags,
+}: {
+  brand: Brand
+  translatedDescription: string
+  translatedIndustry: string
+  translatedTags: Record<string, string>
+}) {
   const t = useTranslations("brand")
-  const tCat = useTranslations("categories")
-  const tTag = useTranslations("tags")
-  const tBrand = useTranslations("brands")
-
-  function tr(
-    ns: ReturnType<typeof useTranslations>,
-    key: string,
-    fallback: string
-  ) {
-    try {
-      return ns(key)
-    } catch {
-      return fallback
-    }
-  }
 
   return (
     <section className="flex flex-col gap-4">
@@ -48,13 +43,13 @@ export function BrandHeader({ brand }: { brand: Brand }) {
             {brand.name}
           </h1>
           <span className="text-[13px] text-neutral-500 dark:text-neutral-400">
-            {tr(tCat, brand.industry, brand.industry)}
+            {translatedIndustry}
           </span>
         </div>
       </div>
 
       <p className="max-w-2xl text-[14px] leading-relaxed text-neutral-500 dark:text-neutral-400">
-        {tr(tBrand, `${brand.slug}.description`, brand.description)}
+        {translatedDescription}
       </p>
 
       <div className="flex flex-wrap items-center gap-1.5 text-[12.5px] text-neutral-500 dark:text-neutral-400">
@@ -65,7 +60,7 @@ export function BrandHeader({ brand }: { brand: Brand }) {
                 &middot;
               </span>
             )}
-            <span>{tr(tTag, tag, tag)}</span>
+            <span>{translatedTags[tag] ?? tag}</span>
           </span>
         ))}
         {brand.url && (

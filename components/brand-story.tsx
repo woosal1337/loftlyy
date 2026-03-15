@@ -1,17 +1,14 @@
 import { useTranslations } from "next-intl"
 import type { Brand } from "@/lib/types"
 
-export function BrandStory({ brand }: { brand: Brand }) {
+export function BrandStory({
+  brand,
+  translatedPhilosophy,
+}: {
+  brand: Brand
+  translatedPhilosophy?: string
+}) {
   const t = useTranslations("brand")
-  const tBrand = useTranslations("brands")
-
-  function tr(key: string, fallback: string) {
-    try {
-      return tBrand(key)
-    } catch {
-      return fallback
-    }
-  }
 
   const hasStory =
     brand.founded ||
@@ -58,7 +55,7 @@ export function BrandStory({ brand }: { brand: Brand }) {
 
       {brand.philosophy && (
         <p className="max-w-2xl text-[13.5px] leading-relaxed text-neutral-500 italic dark:text-neutral-400">
-          &ldquo;{tr(`${brand.slug}.philosophy`, brand.philosophy)}&rdquo;
+          &ldquo;{translatedPhilosophy ?? brand.philosophy}&rdquo;
         </p>
       )}
     </section>
