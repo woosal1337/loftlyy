@@ -72,7 +72,7 @@ export function BrandAssets({
         {t("assets")}
       </h2>
 
-      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:auto-rows-[200px] lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-3 sm:auto-rows-[200px] sm:grid-cols-2 lg:grid-cols-3">
         {assets.map((asset) => {
           const span = getSpan(asset)
           return (

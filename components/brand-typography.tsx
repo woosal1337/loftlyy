@@ -128,7 +128,7 @@ function TypeSpecimen({ font }: { font: BrandTypographyType }) {
         <p className="text-[17px] leading-snug text-neutral-600 sm:text-[20px] dark:text-neutral-400">
           over the lazy dog. 0123456789
         </p>
-        <p className="break-all text-[13px] leading-relaxed text-neutral-500 sm:break-normal dark:text-neutral-400">
+        <p className="text-[13px] leading-relaxed break-all text-neutral-500 sm:break-normal dark:text-neutral-400">
           ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz !@#$%&amp;*()
         </p>
       </div>

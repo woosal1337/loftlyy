@@ -62,6 +62,7 @@ The `BrandAssets` component uses a regex (`/ivory|white|light/i`) on asset label
 - All other labels → light background (`bg-neutral-50`)
 
 So name your assets accordingly:
+
 - `"Brand Logo — Black"` → renders on light bg ✓
 - `"Brand Logo — White"` → renders on dark bg ✓
 - `"Brand Logo — Light Green"` → renders on dark bg ✓
@@ -191,7 +192,13 @@ Add the import and include it in the array in `data/brands/index.ts`:
 import { brandName } from "./brand-slug"
 
 export const brands: Brand[] = [
-  anthropic, apple, brandName, discord, openai, spotify, wise
+  anthropic,
+  apple,
+  brandName,
+  discord,
+  openai,
+  spotify,
+  wise,
 ].sort((a, b) => a.name.localeCompare(b.name))
 ```
 
@@ -254,12 +261,12 @@ pnpm dev
 
 ## Common Pitfalls
 
-| Issue | Cause | Fix |
-|---|---|---|
-| Asset cards are blank | SVG missing `width`/`height` attrs | Add explicit `width` and `height` to `<svg>` element |
-| Icons appear tiny | SVG `width`/`height` too small (e.g., 16x16) | Increase to 256x256+ (keep viewBox the same) |
-| Icon has too much whitespace | ViewBox has padding around artwork | Tighten viewBox to path bounds |
-| White logo on white bg | Label missing "white"/"light"/"ivory" | Add variant keyword to label |
-| Font specimen shows system font | `fontUrl` is external URL or missing | Use local `/brands/<slug>/fonts/` path to .woff2 file |
-| Dev server shows stale data | `.next` cache | Delete `.next/` and restart `pnpm dev` |
-| Data dimensions don't match SVG | `width`/`height` in data ≠ SVG attrs | Sync data values to actual SVG attributes |
+| Issue                           | Cause                                        | Fix                                                   |
+| ------------------------------- | -------------------------------------------- | ----------------------------------------------------- |
+| Asset cards are blank           | SVG missing `width`/`height` attrs           | Add explicit `width` and `height` to `<svg>` element  |
+| Icons appear tiny               | SVG `width`/`height` too small (e.g., 16x16) | Increase to 256x256+ (keep viewBox the same)          |
+| Icon has too much whitespace    | ViewBox has padding around artwork           | Tighten viewBox to path bounds                        |
+| White logo on white bg          | Label missing "white"/"light"/"ivory"        | Add variant keyword to label                          |
+| Font specimen shows system font | `fontUrl` is external URL or missing         | Use local `/brands/<slug>/fonts/` path to .woff2 file |
+| Dev server shows stale data     | `.next` cache                                | Delete `.next/` and restart `pnpm dev`                |
+| Data dimensions don't match SVG | `width`/`height` in data ≠ SVG attrs         | Sync data values to actual SVG attributes             |

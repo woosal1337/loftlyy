@@ -14,6 +14,7 @@ curl "https://openbrand.sh/api/extract?url=https://<brand-domain>" \
 This returns colors, fonts, logos, and other brand data. Use WebFetch to call the API and parse the JSON response.
 
 Then supplement with WebFetch to the brand's official website and gather anything missing:
+
 - Brand description (2-3 sentences)
 - Official colors with hex values and usage descriptions
 - Typography: font names, roles, weights, designer, foundry
@@ -26,6 +27,7 @@ Also check `data/categories.ts` for available industry/style categories.
 ## Step 2: Fetch Logo Assets
 
 Find official SVG logos. Try these sources in order:
+
 1. Brand's official press/brand page
 2. `https://www.logo.wine/logo/Brand_Name` via WebFetch
 3. Brand's website HTML for inline SVG or CDN paths:
@@ -34,11 +36,13 @@ Find official SVG logos. Try these sources in order:
    ```
 
 Create at minimum these variants:
+
 - `<slug>-logo-black.svg` — dark fill for light backgrounds
 - `<slug>-logo-white.svg` — white fill for dark backgrounds (label MUST contain "White")
 - Additional brand-color variants if applicable
 
 **CRITICAL SVG rules:**
+
 - Every SVG MUST have explicit `width` and `height` attributes, not just `viewBox`
 - Icon logos: minimum 128x128 dimensions (increase `width`/`height` if viewBox is small like 16x16 — keep viewBox the same)
 - ViewBox must tightly crop the artwork — no excessive padding
@@ -58,12 +62,14 @@ curl -sL -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 
 Also check subpages (blog, docs, developer portal) if the homepage doesn't yield results. Try predictable CDN paths.
 
 For system fonts (e.g., SF Pro on macOS), use pyftsubset to subset:
+
 ```bash
 python3 -m venv /tmp/fonttools-env && /tmp/fonttools-env/bin/pip install fonttools brotli
 /tmp/fonttools-env/bin/pyftsubset /path/to/font.ttf --output-file=output.woff2 --flavor=woff2 --text="The quick brown fox jumps over the lazy dog. 0123456789 ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz !@#\$%&*()" --layout-features='*'
 ```
 
 Requirements:
+
 - Must be `.woff2` format, under 200KB each
 - Must be local files at `/brands/<slug>/fonts/` — NEVER use external URLs as `fontUrl`
 - One file per typography entry in the data
@@ -75,6 +81,7 @@ Save to `public/brands/<slug>/fonts/`.
 Create `data/brands/<slug>.ts` following the `Brand` type from `lib/types.ts`.
 
 Key rules:
+
 - `width`/`height` in assets and thumbnail MUST exactly match the SVG's `width`/`height` attributes
 - Asset labels containing "white", "ivory", or "light" (case-insensitive) get dark backgrounds automatically
 - Asset labels containing "black", "dark", "slate", or "navy" (case-insensitive) get light backgrounds in dark mode automatically
@@ -86,12 +93,14 @@ Key rules:
 ## Step 5: Register the Brand
 
 Edit `data/brands/index.ts`:
+
 1. Add the import
 2. Add the brand to the `brands` array (it's auto-sorted by name)
 
 ## Step 6: Add Translations
 
 Add the brand's description to each locale file in `messages/`:
+
 - `messages/en.json` — English description
 - `messages/es.json` — Spanish translation
 - `messages/fr.json` — French translation
@@ -109,6 +118,7 @@ pnpm validate && pnpm typecheck
 ```
 
 This checks:
+
 - All brand data fields are complete and valid
 - All asset/thumbnail/font files exist on disk
 - All SVGs have proper width/height attributes

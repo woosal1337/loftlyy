@@ -8,13 +8,7 @@ export const x: Brand = {
   url: "https://x.com",
   industry: "social-media",
   categories: ["social-media", "technology", "minimal-logos"],
-  tags: [
-    "microblogging",
-    "real-time",
-    "news",
-    "social-network",
-    "messaging",
-  ],
+  tags: ["microblogging", "real-time", "news", "social-network", "messaging"],
   colors: [
     {
       name: "X Black",

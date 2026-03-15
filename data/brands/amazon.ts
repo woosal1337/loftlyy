@@ -8,14 +8,7 @@ export const amazon: Brand = {
   url: "https://amazon.com",
   industry: "e-commerce",
   categories: ["e-commerce", "technology", "wordmark-logos"],
-  tags: [
-    "e-commerce",
-    "cloud",
-    "streaming",
-    "logistics",
-    "marketplace",
-    "ai",
-  ],
+  tags: ["e-commerce", "cloud", "streaming", "logistics", "marketplace", "ai"],
   colors: [
     {
       name: "Amazon Orange",

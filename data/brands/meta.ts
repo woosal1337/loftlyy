@@ -33,8 +33,7 @@ export const meta: Brand = {
     {
       name: "Meta Charcoal",
       hex: "#1C2B33",
-      usage:
-        "Primary dark color for wordmarks and text on light backgrounds.",
+      usage: "Primary dark color for wordmarks and text on light backgrounds.",
     },
     {
       name: "White",

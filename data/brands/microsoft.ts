@@ -26,17 +26,20 @@ export const microsoft: Brand = {
     {
       name: "Microsoft Green",
       hex: "#7FBA00",
-      usage: "Top-right quadrant of the Windows logo, Xbox branding, success states.",
+      usage:
+        "Top-right quadrant of the Windows logo, Xbox branding, success states.",
     },
     {
       name: "Microsoft Blue",
       hex: "#00A4EF",
-      usage: "Bottom-left quadrant of the Windows logo, primary links, Azure branding.",
+      usage:
+        "Bottom-left quadrant of the Windows logo, primary links, Azure branding.",
     },
     {
       name: "Microsoft Yellow",
       hex: "#FFB900",
-      usage: "Bottom-right quadrant of the Windows logo, highlights, Bing accents.",
+      usage:
+        "Bottom-right quadrant of the Windows logo, highlights, Bing accents.",
     },
     {
       name: "Microsoft Gray",

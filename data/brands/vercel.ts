@@ -8,13 +8,7 @@ export const vercel: Brand = {
   url: "https://vercel.com",
   industry: "technology",
   categories: ["technology", "saas", "minimal-logos", "geometric-logos"],
-  tags: [
-    "developer-tools",
-    "cloud",
-    "hosting",
-    "frontend",
-    "api",
-  ],
+  tags: ["developer-tools", "cloud", "hosting", "frontend", "api"],
   colors: [
     {
       name: "Black",

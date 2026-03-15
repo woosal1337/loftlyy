@@ -46,8 +46,7 @@ export const github: Brand = {
     {
       name: "Copilot Purple",
       hex: "#8534F3",
-      usage:
-        "GitHub Copilot product branding, AI feature accents.",
+      usage: "GitHub Copilot product branding, AI feature accents.",
     },
     {
       name: "Security Blue",
