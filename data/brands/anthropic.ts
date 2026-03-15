@@ -119,7 +119,7 @@ export const anthropic: Brand = {
       format: "svg",
     },
     {
-      label: "Claude Logo — One-color",
+      label: "Claude Logo — White",
       src: "/brands/anthropic/claude-logo-one-color.svg",
       width: 9156,
       height: 2000,
@@ -140,7 +140,7 @@ export const anthropic: Brand = {
       format: "svg",
     },
     {
-      label: "Claude Code Logo — One-color",
+      label: "Claude Code Logo — White",
       src: "/brands/anthropic/claude-code-logo-one-color.svg",
       width: 14552,
       height: 2000,

@@ -74,7 +74,7 @@ function TypeSpecimen({ font }: { font: BrandTypographyType }) {
   return (
     <div className="group flex flex-col gap-4 py-6 first:pt-0 last:pb-0">
       {/* Header row */}
-      <div className="flex items-baseline justify-between gap-4">
+      <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
         <div className="flex items-center gap-2.5">
           <h3 className="text-[14px] font-semibold text-neutral-800 dark:text-neutral-200">
             {font.name}
@@ -96,7 +96,7 @@ function TypeSpecimen({ font }: { font: BrandTypographyType }) {
             )}
           </button>
         </div>
-        <div className="flex items-center gap-1.5 text-xs text-neutral-500 dark:text-neutral-400">
+        <div className="flex flex-wrap items-center gap-1.5 text-xs text-neutral-500 dark:text-neutral-400">
           <span>{font.role}</span>
           {font.designer && (
             <>
@@ -122,10 +122,10 @@ function TypeSpecimen({ font }: { font: BrandTypographyType }) {
         className="flex flex-col gap-1"
         style={fontFamily ? { fontFamily } : undefined}
       >
-        <p className="text-[36px] leading-[1.1] tracking-tight text-neutral-800 dark:text-neutral-200">
+        <p className="text-[28px] leading-[1.1] tracking-tight text-neutral-800 sm:text-[36px] dark:text-neutral-200">
           The quick brown fox jumps
         </p>
-        <p className="text-[20px] leading-snug text-neutral-600 dark:text-neutral-400">
+        <p className="text-[17px] leading-snug text-neutral-600 sm:text-[20px] dark:text-neutral-400">
           over the lazy dog. 0123456789
         </p>
         <p className="text-[13px] leading-relaxed text-neutral-500 dark:text-neutral-400">

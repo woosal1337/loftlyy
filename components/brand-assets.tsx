@@ -72,7 +72,7 @@ export function BrandAssets({
         {t("assets")}
       </h2>
 
-      <div className="grid auto-rows-[200px] grid-cols-2 gap-3 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:auto-rows-[200px] lg:grid-cols-3">
         {assets.map((asset) => {
           const span = getSpan(asset)
           return (
@@ -155,7 +155,7 @@ function AssetCard({
     <div
       className={cn(
         "group relative flex flex-col overflow-hidden rounded-2xl bg-neutral-50 dark:bg-neutral-900",
-        span === "wide" && "col-span-2"
+        span === "wide" && "sm:col-span-2"
       )}
     >
       {/* Asset preview */}
@@ -179,8 +179,46 @@ function AssetCard({
         />
       </div>
 
-      {/* Overlay — always visible on mobile, hover-revealed on desktop */}
-      <div className="absolute inset-x-0 bottom-0 flex h-full items-end justify-between bg-gradient-to-t from-black/50 via-black/15 to-transparent px-4 pb-3 opacity-100 transition-opacity duration-200 lg:opacity-0 lg:group-focus-within:opacity-100 lg:group-hover:opacity-100">
+      {/* Mobile: label + download below the image */}
+      <div className="flex items-center justify-between px-4 py-3 sm:hidden">
+        <div className="flex flex-col">
+          <span className="text-[13px] font-medium text-neutral-800 dark:text-neutral-200">
+            {asset.label}
+          </span>
+          <span className="text-[11px] text-neutral-500 uppercase dark:text-neutral-400">
+            {asset.format}
+          </span>
+        </div>
+        <DropdownMenu>
+          <DropdownMenuTrigger
+            className="inline-flex size-9 items-center justify-center rounded-lg bg-neutral-100 text-neutral-600 transition-colors hover:bg-neutral-200 focus-visible:ring-2 focus-visible:ring-ring dark:bg-neutral-800 dark:text-neutral-400 dark:hover:bg-neutral-700"
+            aria-label={t("download")}
+          >
+            <IconDownload className="h-3.5 w-3.5" />
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end" side="top" sideOffset={8}>
+            {isSvg && (
+              <DropdownMenuItem onClick={() => downloadAs("svg")}>
+                {t("downloadSvg")}
+              </DropdownMenuItem>
+            )}
+            <DropdownMenuItem onClick={() => downloadAs("png")}>
+              {t("downloadPng")}
+            </DropdownMenuItem>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem onClick={copyImage}>
+              {copied ? (
+                <span className="text-green-600">{t("copied")}</span>
+              ) : (
+                t("copyImage")
+              )}
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </div>
+
+      {/* Desktop: hover overlay */}
+      <div className="absolute inset-x-0 bottom-0 hidden h-full items-end justify-between bg-gradient-to-t from-black/50 via-black/15 to-transparent px-4 pb-3 transition-opacity duration-200 sm:flex sm:opacity-0 sm:group-focus-within:opacity-100 sm:group-hover:opacity-100">
         <div className="flex flex-col">
           <span className="text-[13px] font-medium text-white">
             {asset.label}
