@@ -20,7 +20,8 @@ export const starbucks: Brand = {
     {
       name: "Starbucks Green",
       hex: "#006341",
-      usage: "Primary brand color — logo, primary CTAs, and core brand identity.",
+      usage:
+        "Primary brand color — logo, primary CTAs, and core brand identity.",
     },
     {
       name: "Accent Green",

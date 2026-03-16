@@ -1,15 +1,9 @@
-import dynamic from "next/dynamic"
+import Image from "next/image"
 import { useTranslations } from "next-intl"
 import { getTranslations, setRequestLocale } from "next-intl/server"
-import { IconArrowRight, IconHeart } from "@tabler/icons-react"
+import { IconArrowRight } from "@tabler/icons-react"
 import { Link } from "@/i18n/navigation"
 import { getAllBrands } from "@/data/brands"
-
-const DitherLogoCarousel = dynamic(() =>
-  import("@/components/dither-logo-carousel").then((m) => ({
-    default: m.DitherLogoCarousel,
-  }))
-)
 
 export async function generateMetadata({
   params,
@@ -40,23 +34,17 @@ function BrandsLanding() {
   const t = useTranslations()
   const brands = getAllBrands()
 
-  // Pick a stable subset of 8 brands for the carousel to avoid loading all logos
-  const MAX_CAROUSEL = 8
-  const carouselBrands = brands.slice(0, MAX_CAROUSEL).map((b) => ({
-    slug: b.slug,
-    name: b.name,
-    thumbnailSrc: b.thumbnail.src,
-  }))
-
   return (
     <div className="flex min-h-full w-full flex-col items-center justify-center px-4 py-12 sm:px-6">
       {/* Hero */}
       <section className="flex flex-col items-center gap-6 text-center">
-        <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-2xl bg-neutral-100 p-2 dark:bg-neutral-800">
-          <DitherLogoCarousel
-            brands={carouselBrands}
-            interval={2000}
-            className="size-full"
+        <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-2xl bg-neutral-100 dark:bg-neutral-800">
+          <Image
+            src="/logo.webp"
+            alt="Loftly"
+            width={48}
+            height={48}
+            className="size-full rounded-xl object-contain"
           />
         </div>
 
@@ -84,6 +72,27 @@ function BrandsLanding() {
           </a>
         </div>
       </section>
+
+      {/* Forward marquee — below hero */}
+      <div className="relative mt-24 w-full max-w-3xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+        <div className="flex w-max animate-[marquee_50s_linear_infinite] gap-10">
+          {[...brands, ...brands].map((brand, i) => (
+            <Link
+              key={`${brand.slug}-fwd-${i}`}
+              href={`/${brand.slug}`}
+              className="flex h-8 w-8 shrink-0 items-center justify-center transition-all hover:opacity-100 hover:grayscale-0"
+            >
+              <Image
+                src={brand.thumbnail.src}
+                alt={brand.name}
+                width={32}
+                height={32}
+                className="size-full object-contain dark:invert"
+              />
+            </Link>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }

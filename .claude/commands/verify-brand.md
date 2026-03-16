@@ -29,28 +29,29 @@ Launch all of these fetches **simultaneously** (parallel tool calls):
 ## Step 3: Verify each field
 
 For every field below, cross-reference your findings and assign a confidence level:
+
 - ✅ **Confirmed** — multiple authoritative sources agree with stored value
 - ⚠️ **Discrepancy** — sources suggest a different value
 - ❌ **Wrong** — stored value is clearly incorrect
 - ❓ **Unverifiable** — no authoritative source found
 
-| Field | Verification approach |
-|---|---|
-| `founded` | Wikipedia infobox, official About page, Crunchbase |
-| `headquarters` | Wikipedia infobox, official About/Contact page |
-| `designer` | Wikipedia, official brand guidelines, Brand New / It's Nice That design press |
-| `lastRebranded` | Wikipedia, design press (Brand New, UnderConsideration), official announcements |
-| `url` | Returns 200; no redirect to a different domain |
-| `description` (.ts file) | Factually current; matches official About copy |
-| `philosophy` (.ts file) | Reflects brand's actual design identity narrative |
-| `colors` hex values | Match official brand guidelines, press kit, or design system docs |
-| `typography` font names | Match official brand guidelines or detected fonts on brand website |
-| `categories` / `tags` | Appropriate for the brand's current industry positioning |
-| `legal.guidelinesUrl` | Returns 200 or 301/302; page actually contains brand guidelines |
-| `legal.dos` | Consistent with official guidelines (if accessible) |
-| `legal.donts` | Consistent with official guidelines (if accessible) |
-| `brands.$ARGUMENTS.description` (en.json) | Up-to-date; matches current brand positioning |
-| `brands.$ARGUMENTS.philosophy` (en.json) | Accurate; consistent with brand's identity narrative |
+| Field                                     | Verification approach                                                           |
+| ----------------------------------------- | ------------------------------------------------------------------------------- |
+| `founded`                                 | Wikipedia infobox, official About page, Crunchbase                              |
+| `headquarters`                            | Wikipedia infobox, official About/Contact page                                  |
+| `designer`                                | Wikipedia, official brand guidelines, Brand New / It's Nice That design press   |
+| `lastRebranded`                           | Wikipedia, design press (Brand New, UnderConsideration), official announcements |
+| `url`                                     | Returns 200; no redirect to a different domain                                  |
+| `description` (.ts file)                  | Factually current; matches official About copy                                  |
+| `philosophy` (.ts file)                   | Reflects brand's actual design identity narrative                               |
+| `colors` hex values                       | Match official brand guidelines, press kit, or design system docs               |
+| `typography` font names                   | Match official brand guidelines or detected fonts on brand website              |
+| `categories` / `tags`                     | Appropriate for the brand's current industry positioning                        |
+| `legal.guidelinesUrl`                     | Returns 200 or 301/302; page actually contains brand guidelines                 |
+| `legal.dos`                               | Consistent with official guidelines (if accessible)                             |
+| `legal.donts`                             | Consistent with official guidelines (if accessible)                             |
+| `brands.$ARGUMENTS.description` (en.json) | Up-to-date; matches current brand positioning                                   |
+| `brands.$ARGUMENTS.philosophy` (en.json)  | Accurate; consistent with brand's identity narrative                            |
 
 **Note on colors**: Hex values for brand colors can legitimately vary slightly between sources (screen rendering, print vs digital). Only flag a discrepancy if the difference is significant (>10% in any channel) or if official guidelines explicitly state a different value.
 
@@ -99,15 +100,18 @@ Always cite the specific source URL or search result for every discrepancy.
 For every issue with **≥85% confidence**, apply the fix immediately:
 
 **In `data/brands/$ARGUMENTS.ts`**:
+
 - Update the incorrect field value(s)
 - Preserve all formatting, code style, and surrounding structure exactly
 - Do not change any field that was confirmed correct or unverifiable
 
 **In `messages/en.json`** (if `description` or `philosophy` is outdated):
+
 - Update `brands.$ARGUMENTS.description` and/or `brands.$ARGUMENTS.philosophy` with accurate, well-written copy
 - Keep the same tone: semi-formal, concise, present-tense
 
 **Propagate to all other locales** (only if en.json changed):
+
 - Update `messages/es.json`, `messages/fr.json`, `messages/de.json`, `messages/ja.json`, `messages/it.json`, `messages/pt.json`, `messages/ko.json`, `messages/zh.json`
 - Translate the updated English text accurately into each language — natural phrasing, correct diacritics, not literal translation
 

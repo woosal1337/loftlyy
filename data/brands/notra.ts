@@ -13,8 +13,7 @@ export const notra: Brand = {
     {
       name: "Notra Cream",
       hex: "#F7F5F3",
-      usage:
-        "Primary background color, content surfaces, and light mode base.",
+      usage: "Primary background color, content surfaces, and light mode base.",
     },
     {
       name: "Notra Ink",

@@ -8,7 +8,13 @@ export const planetscale: Brand = {
   url: "https://planetscale.com",
   industry: "technology",
   categories: ["technology", "saas", "minimal-logos", "geometric-logos"],
-  tags: ["developer-tools", "database", "cloud", "infrastructure", "open-source"],
+  tags: [
+    "developer-tools",
+    "database",
+    "cloud",
+    "infrastructure",
+    "open-source",
+  ],
   colors: [
     {
       name: "Black",

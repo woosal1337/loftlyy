@@ -25,6 +25,7 @@ Record the full dot-notation key path for each issue (e.g. `brands.tesla.descrip
 ## Step 3: Placeholder integrity check
 
 For every string in `en.json` that contains `{variable}` placeholders, verify the translated string contains:
+
 - The **same set** of placeholder names (e.g. `{brandName}`, `{count}`, `{category}`)
 - No added, removed, or renamed placeholders
 
@@ -47,6 +48,7 @@ Use your language knowledge to review translation quality. Focus exhaustively on
 For the `brands.*` namespace (90+ entries), spot-check 10 random brand entries per locale rather than reviewing all.
 
 Check for:
+
 - **Diacritics and special characters**: accents (é, è, ê), umlauts (ä, ö, ü, ß), cedillas (ç), tildes (ñ), etc.
 - **Natural phrasing**: not overly literal or word-for-word machine translation
 - **Apostrophes and contractions**: e.g. `d'Abode` not `d Abode`, `l'identité` not `l identité`
