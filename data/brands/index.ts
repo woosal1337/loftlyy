@@ -23,6 +23,7 @@ import { interfere } from "./interfere"
 import { instagram } from "./instagram"
 import { google } from "./google"
 import { linear } from "./linear"
+import { lovable } from "./lovable"
 import { meta } from "./meta"
 import { nvidia } from "./nvidia"
 import { microsoft } from "./microsoft"
@@ -71,6 +72,7 @@ const rawBrands: Brand[] = [
   instagram,
   google,
   linear,
+  lovable,
   meta,
   microsoft,
   netflix,

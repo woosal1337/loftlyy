@@ -199,6 +199,10 @@
       "description": "Linear é uma plataforma de gerenciamento de projetos criada para equipes modernas de software, desenhada em torno de velocidade, clareza e capricho. Fundada em 2019, otimiza rastreamento de issues, planejamento de sprints e fluxos de desenvolvimento de produto para mais de 25.000 empresas.",
       "philosophy": "A identidade da Linear reflete foco implacável em velocidade, capricho e clareza. A marca usa uma paleta de índigo contida e um logomark geométrico limpo para comunicar precisão e propósito."
     },
+    "lovable": {
+      "description": "Lovable é um construtor de aplicativos alimentado por IA que permite a qualquer pessoa criar aplicações web full-stack por meio de instruções em linguagem natural. Fundada em Estocolmo, capacita criadores não técnicos a lançar software pronto para produção sem escrever código.",
+      "philosophy": "Quente, vibrante e acessível. A identidade rica em gradientes da Lovable combina tons energéticos de laranja, rosa e azul em uma marca distintiva em forma de L, refletindo uma plataforma que torna a criação de software alegre e acessível a todos."
+    },
     "microsoft": {
       "description": "Microsoft é uma corporação tecnológica global que desenvolve software, hardware e serviços em nuvem que impulsionam empresas e consumidores em todo o mundo. De Windows e Office a Azure e Xbox, os produtos da Microsoft alcançam bilhões de pessoas, tornando-a uma das empresas de tecnologia mais influentes da história.",
       "philosophy": "A janela de quatro cores da Microsoft simboliza abertura e diversidade — quatro painéis distintos se unindo como um só. A grade geométrica limpa e a tipografia neutra Segoe comunicam confiabilidade, escala e a evolução da empresa de gigante do software para plataforma cloud-first movida por IA."
@@ -439,7 +443,9 @@
     "quality-assurance": "Garantia de Qualidade",
     "database": "Banco de dados",
     "infrastructure": "Infraestrutura",
-    "content-automation": "Automação de Conteúdo"
+    "content-automation": "Automação de Conteúdo",
+    "no-code": "No-Code",
+    "app-builder": "Construtor de apps"
   },
   "tag": {
     "title": "Marcas com tag \"{tag}\"",

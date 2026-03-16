@@ -199,6 +199,10 @@
       "description": "Linear è una piattaforma di project management progettata per moderni team software, costruita attorno a velocità, chiarezza e cura artigianale. Fondata nel 2019, semplifica issue tracking, pianificazione degli sprint e flussi di sviluppo prodotto per oltre 25.000 aziende.",
       "philosophy": "L'identità di Linear riflette un'attenzione rigorosa a velocità, cura artigianale e chiarezza. Il brand usa una palette indaco sobria e un logomark geometrico pulito per comunicare precisione e intenzione."
     },
+    "lovable": {
+      "description": "Lovable è un costruttore di app basato sull'IA che consente a chiunque di creare applicazioni web full-stack tramite istruzioni in linguaggio naturale. Fondata a Stoccolma, permette ai creatori non tecnici di pubblicare software pronto per la produzione senza scrivere codice.",
+      "philosophy": "Calda, vibrante e accessibile. L'identità ricca di gradienti di Lovable fonde tonalità energiche di arancione, rosa e blu in un distintivo marchio a forma di L, riflettendo una piattaforma che rende la creazione di software gioiosa e accessibile a tutti."
+    },
     "microsoft": {
       "description": "Microsoft è una multinazionale tecnologica che sviluppa software, hardware e servizi cloud a supporto di aziende e consumatori in tutto il mondo. Da Windows e Office ad Azure e Xbox, i prodotti Microsoft raggiungono miliardi di persone, rendendola una delle aziende tecnologiche più influenti della storia.",
       "philosophy": "La finestra a quattro colori di Microsoft simboleggia apertura e diversità — quattro riquadri distinti che si uniscono in uno solo. La griglia geometrica pulita e il logotipo neutro in Segoe comunicano affidabilità, scalabilità e l'evoluzione dell'azienda da colosso del software a piattaforma cloud-first alimentata dall'IA."
@@ -439,7 +443,9 @@
     "quality-assurance": "Garanzia di Qualità",
     "database": "Database",
     "infrastructure": "Infrastruttura",
-    "content-automation": "Automazione dei Contenuti"
+    "content-automation": "Automazione dei Contenuti",
+    "no-code": "No-Code",
+    "app-builder": "Creatore di app"
   },
   "tag": {
     "title": "Brand taggati \"{tag}\"",

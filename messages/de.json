@@ -199,6 +199,10 @@
       "description": "Linear ist eine speziell entwickelte Projektmanagement-Plattform für moderne Softwareteams, die auf Geschwindigkeit, Klarheit und Handwerkskunst ausgelegt ist. 2019 gegründet, optimiert Linear die Fehlerverfolgung, Sprint-Planung und Produktentwicklungs-Workflows für über 25.000 Unternehmen.",
       "philosophy": "Linears Identität spiegelt unerbittlichen Fokus auf Geschwindigkeit, Handwerkskunst und Klarheit wider. Die Marke verwendet eine zurückhaltende Indigo-Palette und ein klares geometrisches Logozeichen, um Präzision und Zielstrebigkeit zu vermitteln."
     },
+    "lovable": {
+      "description": "Lovable ist ein KI-gestützter App-Builder, der es jedem ermöglicht, Full-Stack-Webanwendungen durch natürliche Sprachanweisungen zu erstellen. In Stockholm gegründet, befähigt es nicht-technische Entwickler, produktionsreife Software ohne Programmierung zu veröffentlichen.",
+      "philosophy": "Warm, lebendig und zugänglich. Lovables verlaufsreiche Identität verbindet energiegeladene Orange-, Rosa- und Blautöne zu einem markanten L-förmigen Zeichen, das eine Plattform widerspiegelt, die Softwareerstellung freudig und für jeden zugänglich macht."
+    },
     "microsoft": {
       "description": "Microsoft ist ein globaler Technologiekonzern, der Software, Hardware und Cloud-Dienste entwickelt, die Unternehmen und Verbraucher weltweit antreiben. Von Windows und Office über Azure bis Xbox — Microsofts Produkte erreichen Milliarden von Menschen und machen es zu einem der einflussreichsten Technologieunternehmen der Geschichte.",
       "philosophy": "Microsofts vierfarbiges Fenster symbolisiert Offenheit und Vielfalt — vier verschiedene Scheiben, die sich zu einem Ganzen vereinen. Das klare, geometrische Raster und die neutrale Segoe-Schrift vermitteln Zuverlässigkeit, Skalierbarkeit und die Entwicklung des Unternehmens vom Software-Giganten zur Cloud-first-, KI-gesteuerten Plattform."
@@ -439,7 +443,9 @@
     "quality-assurance": "Qualitätssicherung",
     "database": "Datenbank",
     "infrastructure": "Infrastruktur",
-    "content-automation": "Content-Automatisierung"
+    "content-automation": "Content-Automatisierung",
+    "no-code": "No-Code",
+    "app-builder": "App-Builder"
   },
   "tag": {
     "title": "Marken mit Tag \"{tag}\"",

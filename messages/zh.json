@@ -199,6 +199,10 @@
       "description": "Linear 是一个为现代软件团队打造的项目管理平台，围绕速度、清晰度和工艺感进行设计。它创立于 2019 年，为超过 25,000 家公司简化问题跟踪、冲刺规划和产品开发流程。",
       "philosophy": "Linear 的品牌识别体现出对速度、工艺和清晰度的极致专注。品牌通过克制的靛蓝色调和简洁的几何图形标志来传达精确性与目标感。"
     },
+    "lovable": {
+      "description": "Lovable是一款AI驱动的应用构建器，让任何人都能通过自然语言提示创建全栈Web应用程序。总部位于斯德哥尔摩，它使非技术创作者无需编写代码即可发布生产就绪的软件。",
+      "philosophy": "温暖、充满活力且平易近人。Lovable丰富的渐变色品牌标识将充满能量的橙色、粉色和蓝色色调融合成独特的L形标记，反映了一个让软件创作变得愉悦且人人可及的平台。"
+    },
     "microsoft": {
       "description": "Microsoft 是一家全球性科技企业，开发软件、硬件和云服务，为世界各地的企业和消费者提供支持。从 Windows 和 Office 到 Azure 和 Xbox，Microsoft 的产品触及数十亿人，使其成为历史上最具影响力的科技公司之一。",
       "philosophy": "Microsoft 的四色窗户标志象征着开放与多元——四个独立的窗格汇聚为一体。简洁的几何网格与中性的 Segoe 字体传达出可靠性、规模感，以及公司从软件巨头向云优先、AI 驱动平台演进的历程。"
@@ -439,7 +443,9 @@
     "quality-assurance": "质量保证",
     "database": "数据库",
     "infrastructure": "基础设施",
-    "content-automation": "内容自动化"
+    "content-automation": "内容自动化",
+    "no-code": "无代码",
+    "app-builder": "应用构建器"
   },
   "tag": {
     "title": "标记为\"{tag}\"的品牌",

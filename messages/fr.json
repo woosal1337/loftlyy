@@ -203,6 +203,10 @@
       "description": "Linear est une plateforme de gestion de projets conçue pour les équipes logicielles modernes, axée sur la vitesse, la clarté et le savoir-faire. Fondée en 2019, Linear optimise le suivi des problèmes, la planification des sprints et les flux de développement produit pour plus de 25 000 entreprises.",
       "philosophy": "L'identité de Linear reflète une concentration implacable sur la vitesse, le savoir-faire et la clarté. La marque utilise une palette indigo sobre et un logotype géométrique épuré pour transmettre précision et détermination."
     },
+    "lovable": {
+      "description": "Lovable est un créateur d'applications propulsé par l'IA qui permet à quiconque de créer des applications web complètes grâce à des instructions en langage naturel. Fondée à Stockholm, elle permet aux créateurs non techniques de livrer des logiciels prêts pour la production sans écrire de code.",
+      "philosophy": "Chaleureuse, vibrante et accessible. L'identité riche en dégradés de Lovable mêle des teintes énergiques d'orange, de rose et de bleu dans une marque distinctive en forme de L, reflétant une plateforme qui rend la création logicielle joyeuse et accessible à tous."
+    },
     "microsoft": {
       "description": "Microsoft est une multinationale technologique qui développe des logiciels, du matériel et des services cloud au service des entreprises et des consommateurs du monde entier. De Windows et Office à Azure et Xbox, les produits de Microsoft touchent des milliards de personnes, en faisant l'une des entreprises technologiques les plus influentes de l'histoire.",
       "philosophy": "La fenêtre aux quatre couleurs de Microsoft symbolise l'ouverture et la diversité — quatre panneaux distincts se réunissant en un seul. La grille géométrique épurée et le logotype neutre Segoe communiquent fiabilité, envergure et l'évolution de l'entreprise de géant du logiciel vers une plateforme cloud-first propulsée par l'IA."
@@ -439,7 +443,9 @@
     "quality-assurance": "Assurance Qualité",
     "database": "Base de données",
     "infrastructure": "Infrastructure",
-    "content-automation": "Automatisation de Contenu"
+    "content-automation": "Automatisation de Contenu",
+    "no-code": "No-Code",
+    "app-builder": "Créateur d'apps"
   },
   "tag": {
     "title": "Marques taguées \"{tag}\"",

@@ -203,6 +203,10 @@
       "description": "Linear es una plataforma de gestión de proyectos diseñada para equipos modernos de software, centrada en la velocidad, claridad y artesanía. Fundada en 2019, Linear optimiza el seguimiento de incidencias, la planificación de sprints y los flujos de desarrollo de productos para más de 25.000 empresas.",
       "philosophy": "La identidad de Linear refleja un enfoque implacable en la velocidad, la artesanía y la claridad. La marca utiliza una paleta índigo contenida y un logotipo geométrico limpio para transmitir precisión y propósito."
     },
+    "lovable": {
+      "description": "Lovable es un creador de aplicaciones impulsado por IA que permite a cualquiera crear aplicaciones web completas mediante indicaciones en lenguaje natural. Fundada en Estocolmo, capacita a creadores no técnicos para lanzar software listo para producción sin escribir código.",
+      "philosophy": "Cálida, vibrante y accesible. La identidad rica en degradados de Lovable combina tonos enérgicos de naranja, rosa y azul en una distintiva marca en forma de L, reflejando una plataforma que hace que la creación de software sea alegre y accesible para todos."
+    },
     "microsoft": {
       "description": "Microsoft es una corporación tecnológica global que desarrolla software, hardware y servicios en la nube que impulsan empresas y consumidores en todo el mundo. Desde Windows y Office hasta Azure y Xbox, los productos de Microsoft llegan a miles de millones de personas, convirtiéndola en una de las empresas tecnológicas más influyentes de la historia.",
       "philosophy": "La ventana de cuatro colores de Microsoft simboliza apertura y diversidad: cuatro paneles distintos que se unen como uno solo. La cuadrícula geométrica limpia y la tipografía neutra Segoe comunican fiabilidad, escala y la evolución de la empresa de gigante del software a plataforma cloud-first impulsada por IA."
@@ -439,7 +443,9 @@
     "quality-assurance": "Control de Calidad",
     "database": "Base de datos",
     "infrastructure": "Infraestructura",
-    "content-automation": "Automatización de Contenido"
+    "content-automation": "Automatización de Contenido",
+    "no-code": "Sin código",
+    "app-builder": "Creador de apps"
   },
   "tag": {
     "title": "Marcas etiquetadas \"{tag}\"",

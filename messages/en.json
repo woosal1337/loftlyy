@@ -203,6 +203,10 @@
       "description": "Linear is a purpose-built project management platform for modern software teams, designed around speed, clarity, and craftsmanship. Founded in 2019, Linear streamlines issue tracking, sprint planning, and product development workflows for over 25,000 companies.",
       "philosophy": "Linear's identity reflects relentless focus on speed, craftsmanship, and clarity. The brand uses a restrained indigo palette and clean geometric logomark to convey precision and purpose."
     },
+    "lovable": {
+      "description": "Lovable is an AI-powered app builder that lets anyone create full-stack web applications through natural language prompts. Founded in Stockholm, it empowers non-technical builders to ship production-ready software without writing code.",
+      "philosophy": "Warm, vibrant, and approachable. Lovable's gradient-rich identity blends energetic orange, pink, and blue hues into a distinctive L-shaped mark, reflecting a platform that makes software creation feel joyful and accessible to everyone."
+    },
     "microsoft": {
       "description": "Microsoft is a global technology corporation that develops software, hardware, and cloud services powering businesses and consumers worldwide. From Windows and Office to Azure and Xbox, Microsoft's products touch billions of people, making it one of the most influential technology companies in history.",
       "philosophy": "Microsoft's four-color window symbolizes openness and diversity — four distinct panes coming together as one. The clean, geometric grid and neutral Segoe wordmark communicate reliability, scale, and the company's evolution from software giant to cloud-first, AI-powered platform."
@@ -439,7 +443,9 @@
     "quality-assurance": "Quality Assurance",
     "database": "Database",
     "infrastructure": "Infrastructure",
-    "content-automation": "Content Automation"
+    "content-automation": "Content Automation",
+    "no-code": "No-Code",
+    "app-builder": "App Builder"
   },
   "tag": {
     "title": "Brands tagged \"{tag}\"",
