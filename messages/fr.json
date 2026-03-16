@@ -211,6 +211,10 @@
       "description": "Microsoft est une multinationale technologique qui développe des logiciels, du matériel et des services cloud au service des entreprises et des consommateurs du monde entier. De Windows et Office à Azure et Xbox, les produits de Microsoft touchent des milliards de personnes, en faisant l'une des entreprises technologiques les plus influentes de l'histoire.",
       "philosophy": "La fenêtre aux quatre couleurs de Microsoft symbolise l'ouverture et la diversité — quatre panneaux distincts se réunissant en un seul. La grille géométrique épurée et le logotype neutre Segoe communiquent fiabilité, envergure et l'évolution de l'entreprise de géant du logiciel vers une plateforme cloud-first propulsée par l'IA."
     },
+    "mintlify": {
+      "description": "Mintlify est la plateforme de connaissances intelligente qui aide les équipes à créer, maintenir et optimiser la documentation pour les humains comme pour l'IA. Conçue pour les entreprises orientées développeurs, Mintlify propulse une documentation élégante et native IA utilisée par plus de 2 millions de développeurs chaque mois.",
+      "philosophy": "L'identité de marque de Mintlify incarne la rencontre entre clarté et intelligence. Sa palette vert menthe signature et sa typographie épurée et moderne reflètent la mission de la plateforme : rendre la documentation simple et belle, transformant un aspect traditionnellement négligé du logiciel en un avantage concurrentiel."
+    },
     "vercel": {
       "description": "Vercel est une plateforme cloud pour les développeurs frontend qui permet aux équipes de construire, déployer et faire évoluer des applications web sans configuration. Fondée en 2015, Vercel est la créatrice de Next.js et du système de design Geist.",
       "philosophy": "L'identité de marque de Vercel est centrée sur l'expérience développeur et la puissance du frontend. Sa palette noir et blanc et son iconique symbole triangulaire communiquent vitesse, précision et l'avant-garde du développement web."
@@ -445,7 +449,8 @@
     "infrastructure": "Infrastructure",
     "content-automation": "Automatisation de Contenu",
     "no-code": "No-Code",
-    "app-builder": "Créateur d'apps"
+    "app-builder": "Créateur d'apps",
+    "documentation": "Documentation"
   },
   "tag": {
     "title": "Marques taguées \"{tag}\"",

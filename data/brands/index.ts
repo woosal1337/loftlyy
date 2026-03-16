@@ -25,6 +25,7 @@ import { google } from "./google"
 import { linear } from "./linear"
 import { lovable } from "./lovable"
 import { meta } from "./meta"
+import { mintlify } from "./mintlify"
 import { nvidia } from "./nvidia"
 import { microsoft } from "./microsoft"
 import { netflix } from "./netflix"
@@ -74,6 +75,7 @@ const rawBrands: Brand[] = [
   linear,
   lovable,
   meta,
+  mintlify,
   microsoft,
   netflix,
   nike,

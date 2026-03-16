@@ -207,6 +207,10 @@
       "description": "Microsoft é uma corporação tecnológica global que desenvolve software, hardware e serviços em nuvem que impulsionam empresas e consumidores em todo o mundo. De Windows e Office a Azure e Xbox, os produtos da Microsoft alcançam bilhões de pessoas, tornando-a uma das empresas de tecnologia mais influentes da história.",
       "philosophy": "A janela de quatro cores da Microsoft simboliza abertura e diversidade — quatro painéis distintos se unindo como um só. A grade geométrica limpa e a tipografia neutra Segoe comunicam confiabilidade, escala e a evolução da empresa de gigante do software para plataforma cloud-first movida por IA."
     },
+    "mintlify": {
+      "description": "Mintlify é a plataforma inteligente de conhecimento que ajuda equipes a criar, manter e otimizar documentação tanto para humanos quanto para IA. Desenvolvida para empresas focadas em desenvolvedores, a Mintlify impulsiona documentação elegante e AI-native utilizada por mais de 2 milhões de desenvolvedores mensalmente.",
+      "philosophy": "A identidade de marca da Mintlify incorpora a interseção entre clareza e inteligência. Sua paleta verde-menta característica e tipografia limpa e moderna refletem a missão da plataforma: tornar a documentação simples e atraente, transformando um aspecto tradicionalmente negligenciado do software em uma vantagem competitiva."
+    },
     "vercel": {
       "description": "Vercel é uma plataforma em nuvem para desenvolvedores frontend que permite a equipes construir, implantar e escalar aplicações web sem configuração. Fundada em 2015, a Vercel é a criadora do Next.js e do sistema de design Geist.",
       "philosophy": "A identidade de marca da Vercel se concentra na experiência do desenvolvedor e no poder do frontend. Sua paleta marcante em preto e branco e seu símbolo triangular icônico comunicam velocidade, precisão e a vanguarda do desenvolvimento web."
@@ -445,7 +449,8 @@
     "infrastructure": "Infraestrutura",
     "content-automation": "Automação de Conteúdo",
     "no-code": "No-Code",
-    "app-builder": "Construtor de apps"
+    "app-builder": "Construtor de apps",
+    "documentation": "Documentação"
   },
   "tag": {
     "title": "Marcas com tag \"{tag}\"",

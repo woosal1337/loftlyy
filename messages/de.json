@@ -207,6 +207,10 @@
       "description": "Microsoft ist ein globaler Technologiekonzern, der Software, Hardware und Cloud-Dienste entwickelt, die Unternehmen und Verbraucher weltweit antreiben. Von Windows und Office über Azure bis Xbox — Microsofts Produkte erreichen Milliarden von Menschen und machen es zu einem der einflussreichsten Technologieunternehmen der Geschichte.",
       "philosophy": "Microsofts vierfarbiges Fenster symbolisiert Offenheit und Vielfalt — vier verschiedene Scheiben, die sich zu einem Ganzen vereinen. Das klare, geometrische Raster und die neutrale Segoe-Schrift vermitteln Zuverlässigkeit, Skalierbarkeit und die Entwicklung des Unternehmens vom Software-Giganten zur Cloud-first-, KI-gesteuerten Plattform."
     },
+    "mintlify": {
+      "description": "Mintlify ist die intelligente Wissensplattform, die Teams dabei unterstützt, Dokumentation sowohl für Menschen als auch für KI zu erstellen, zu pflegen und zu optimieren. Entwickelt für entwicklerorientierte Unternehmen, betreibt Mintlify ansprechende, KI-native Dokumentation, die monatlich von über 2 Millionen Entwicklern genutzt wird.",
+      "philosophy": "Mintlifys Markenidentität verkörpert die Schnittstelle von Klarheit und Intelligenz. Die charakteristische Mintgrün-Palette und die klare, moderne Typografie spiegeln die Mission der Plattform wider: Dokumentation mühelos und ansprechend zu gestalten und einen traditionell vernachlässigten Aspekt der Softwareentwicklung in einen Wettbewerbsvorteil zu verwandeln."
+    },
     "vercel": {
       "description": "Vercel ist eine Cloud-Plattform für Frontend-Entwickler, die es Teams ermöglicht, Webanwendungen ohne Konfiguration zu erstellen, bereitzustellen und zu skalieren. 2015 gegründet, ist Vercel der Schöpfer von Next.js und dem Geist-Designsystem.",
       "philosophy": "Vercels Markenidentität konzentriert sich auf die Entwicklererfahrung und die Kraft des Frontends. Die markante Schwarz-Weiß-Palette und das ikonische Dreieckssymbol vermitteln Geschwindigkeit, Präzision und die Spitze der Webentwicklung."
@@ -445,7 +449,8 @@
     "infrastructure": "Infrastruktur",
     "content-automation": "Content-Automatisierung",
     "no-code": "No-Code",
-    "app-builder": "App-Builder"
+    "app-builder": "App-Builder",
+    "documentation": "Dokumentation"
   },
   "tag": {
     "title": "Marken mit Tag \"{tag}\"",

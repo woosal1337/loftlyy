@@ -207,6 +207,10 @@
       "description": "Microsoft 是一家全球性科技企业，开发软件、硬件和云服务，为世界各地的企业和消费者提供支持。从 Windows 和 Office 到 Azure 和 Xbox，Microsoft 的产品触及数十亿人，使其成为历史上最具影响力的科技公司之一。",
       "philosophy": "Microsoft 的四色窗户标志象征着开放与多元——四个独立的窗格汇聚为一体。简洁的几何网格与中性的 Segoe 字体传达出可靠性、规模感，以及公司从软件巨头向云优先、AI 驱动平台演进的历程。"
     },
+    "mintlify": {
+      "description": "Mintlify 是一个智能知识平台，帮助团队为人类和 AI 创建、维护和优化文档。专为开发者优先的企业打造，Mintlify 驱动着每月超过 200 万开发者使用的精美 AI 原生文档。",
+      "philosophy": "Mintlify 的品牌标识体现了清晰与智能的交汇。其标志性的薄荷绿色调和简洁现代的字体设计，反映了平台让文档轻松且优美的使命——将软件领域中长期被忽视的环节转化为竞争优势。"
+    },
     "vercel": {
       "description": "Vercel 是一个面向前端开发者的云平台，使团队能够以零配置方式构建、部署并扩展 Web 应用。它创立于 2015 年，是 Next.js 和 Geist 设计系统的创造者。",
       "philosophy": "Vercel 的品牌识别聚焦于开发者体验以及前端的力量。其鲜明的黑白配色和标志性的三角形符号传达出速度、精确性以及 Web 开发的前沿感。"
@@ -445,7 +449,8 @@
     "infrastructure": "基础设施",
     "content-automation": "内容自动化",
     "no-code": "无代码",
-    "app-builder": "应用构建器"
+    "app-builder": "应用构建器",
+    "documentation": "文档"
   },
   "tag": {
     "title": "标记为\"{tag}\"的品牌",

@@ -211,6 +211,10 @@
       "description": "Microsoft is a global technology corporation that develops software, hardware, and cloud services powering businesses and consumers worldwide. From Windows and Office to Azure and Xbox, Microsoft's products touch billions of people, making it one of the most influential technology companies in history.",
       "philosophy": "Microsoft's four-color window symbolizes openness and diversity — four distinct panes coming together as one. The clean, geometric grid and neutral Segoe wordmark communicate reliability, scale, and the company's evolution from software giant to cloud-first, AI-powered platform."
     },
+    "mintlify": {
+      "description": "Mintlify is the intelligent knowledge platform that helps teams create, maintain, and optimize documentation for both humans and AI. Built for developer-first companies, Mintlify powers beautiful, AI-native documentation used by over 2 million developers monthly.",
+      "philosophy": "Mintlify's brand identity embodies the intersection of clarity and intelligence. Its signature mint green palette and clean, modern typography reflect the platform's mission to make documentation effortless and beautiful — transforming a traditionally neglected aspect of software into a competitive advantage."
+    },
     "vercel": {
       "description": "Vercel is a cloud platform for frontend developers that enables teams to build, deploy, and scale web applications with zero configuration. Founded in 2015, Vercel is the creator of Next.js and the Geist design system.",
       "philosophy": "Vercel's brand identity centers on developer experience and the power of the frontend. Its stark black-and-white palette and iconic triangle symbol communicate speed, precision, and the cutting edge of web development."
@@ -445,7 +449,8 @@
     "infrastructure": "Infrastructure",
     "content-automation": "Content Automation",
     "no-code": "No-Code",
-    "app-builder": "App Builder"
+    "app-builder": "App Builder",
+    "documentation": "Documentation"
   },
   "tag": {
     "title": "Brands tagged \"{tag}\"",
