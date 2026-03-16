@@ -291,6 +291,10 @@
       "description": "Duolingo é uma plataforma gratuita de aprendizado de idiomas que oferece mais de 100 cursos em mais de 40 línguas, tornando a educação universalmente acessível por meio de lições gamificadas e sequências. Fundada em 2011 por Luis von Ahn e Severin Hacker, tornou-se o aplicativo de aprendizado de idiomas mais popular do mundo com centenas de milhões de alunos. A missão do Duolingo é desenvolver a melhor educação do mundo e torná-la disponível para todos.",
       "philosophy": "Lúdica e com propósito, a identidade do Duolingo é centrada na icônica coruja verde Duo, símbolo de aprendizado acessível que equilibra diversão gamificada com impacto educacional genuíno. O verde vibrante e as formas arredondadas comunicam amizade e acessibilidade, reforçando a crença de que aprender um idioma deve parecer um jogo, não uma tarefa."
     },
+    "elevenlabs": {
+      "description": "A ElevenLabs é uma empresa de pesquisa em áudio com IA especializada em síntese de texto para fala realista, clonagem de voz e IA conversacional. Fundada em 2022, a plataforma permite que criadores e desenvolvedores gerem fala realista com emoção e entonação naturais em 32 idiomas.",
+      "philosophy": "A identidade de marca da ElevenLabs é construída sobre um minimalismo marcante — uma paleta em preto e branco que reflete sua base orientada pela pesquisa. As icônicas linhas verticais duplas abstraem o número onze ao mesmo tempo em que evocam um botão de pausa, conectando tecnologia de áudio e identidade visual com elegante simplicidade."
+    },
     "starbucks": {
       "description": "A Starbucks é a principal torrefadora e varejista de café especial do mundo, com mais de 38.000 estabelecimentos em mais de 85 países. Fundada em 1971 no Pike Place Market de Seattle, a Starbucks fornece café arábica de alta qualidade e tornou-se uma força definidora na cultura global de cafeterias, posicionando-se como um acolhedor «terceiro lugar» entre casa e trabalho.",
       "philosophy": "A cada xícara, a cada conversa, a cada comunidade — a Starbucks cultiva as possibilidades ilimitadas da conexão humana. A icônica sereia branca sobre o Verde Starbucks é um dos símbolos mais reconhecidos do mundo."
@@ -450,7 +454,8 @@
     "content-automation": "Automação de Conteúdo",
     "no-code": "No-Code",
     "app-builder": "Construtor de apps",
-    "documentation": "Documentação"
+    "documentation": "Documentação",
+    "voice-ai": "IA de Voz"
   },
   "tag": {
     "title": "Marcas com tag \"{tag}\"",

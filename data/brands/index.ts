@@ -15,6 +15,7 @@ import { cursor } from "./cursor"
 import { apple } from "./apple"
 import { discord } from "./discord"
 import { duolingo } from "./duolingo"
+import { elevenlabs } from "./elevenlabs"
 import { notra } from "./notra"
 import { notion } from "./notion"
 import { figma } from "./figma"
@@ -67,6 +68,7 @@ const rawBrands: Brand[] = [
   cursor,
   discord,
   duolingo,
+  elevenlabs,
   figma,
   github,
   interfere,

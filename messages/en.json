@@ -291,6 +291,10 @@
       "description": "Duolingo is a free language-learning platform offering over 100 courses across 40+ languages, making education universally accessible through gamified lessons and streaks. Founded in 2011 by Luis von Ahn and Severin Hacker, it has grown into the world's most popular language-learning app with hundreds of millions of learners. Duolingo's mission is to develop the best education in the world and make it available to everyone.",
       "philosophy": "Playful and purposeful, Duolingo's identity centers on the iconic green Duo owl — a symbol of approachable learning that balances gamified fun with genuine educational impact. The vibrant green and rounded forms communicate friendliness and accessibility, reinforcing the belief that learning a language should feel like a game, not a chore."
     },
+    "elevenlabs": {
+      "description": "ElevenLabs is an AI audio research company specializing in realistic text-to-speech synthesis, voice cloning, and conversational AI. Founded in 2022, the platform enables creators and developers to generate lifelike speech with natural emotion and intonation across 32 languages.",
+      "philosophy": "ElevenLabs' brand identity is built on stark minimalism — a black-and-white palette that signals its research-driven foundation. The iconic double vertical lines abstract the number eleven while evoking a pause button, bridging the gap between audio technology and visual identity with elegant simplicity."
+    },
     "starbucks": {
       "description": "Starbucks is the world's premier roaster and retailer of specialty coffee, operating over 38,000 locations in 85+ countries. Founded in 1971 at Seattle's Pike Place Market, Starbucks sources high-quality arabica coffee and has become a defining force in global coffeehouse culture, positioning itself as a welcoming 'third place' between home and work.",
       "philosophy": "With every cup, with every conversation, with every community — Starbucks nurtures the limitless possibilities of human connection. The iconic white Siren on Starbucks Green is one of the most recognized symbols on earth, embodying warmth, craft, and the promise of a welcoming space."
@@ -450,7 +454,8 @@
     "content-automation": "Content Automation",
     "no-code": "No-Code",
     "app-builder": "App Builder",
-    "documentation": "Documentation"
+    "documentation": "Documentation",
+    "voice-ai": "Voice AI"
   },
   "tag": {
     "title": "Brands tagged \"{tag}\"",

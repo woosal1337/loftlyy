@@ -291,6 +291,10 @@
       "description": "Duolingo ist eine kostenlose Sprachlernplattform, die über 100 Kurse in mehr als 40 Sprachen anbietet und Bildung durch spielerische Lektionen und Serien universell zugänglich macht. Gegründet 2011 von Luis von Ahn und Severin Hacker, ist sie zur beliebtesten Sprachlern-App der Welt mit Hunderten von Millionen Lernenden geworden. Die Mission von Duolingo ist es, die beste Bildung der Welt zu entwickeln und sie für alle zugänglich zu machen.",
       "philosophy": "Verspielt und zielgerichtet dreht sich Duolingos Identität um den ikonischen grünen Duo-Eule, ein Symbol für zugängliches Lernen, das spielerischen Spaß mit echtem Bildungseffekt verbindet. Das lebhafte Grün und die runden Formen vermitteln Freundlichkeit und Zugänglichkeit und unterstreichen die Überzeugung, dass das Erlernen einer Sprache sich wie ein Spiel anfühlen sollte, nicht wie eine lästige Pflicht."
     },
+    "elevenlabs": {
+      "description": "ElevenLabs ist ein KI-Audioforschungsunternehmen, das sich auf realistische Text-zu-Sprache-Synthese, Stimmklonierung und konversationelle KI spezialisiert hat. Gegründet 2022, ermöglicht die Plattform Kreativen und Entwicklern, lebensechte Sprache mit natürlicher Emotion und Intonation in 32 Sprachen zu erzeugen.",
+      "philosophy": "Die Markenidentität von ElevenLabs basiert auf striktem Minimalismus — eine Schwarz-Weiß-Palette, die den forschungsgetriebenen Kern widerspiegelt. Die ikonischen doppelten vertikalen Linien abstrahieren die Zahl Elf und erinnern zugleich an eine Pause-Taste — eine elegante Brücke zwischen Audiotechnologie und visueller Identität."
+    },
     "starbucks": {
       "description": "Starbucks ist weltweit führender Röster und Einzelhändler von Spezialitätenkaffee mit über 38.000 Standorten in mehr als 85 Ländern. Gegründet 1971 auf dem Pike Place Market in Seattle, bezieht Starbucks hochwertigen Arabica-Kaffee und hat sich zu einer prägenden Kraft in der weltweiten Café-Kultur entwickelt — als einladender «dritter Ort» zwischen Zuhause und Arbeit.",
       "philosophy": "Mit jeder Tasse, mit jedem Gespräch, mit jeder Gemeinschaft — Starbucks fördert die grenzenlosen Möglichkeiten menschlicher Verbundenheit. Die ikonische weiße Sirene auf Starbucks-Grün gehört zu den bekanntesten Symbolen der Welt."
@@ -450,7 +454,8 @@
     "content-automation": "Content-Automatisierung",
     "no-code": "No-Code",
     "app-builder": "App-Builder",
-    "documentation": "Dokumentation"
+    "documentation": "Dokumentation",
+    "voice-ai": "Sprach-KI"
   },
   "tag": {
     "title": "Marken mit Tag \"{tag}\"",

@@ -291,6 +291,10 @@
       "description": "Duolingo è una piattaforma gratuita per l'apprendimento delle lingue che offre oltre 100 corsi in più di 40 lingue, rendendo l'istruzione universalmente accessibile attraverso lezioni gamificate e serie. Fondata nel 2011 da Luis von Ahn e Severin Hacker, è diventata l'app per l'apprendimento delle lingue più popolare al mondo con centinaia di milioni di studenti. La missione di Duolingo è sviluppare la migliore educazione al mondo e renderla disponibile a tutti.",
       "philosophy": "Giocosa e intenzionale, l'identità di Duolingo è centrata sul leggendario gufo verde Duo, simbolo di un apprendimento accessibile che bilancia il divertimento gamificato con un impatto educativo autentico. Il verde vivace e le forme arrotondate comunicano amichevolezza e accessibilità, rafforzando la convinzione che imparare una lingua debba sembrare un gioco, non un compito."
     },
+    "elevenlabs": {
+      "description": "ElevenLabs è un'azienda di ricerca audio basata sull'IA, specializzata nella sintesi vocale realistica, nella clonazione vocale e nell'IA conversazionale. Fondata nel 2022, la piattaforma consente a creatori e sviluppatori di generare parlato realistico con emozione e intonazione naturali in 32 lingue.",
+      "philosophy": "L'identità del marchio ElevenLabs è costruita su un minimalismo radicale — una palette in bianco e nero che riflette le sue radici nella ricerca. Le iconiche doppie linee verticali astraggono il numero undici evocando al contempo un pulsante di pausa, collegando tecnologia audio e identità visiva con elegante semplicità."
+    },
     "starbucks": {
       "description": "Starbucks è il principale torrefattore e rivenditore di caffè speciale al mondo, con oltre 38.000 sedi in più di 85 paesi. Fondata nel 1971 al Pike Place Market di Seattle, Starbucks seleziona caffè arabica di alta qualità ed è diventata una forza determinante nella cultura globale dei caffè, posizionandosi come un accogliente «terzo luogo» tra casa e lavoro.",
       "philosophy": "Con ogni tazza, con ogni conversazione, con ogni comunità — Starbucks coltiva le infinite possibilità della connessione umana. L'iconica sirena bianca su verde Starbucks è uno dei simboli più riconoscibili al mondo."
@@ -450,7 +454,8 @@
     "content-automation": "Automazione dei Contenuti",
     "no-code": "No-Code",
     "app-builder": "Creatore di app",
-    "documentation": "Documentazione"
+    "documentation": "Documentazione",
+    "voice-ai": "IA Vocale"
   },
   "tag": {
     "title": "Brand taggati \"{tag}\"",

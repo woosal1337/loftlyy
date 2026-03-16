@@ -291,6 +291,10 @@
       "description": "Duolingo est une plateforme d'apprentissage des langues gratuite proposant plus de 100 cours dans plus de 40 langues, rendant l'éducation universellement accessible grâce à des leçons ludiques et des séries. Fondée en 2011 par Luis von Ahn et Severin Hacker, elle est devenue l'application d'apprentissage des langues la plus populaire au monde avec des centaines de millions d'apprenants. La mission de Duolingo est de développer la meilleure éducation au monde et de la rendre accessible à tous.",
       "philosophy": "Ludique et intentionnelle, l'identité de Duolingo est centrée sur le célèbre hibou vert Duo, un symbole d'apprentissage accessible qui équilibre le plaisir gamifié et l'impact éducatif authentique. Le vert vibrant et les formes arrondies communiquent la convivialité et l'accessibilité, renforçant la conviction qu'apprendre une langue doit ressembler à un jeu, pas à une corvée."
     },
+    "elevenlabs": {
+      "description": "ElevenLabs est une entreprise de recherche en audio par IA spécialisée dans la synthèse vocale réaliste, le clonage de voix et l'IA conversationnelle. Fondée en 2022, la plateforme permet aux créateurs et développeurs de générer une parole naturelle avec émotion et intonation authentiques dans 32 langues.",
+      "philosophy": "L'identité de marque d'ElevenLabs repose sur un minimalisme radical — une palette noir et blanc qui reflète ses fondements axés sur la recherche. Les iconiques doubles lignes verticales abstraient le nombre onze tout en évoquant un bouton pause, reliant technologie audio et identité visuelle avec une élégante simplicité."
+    },
     "starbucks": {
       "description": "Starbucks est le premier torréfacteur et détaillant de café de spécialité au monde, exploitant plus de 38 000 établissements dans plus de 85 pays. Fondé en 1971 au Pike Place Market de Seattle, Starbucks sélectionne du café arabica de haute qualité et est devenu une force déterminante dans la culture mondiale des cafés, se positionnant comme un «troisième lieu» accueillant entre la maison et le travail.",
       "philosophy": "À chaque tasse, à chaque conversation, dans chaque communauté — Starbucks cultive les possibilités infinies de la connexion humaine. L'iconique sirène blanche sur fond vert Starbucks est l'un des symboles les plus reconnus au monde."
@@ -450,7 +454,8 @@
     "content-automation": "Automatisation de Contenu",
     "no-code": "No-Code",
     "app-builder": "Créateur d'apps",
-    "documentation": "Documentation"
+    "documentation": "Documentation",
+    "voice-ai": "IA Vocale"
   },
   "tag": {
     "title": "Marques taguées \"{tag}\"",
