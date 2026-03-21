@@ -5,6 +5,7 @@ import { useLocale } from "next-intl"
 import { localeMetadata } from "@/i18n/locales"
 import { usePathname, useRouter } from "@/i18n/navigation"
 import { routing } from "@/i18n/routing"
+import { searchParamsToQuery } from "@/lib/utils"
 
 export function LocaleSwitcher() {
   const locale = useLocale()
@@ -13,10 +14,15 @@ export function LocaleSwitcher() {
   const searchParams = useSearchParams()
 
   function onLocaleChange(e: React.ChangeEvent<HTMLSelectElement>) {
-    const qs = searchParams.toString()
-    router.replace(qs ? `${pathname}?${qs}` : pathname, {
-      locale: e.target.value,
-    })
+    router.replace(
+      {
+        pathname,
+        query: searchParamsToQuery(searchParams),
+      },
+      {
+        locale: e.target.value,
+      }
+    )
   }
 
   return (

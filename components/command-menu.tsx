@@ -25,11 +25,11 @@ import {
   IconDeviceDesktop,
 } from "@tabler/icons-react"
 import { useLocale } from "next-intl"
-import { useTheme } from "next-themes"
+import { useTheme } from "@/components/theme-provider"
 import { localeMetadata } from "@/i18n/locales"
 import { useRouter, usePathname } from "@/i18n/navigation"
 import { routing } from "@/i18n/routing"
-import { cn } from "@/lib/utils"
+import { cn, searchParamsToQuery } from "@/lib/utils"
 import {
   filterBrands,
   getAvailableFilters,
@@ -399,10 +399,15 @@ export function CommandMenu({
                         key={loc}
                         value={`language ${localeMetadata[loc].displayName} ${localeMetadata[loc].nativeName} ${loc}`}
                         onSelect={() => {
-                          const qs = searchParams.toString()
-                          router.replace(qs ? `${pathname}?${qs}` : pathname, {
-                            locale: loc,
-                          })
+                          router.replace(
+                            {
+                              pathname,
+                              query: searchParamsToQuery(searchParams),
+                            },
+                            {
+                              locale: loc,
+                            }
+                          )
                           setOpen(false)
                         }}
                         className="flex cursor-pointer items-center gap-3 rounded-lg px-2 py-2 text-sm text-neutral-600 data-[selected=true]:bg-neutral-100 dark:text-neutral-400 dark:data-[selected=true]:bg-neutral-800/50"

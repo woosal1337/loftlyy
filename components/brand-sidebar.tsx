@@ -2,12 +2,13 @@ import { Suspense } from "react"
 import Image from "next/image"
 import { IconHeart } from "@tabler/icons-react"
 import { Link } from "@/i18n/navigation"
-import { getAllSidebarBrands } from "@/data/brands"
+import { getAllSidebarBrands, getColorExplorerEntries } from "@/data/brands"
 import { LocaleSwitcher } from "./locale-switcher"
 import { BrandSidebarSearch } from "./brand-sidebar-search"
 
 export function BrandSidebar() {
   const brands = getAllSidebarBrands()
+  const colorExplorerCount = getColorExplorerEntries().length
 
   return (
     <aside
@@ -41,7 +42,10 @@ export function BrandSidebar() {
       {/* Brand list — scrollable middle */}
       <div className="min-h-0 flex-1 px-4 pt-4">
         <Suspense>
-          <BrandSidebarSearch brands={brands} />
+          <BrandSidebarSearch
+            brands={brands}
+            colorExplorerCount={colorExplorerCount}
+          />
         </Suspense>
       </div>
 

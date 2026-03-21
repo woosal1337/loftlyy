@@ -1,15 +1,10 @@
 "use client"
 
-import {
-  useRef,
-  useEffect,
-  useCallback,
-  useMemo,
-  useState,
-} from "react"
+import { useRef, useEffect, useCallback, useMemo, useState } from "react"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { useTranslations } from "next-intl"
+import { IconPalette } from "@tabler/icons-react"
 import { Link } from "@/i18n/navigation"
 import { cn } from "@/lib/utils"
 import { filterBrands } from "@/lib/filters"
@@ -32,19 +27,17 @@ function getVerticalMask(canScrollUp: boolean, canScrollDown: boolean) {
 
 export function BrandSidebarSearch({
   brands,
+  colorExplorerCount,
   onNavigate,
 }: {
   brands: SidebarBrand[]
+  colorExplorerCount: number
   onNavigate?: () => void
 }) {
   const pathname = usePathname()
   const t = useTranslations("nav")
-  const {
-    filters,
-    hasActiveFilters,
-    toggleFilter,
-    clearFilters,
-  } = useBrandFilters()
+  const { filters, hasActiveFilters, toggleFilter, clearFilters } =
+    useBrandFilters()
   const scrollRef = useRef<HTMLDivElement>(null)
   const [canScrollUp, setCanScrollUp] = useState(false)
   const [canScrollDown, setCanScrollDown] = useState(false)
@@ -91,6 +84,47 @@ export function BrandSidebarSearch({
 
       {/* Brand list */}
       <div className="flex min-h-0 flex-1 flex-col gap-2">
+        <div className="flex items-center gap-1.5">
+          <span className="text-[11px] font-medium tracking-widest text-neutral-500 uppercase dark:text-neutral-400">
+            {t("explore")}
+          </span>
+        </div>
+
+        <Link
+          href="/colors"
+          onClick={onNavigate}
+          className={cn(
+            "flex items-center gap-2 rounded-lg px-2 py-1.5 transition-colors",
+            pathname.endsWith("/colors")
+              ? "bg-neutral-100/70 dark:bg-neutral-800/50"
+              : "hover:bg-neutral-50 dark:hover:bg-neutral-800/30"
+          )}
+        >
+          <span
+            className={cn(
+              "flex size-7 shrink-0 items-center justify-center rounded-[10px]",
+              pathname.endsWith("/colors")
+                ? "bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-950"
+                : "bg-neutral-100 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300"
+            )}
+          >
+            <IconPalette className="size-4" />
+          </span>
+          <span
+            className={cn(
+              "min-w-0 flex-1 truncate text-sm font-medium",
+              pathname.endsWith("/colors")
+                ? "text-neutral-900 dark:text-neutral-100"
+                : "text-neutral-600 dark:text-neutral-400"
+            )}
+          >
+            {t("colorExplorer")}
+          </span>
+          <span className="text-[11px] font-medium text-neutral-400 dark:text-neutral-500">
+            {colorExplorerCount}
+          </span>
+        </Link>
+
         <div className="flex items-center gap-1.5">
           <span className="text-[11px] font-medium tracking-widest text-neutral-500 uppercase dark:text-neutral-400">
             {t("allBrands")}

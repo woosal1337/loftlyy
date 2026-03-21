@@ -59,6 +59,13 @@ function getPathConfig(path) {
     }
   }
 
+  if (path.endsWith("/colors")) {
+    return {
+      changefreq: "weekly",
+      priority: 0.5,
+    }
+  }
+
   if (path.includes("/typography/")) {
     return {
       changefreq: "weekly",
@@ -83,6 +90,7 @@ const config = {
 
     for (const locale of locales) {
       paths.push(await config.transform(config, `/${locale}`))
+      paths.push(await config.transform(config, `/${locale}/colors`))
 
       for (const slug of brandSlugs) {
         paths.push(await config.transform(config, `/${locale}/${slug}`))

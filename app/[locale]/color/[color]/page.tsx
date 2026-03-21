@@ -9,6 +9,7 @@ import {
 } from "@/components/structured-data"
 import { BrandListingCard } from "@/components/brand-listing-card"
 import { BrowseBySection } from "@/components/browse-by-section"
+import { Link } from "@/i18n/navigation"
 import {
   getRelatedCategoriesForBrands,
   getRelatedTagsForBrands,
@@ -84,12 +85,13 @@ export default async function ColorPage({
   if (brands.length === 0) notFound()
 
   const colorFamily = getColorFamilyBySlug(color)
-  const [t, tColors, tCat, tTags, tBrowse] = await Promise.all([
+  const [t, tColors, tCat, tTags, tBrowse, tExplorer] = await Promise.all([
     getTranslations({ locale, namespace: "color" }),
     getTranslations({ locale, namespace: "colorFamilies" }),
     getTranslations({ locale, namespace: "categories" }),
     getTranslations({ locale, namespace: "tags" }),
     getTranslations({ locale, namespace: "browseBy" }),
+    getTranslations({ locale, namespace: "colorExplorer" }),
   ])
 
   const colorName = tColors(color)
@@ -129,6 +131,22 @@ export default async function ColorPage({
           {t("description", { count: brands.length, color: colorName })}
         </p>
       </div>
+      <Link
+        href={`/colors?family=${color}`}
+        className="group inline-flex items-center justify-between gap-4 rounded-[24px] border border-neutral-200 bg-neutral-50 p-5 transition-colors hover:border-neutral-300 hover:bg-neutral-100 dark:border-neutral-800 dark:bg-neutral-900/70 dark:hover:border-neutral-700 dark:hover:bg-neutral-900"
+      >
+        <div className="flex min-w-0 flex-col gap-1">
+          <span className="text-sm font-semibold text-neutral-900 dark:text-neutral-100">
+            {t("exploreFamily")}
+          </span>
+          <span className="text-sm text-neutral-500 dark:text-neutral-400">
+            {tExplorer("ctaDescription", { color: colorName })}
+          </span>
+        </div>
+        <span className="rounded-full bg-white px-3 py-1.5 text-sm font-medium text-neutral-700 transition-colors group-hover:bg-neutral-900 group-hover:text-white dark:bg-neutral-950 dark:text-neutral-200 dark:group-hover:bg-neutral-100 dark:group-hover:text-neutral-950">
+          {tExplorer("ctaLabel")}
+        </span>
+      </Link>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {brands.map((brand) => (
           <BrandListingCard key={brand.slug} brand={brand} />

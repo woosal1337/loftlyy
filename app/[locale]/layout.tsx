@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import { Inter, JetBrains_Mono } from "next/font/google"
 import Script from "next/script"
 import { NextIntlClientProvider, hasLocale } from "next-intl"
 import {
@@ -8,26 +7,13 @@ import {
   setRequestLocale,
 } from "next-intl/server"
 import { notFound } from "next/navigation"
+import { NuqsAdapter } from "nuqs/adapters/next/app"
 
-import "../globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { SiteStructuredData } from "@/components/structured-data"
 import { routing } from "@/i18n/routing"
-import { cn } from "@/lib/utils"
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://loftlyy.com"
-
-const fontSans = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans",
-  display: "swap",
-})
-
-const fontMono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-  display: "swap",
-})
 
 export async function generateMetadata({
   params,
@@ -87,57 +73,33 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale)
   const [messages, t] = await Promise.all([
-    getMessages(),
+    getMessages({ locale }),
     getTranslations({ locale, namespace: "metadata" }),
   ])
 
-  const clientMessages = {
-    brand: messages.brand,
-    nav: messages.nav,
-  }
-
   return (
-    <html
-      lang={locale}
-      suppressHydrationWarning
-      className={cn(
-        "antialiased",
-        fontMono.variable,
-        "font-sans",
-        fontSans.variable
-      )}
-    >
-      <head>
-        <meta
-          name="theme-color"
-          content="#ffffff"
-          media="(prefers-color-scheme: light)"
-        />
-        <meta
-          name="theme-color"
-          content="#0a0a0a"
-          media="(prefers-color-scheme: dark)"
-        />
-        <SiteStructuredData
-          siteName={t("siteName")}
-          siteDescription={t("siteDescription")}
-          url={`${BASE_URL}/${locale}`}
-        />
-        <Script
-          defer
-          src="https://assets.onedollarstats.com/stonks.js"
-          strategy="afterInteractive"
-        />
-      </head>
-      <body>
-        <NextIntlClientProvider
-          key={locale}
-          locale={locale}
-          messages={clientMessages}
-        >
-          <ThemeProvider>{children}</ThemeProvider>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <>
+      <SiteStructuredData
+        siteName={t("siteName")}
+        siteDescription={t("siteDescription")}
+        url={`${BASE_URL}/${locale}`}
+      />
+      <Script
+        defer
+        src="https://assets.onedollarstats.com/stonks.js"
+        strategy="afterInteractive"
+      />
+      <div lang={locale}>
+        <NuqsAdapter>
+          <NextIntlClientProvider
+            key={locale}
+            locale={locale}
+            messages={messages}
+          >
+            <ThemeProvider>{children}</ThemeProvider>
+          </NextIntlClientProvider>
+        </NuqsAdapter>
+      </div>
+    </>
   )
 }
