@@ -1,6 +1,4 @@
 import type { Brand } from "@/lib/types"
-import { routing } from "@/i18n/routing"
-
 const ABSOLUTE_URL_RE = /^https?:\/\//i
 const TITLE_MAX_LENGTH = 65
 const DESCRIPTION_MAX_LENGTH = 160
@@ -110,19 +108,6 @@ function getImageUrls(brand: Brand): string[] {
   }
 
   return [toAbsoluteUrl(brand.thumbnail.src)]
-}
-
-export function buildLanguageAlternates(
-  pathname: string
-): Record<string, string> {
-  const normalizedPath = pathname.startsWith("/") ? pathname : `/${pathname}`
-  const pathSuffix = normalizedPath === "/" ? "" : normalizedPath
-  return Object.fromEntries(
-    routing.locales.map((locale) => [
-      locale,
-      `${BASE_URL}/${locale}${pathSuffix}`,
-    ])
-  )
 }
 
 export function composeBrandSeoContent({
