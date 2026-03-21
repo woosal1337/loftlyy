@@ -25,10 +25,6 @@ pnpm dev
 
 See [.env.example](.env.example) for required variables. At minimum, set `NEXT_PUBLIC_ASSET_BASE_URL` to the base URL where brand assets (logos, fonts) are hosted.
 
-## Adding a Brand
-
-See [.claude/brand-guide.md](.claude/brand-guide.md) for the full guide on adding new brands.
-
 ## Tech Stack
 
 - [Next.js 16](https://nextjs.org/) (App Router, React 19)
