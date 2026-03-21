@@ -11,28 +11,40 @@ import { CliError, EXIT_CODE } from "@/cli/core/errors"
 import { writeStderr } from "@/cli/core/stdio"
 
 const getCliVersion = async (): Promise<string> => {
-  const packageJsonPath = join(
-    dirname(fileURLToPath(import.meta.url)),
-    "..",
-    "package.json"
-  )
+  const cliPackageName = "@loftlyy/cli"
+  const cliDir = dirname(fileURLToPath(import.meta.url))
 
-  try {
-    const raw = await readFile(packageJsonPath, "utf8")
-    const parsed = JSON.parse(raw) as { version?: unknown }
-    if (typeof parsed.version === "string" && parsed.version.length > 0) {
-      return parsed.version
-    }
-  } catch {
-    const cwdPackageJsonPath = join(process.cwd(), "package.json")
+  const readVersion = async (
+    packageJsonPath: string
+  ): Promise<string | null> => {
     try {
-      const raw = await readFile(cwdPackageJsonPath, "utf8")
-      const parsed = JSON.parse(raw) as { version?: unknown }
+      const raw = await readFile(packageJsonPath, "utf8")
+      const parsed = JSON.parse(raw) as { name?: unknown; version?: unknown }
+
+      if (parsed.name !== cliPackageName) {
+        return null
+      }
+
       if (typeof parsed.version === "string" && parsed.version.length > 0) {
         return parsed.version
       }
     } catch {
-      // fallback to static version below
+      // try next candidate
+    }
+
+    return null
+  }
+
+  const candidates = [
+    join(cliDir, "package.json"),
+    join(cliDir, "..", "package.json"),
+    join(process.cwd(), "package.json"),
+  ]
+
+  for (const packageJsonPath of candidates) {
+    const version = await readVersion(packageJsonPath)
+    if (version) {
+      return version
     }
   }
 

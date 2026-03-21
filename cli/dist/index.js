@@ -599,6 +599,16 @@ var loadRemoteBrands = async (baseUrlInput) => {
   }
   return withBuiltSearchIndex(validBrands);
 };
+var isUnsupportedTsImportError = (error) => {
+  if (!(error instanceof Error)) {
+    return false;
+  }
+  if (error.message.includes('Unknown file extension ".ts"')) {
+    return true;
+  }
+  const errorWithCode = error;
+  return errorWithCode.code === "ERR_UNKNOWN_FILE_EXTENSION";
+};
 var loadBrands = async (options) => {
   if (options.source === "remote") {
     return loadRemoteBrands(options.baseUrl);
@@ -615,6 +625,28 @@ var loadBrands = async (options) => {
       importedModule = await import(pathToFileURL(filePath).href);
     } catch (error) {
       const message = error instanceof Error ? error.message : "Unknown import failure";
+      if (isUnsupportedTsImportError(error) && !options.strict) {
+        try {
+          const fallbackData = await loadRemoteBrands(options.baseUrl);
+          return {
+            ...fallbackData,
+            warnings: [
+              ...warnings,
+              "Local TypeScript brand files cannot be imported in this runtime; using remote API data instead.",
+              ...fallbackData.warnings
+            ]
+          };
+        } catch (fallbackError) {
+          const fallbackMessage = fallbackError instanceof Error ? fallbackError.message : "Unknown remote fallback failure";
+          warnings.push(
+            `Local TypeScript brand files cannot be imported in this runtime and remote fallback failed (${fallbackMessage}).`
+          );
+          return {
+            ...withBuiltSearchIndex(brands),
+            warnings
+          };
+        }
+      }
       const warning2 = `${fileRelativePath}: failed to import (${message})`;
       if (options.strict) {
         throw new CliError(warning2, EXIT_CODE.DATA_FAILURE);
@@ -1102,26 +1134,31 @@ Legacy namespace still works:
 
 // index.ts
 var getCliVersion = async () => {
-  const packageJsonPath = join2(
-    dirname(fileURLToPath(import.meta.url)),
-    "..",
-    "package.json"
-  );
-  try {
-    const raw = await readFile(packageJsonPath, "utf8");
-    const parsed = JSON.parse(raw);
-    if (typeof parsed.version === "string" && parsed.version.length > 0) {
-      return parsed.version;
-    }
-  } catch {
-    const cwdPackageJsonPath = join2(process.cwd(), "package.json");
+  const cliPackageName = "@loftlyy/cli";
+  const cliDir = dirname(fileURLToPath(import.meta.url));
+  const readVersion = async (packageJsonPath) => {
     try {
-      const raw = await readFile(cwdPackageJsonPath, "utf8");
+      const raw = await readFile(packageJsonPath, "utf8");
       const parsed = JSON.parse(raw);
+      if (parsed.name !== cliPackageName) {
+        return null;
+      }
       if (typeof parsed.version === "string" && parsed.version.length > 0) {
         return parsed.version;
       }
     } catch {
+    }
+    return null;
+  };
+  const candidates = [
+    join2(cliDir, "package.json"),
+    join2(cliDir, "..", "package.json"),
+    join2(process.cwd(), "package.json")
+  ];
+  for (const packageJsonPath of candidates) {
+    const version = await readVersion(packageJsonPath);
+    if (version) {
+      return version;
     }
   }
   return "0.1.0";

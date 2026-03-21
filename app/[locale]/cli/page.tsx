@@ -184,7 +184,7 @@ npx @loftlyy/cli search vercel`}
           <CommandCard
             icon={IconSearch}
             command="search <query>"
-            description="Perform a fast, fuzzy search across all brands. Returns matching names, slugs, and primary industries."
+            description="Perform a fast, case-insensitive search across all brands using token and substring matching. Returns matching names, slugs, and primary industries."
             example="loftlyy search apple"
           />
           <CommandCard
@@ -196,7 +196,7 @@ npx @loftlyy/cli search vercel`}
           <CommandCard
             icon={IconPalette}
             command="palette <slug>"
-            description="Extract the exact color palette for a brand. Displays beautiful inline color previews right in your terminal."
+            description="Extract the exact color palette for a brand, including hex values and usage details, formatted for easy use in your terminal or tooling."
             example="loftlyy palette linear"
           />
           <CommandCard
@@ -257,7 +257,7 @@ loftlyy get stripe --output json | jq -r '.colors[0].hex'
           </p>
           <CodeBlock
             code={`# Force remote API mode with custom host
-loftlyy list --source remote --base-url https://api.loftlyy.com
+loftlyy list --source remote --base-url https://loftlyy.com
 
 # Force local file system scanning
 loftlyy list --source local`}

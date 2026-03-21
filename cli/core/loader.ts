@@ -51,6 +51,10 @@ interface RemoteApiBrandData {
   brands: Brand[]
 }
 
+interface ErrorWithCode {
+  code?: unknown
+}
+
 const withBuiltSearchIndex = (brands: Brand[]): LoadedBrands => {
   const sortedBrands = brands.toSorted((a, b) => a.name.localeCompare(b.name))
   return {
@@ -151,6 +155,19 @@ const loadRemoteBrands = async (
   return withBuiltSearchIndex(validBrands)
 }
 
+const isUnsupportedTsImportError = (error: unknown): boolean => {
+  if (!(error instanceof Error)) {
+    return false
+  }
+
+  if (error.message.includes('Unknown file extension ".ts"')) {
+    return true
+  }
+
+  const errorWithCode = error as ErrorWithCode
+  return errorWithCode.code === "ERR_UNKNOWN_FILE_EXTENSION"
+}
+
 export const loadBrands = async (
   options: LoaderOptions
 ): Promise<LoadedBrands> => {
@@ -177,6 +194,34 @@ export const loadBrands = async (
     } catch (error) {
       const message =
         error instanceof Error ? error.message : "Unknown import failure"
+
+      if (isUnsupportedTsImportError(error) && !options.strict) {
+        try {
+          const fallbackData = await loadRemoteBrands(options.baseUrl)
+          return {
+            ...fallbackData,
+            warnings: [
+              ...warnings,
+              "Local TypeScript brand files cannot be imported in this runtime; using remote API data instead.",
+              ...fallbackData.warnings,
+            ],
+          }
+        } catch (fallbackError) {
+          const fallbackMessage =
+            fallbackError instanceof Error
+              ? fallbackError.message
+              : "Unknown remote fallback failure"
+          warnings.push(
+            `Local TypeScript brand files cannot be imported in this runtime and remote fallback failed (${fallbackMessage}).`
+          )
+
+          return {
+            ...withBuiltSearchIndex(brands),
+            warnings,
+          }
+        }
+      }
+
       const warning = `${fileRelativePath}: failed to import (${message})`
       if (options.strict) {
         throw new CliError(warning, EXIT_CODE.DATA_FAILURE)

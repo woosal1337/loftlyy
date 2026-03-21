@@ -79,7 +79,7 @@ function BrandsLanding({ brands }: { brands: SidebarBrand[] }) {
             href="/cli"
             className="flex w-full items-center justify-center gap-2 rounded-full bg-neutral-100 px-6 py-3.5 text-center font-semibold text-neutral-700 transition-colors hover:bg-neutral-200 sm:w-fit sm:py-4 dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700"
           >
-            CLI docs
+            {t("home.cliDocs")}
             <IconTerminal2 size={16} />
           </Link>
           <a
