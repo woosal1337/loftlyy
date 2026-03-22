@@ -35,6 +35,7 @@ import { nvidia } from "./nvidia"
 import { microsoft } from "./microsoft"
 import { netflix } from "./netflix"
 import { nike } from "./nike"
+import { obsidian } from "./obsidian"
 import { openai } from "./openai"
 import { planetscale } from "./planetscale"
 import { polar } from "./polar"
@@ -99,6 +100,7 @@ const rawBrands: Brand[] = [
   nvidia,
   notra,
   notion,
+  obsidian,
   openai,
   planetscale,
   polar,
