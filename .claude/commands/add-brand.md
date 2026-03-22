@@ -8,10 +8,10 @@ First, use the OpenBrand API to extract brand assets automatically:
 
 ```bash
 curl "https://openbrand.sh/api/extract?url=https://<brand-domain>" \
-  -H "Authorization: Bearer ob_live_1a240388814bb0741a32eed36af867323fb8ef2ebebecfd634f42b8a373f2caf"
+  -H "Authorization: Bearer $OPENBRAND_API_KEY"
 ```
 
-This returns colors, fonts, logos, and other brand data. Use WebFetch to call the API and parse the JSON response.
+This returns colors, fonts, logos, and other brand data. Use WebFetch to call the API and parse the JSON response. The API key should be set as an environment variable.
 
 Then supplement with WebFetch to the brand's official website and gather anything missing:
 
@@ -144,7 +144,7 @@ This checks:
 Also verify that assets were uploaded to R2 by spot-checking a URL:
 
 ```bash
-curl -sI "https://pub-079f39a5918e4dde95387cd357e855f3.r2.dev/brands/<slug>/<filename>.svg" | head -5
+curl -sI "$NEXT_PUBLIC_ASSET_BASE_URL/brands/<slug>/<filename>.svg" | head -5
 ```
 
 You should see a `200 OK` with `content-type: image/svg+xml`.

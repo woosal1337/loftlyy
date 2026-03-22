@@ -91,8 +91,7 @@ export const samsung: Brand = {
   philosophy:
     "Samsung's identity is built on the belief that technology should serve humanity. The iconic blue wordmark — clean, geometric, and universally recognizable — embodies reliability, innovation, and a relentless pioneering spirit that drives the company to defy barriers and shape a better world.",
   legal: {
-    guidelinesUrl:
-      "https://www.samsung.com/us/about-us/brand-identity/",
+    guidelinesUrl: "https://www.samsung.com/us/about-us/brand-identity/",
     dos: [
       "Use only official Samsung-provided logo artwork",
       "Maintain minimum clear space around the Samsung wordmark",

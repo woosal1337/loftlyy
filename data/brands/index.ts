@@ -9,6 +9,7 @@ import { adobe } from "./adobe"
 import { airbnb } from "./airbnb"
 import { amazon } from "./amazon"
 import { anthropic } from "./anthropic"
+import { bags } from "./bags"
 import { bmw } from "./bmw"
 import { canva } from "./canva"
 import { clerk } from "./clerk"
@@ -47,6 +48,7 @@ import { spotify } from "./spotify"
 import { shopify } from "./shopify"
 import { slack } from "./slack"
 import { snapchat } from "./snapchat"
+import { solana } from "./solana"
 import { stripe } from "./stripe"
 import { vercel } from "./vercel"
 import { vscode } from "./vscode"
@@ -72,6 +74,7 @@ const rawBrands: Brand[] = [
   airbnb,
   amazon,
   anthropic,
+  bags,
   bmw,
   canva,
   clerk,
@@ -109,6 +112,7 @@ const rawBrands: Brand[] = [
   shopify,
   slack,
   snapchat,
+  solana,
   stripe,
   tailwindCss,
   tesla,

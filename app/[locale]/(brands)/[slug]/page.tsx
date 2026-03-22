@@ -182,10 +182,7 @@ export default async function BrandPage({
         translatedIndustry={translatedIndustry}
         translatedTags={translatedTags}
       />
-      <BrandSeoSummary
-        title={tSeo("summaryTitle")}
-        paragraphs={seo.summaryParagraphs}
-      />
+      <BrandSeoSummary title={tSeo("summaryTitle")} items={seo.summaryItems} />
       <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:gap-6">
         <BrandStory brand={brand} translatedPhilosophy={translatedPhilosophy} />
       </div>

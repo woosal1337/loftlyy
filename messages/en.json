@@ -158,33 +158,21 @@
       "description": "Amazon is the world's largest online retailer and cloud computing company, offering everything from e-commerce and digital streaming to artificial intelligence and logistics. Founded in 1994 by Jeff Bezos, Amazon has grown into one of the most valuable companies in the world.",
       "philosophy": "Amazon's identity is anchored by the iconic smile arrow — a curved line from A to Z that represents the company's promise to deliver everything, with a smile. The warm orange and clean wordmark convey approachability and customer obsession at massive scale."
     },
-    "bmw": {
-      "description": "BMW (Bayerische Motoren Werke) is a German multinational manufacturer of luxury vehicles and motorcycles, founded in 1916 and headquartered in Munich, Germany. Originally an aircraft engine manufacturer, BMW has evolved into one of the world's leading premium automotive brands, celebrated for engineering excellence, driving dynamics, and innovation.",
-      "philosophy": "Through engineering precision and a relentless pursuit of driving pleasure, BMW's identity is anchored by the iconic roundel — a symbol inspired by the Bavarian flag that has represented premium automotive excellence for over a century. The 2020 rebrand by BECC Agency stripped the logo to a flat, transparent design, and a 2025 refinement for the Neue Klasse era removed inner chrome rings entirely, achieving a cleaner, more contemporary expression."
-    },
-    "discord": {
-      "description": "Discord is a voice, video, and text communication platform designed for creating communities. Originally built for gamers, it has expanded to serve communities of all kinds — from study groups to art collectives to open-source projects. Discord's mission is to create space for everyone to find belonging.",
-      "philosophy": "Playful, approachable, and inclusive. Discord's identity balances youthful energy with the clarity needed for a communication platform, using the iconic Clyde mascot and Blurple as anchors of recognition."
-    },
-    "raycast": {
-      "description": "Raycast is a powerful productivity launcher for macOS that lets you control your tools, shortcuts, and workflows from a single keyboard-first interface. Designed for speed and extensibility, Raycast replaces fragmented app-switching with a unified command bar trusted by developers and power users worldwide.",
-      "philosophy": "Raycast's identity embodies the belief that productivity is about flow, not saving time. The geometric logomark — a stylized cursor composed of radiating shapes — reflects speed, precision, and extensibility, all wrapped in a signature red that cuts through the dark, focused interface."
-    },
-    "scira": {
-      "description": "Scira is an open-source, AI-powered search engine that plans, retrieves, and cites information from the web. Built by Zaid Mukaddam and originally launched as MiniPerplx in 2024, it rebranded to Scira — from the Latin 'scire,' meaning 'to know' — offering 17 search modes and 28 integrated tools.",
-      "philosophy": "Research anything. Do anything. Scira's identity is rooted in minimalism and clarity, using a monochromatic palette and sparkle iconography to convey intelligent discovery and agentic capability."
-    },
-    "spotify": {
-      "description": "Spotify is the world's largest audio streaming platform, offering millions of songs, podcasts, and audiobooks. Founded in Sweden, it transformed how people discover and listen to music with personalized playlists and algorithmic recommendations.",
-      "philosophy": "Bold, vibrant, and accessible. Spotify's identity uses the iconic green and a clean geometric logo to represent the joy of music discovery, making audio content feel personal and universally inviting."
-    },
-    "openai": {
-      "description": "OpenAI is an AI research and deployment company dedicated to ensuring that artificial general intelligence benefits all of humanity. Known for creating GPT and ChatGPT, it leads the development of large language models and AI systems.",
-      "philosophy": "Minimal, authoritative, and forward-looking. OpenAI's 2025 rebrand introduced OpenAI Sans, a bespoke typeface by ABC Dinamo, alongside a palette of greys and blues evoking openness and possibility — communicating technological sophistication while feeling distinctly human."
-    },
     "anthropic": {
       "description": "Anthropic is an AI safety company focused on building reliable, interpretable, and steerable AI systems. Founded by former OpenAI researchers, it develops Claude, an AI assistant designed with safety at its core.",
       "philosophy": "Warm, trustworthy, and thoughtfully restrained. Anthropic's identity pairs an organic tan palette with clean typography to communicate safety-focused AI research — approachable yet serious, human yet technical."
+    },
+    "bags": {
+      "description": "Bags is a creator funding platform built on Solana where creators can launch projects, share them with friends, and earn 1% from every trade. It enables communities to discover and support new projects through a social token-trading model.",
+      "philosophy": "Bags embraces a bold, neon-green identity rooted in crypto culture and creator empowerment. The money bag logomark and vibrant green palette signal financial opportunity and community-driven growth, while the rounded Open Runde typeface adds approachability to the platform's Web3 foundations."
+    },
+    "apple": {
+      "description": "Apple designs, manufactures, and markets consumer electronics, software, and services. From the Macintosh to the iPhone, Apple has consistently redefined entire product categories through its obsession with design, simplicity, and user experience.",
+      "philosophy": "Simplicity is the ultimate sophistication. Apple's monochromatic identity strips away everything unnecessary, letting the iconic bitten apple speak with quiet confidence — a symbol of innovation, premium quality, and human-centered design."
+    },
+    "bmw": {
+      "description": "BMW (Bayerische Motoren Werke) is a German multinational manufacturer of luxury vehicles and motorcycles, founded in 1916 and headquartered in Munich, Germany. Originally an aircraft engine manufacturer, BMW has evolved into one of the world's leading premium automotive brands, celebrated for engineering excellence, driving dynamics, and innovation.",
+      "philosophy": "Through engineering precision and a relentless pursuit of driving pleasure, BMW's identity is anchored by the iconic roundel — a symbol inspired by the Bavarian flag that has represented premium automotive excellence for over a century. The 2020 rebrand by BECC Agency stripped the logo to a flat, transparent design, and a 2025 refinement for the Neue Klasse era removed inner chrome rings entirely, achieving a cleaner, more contemporary expression."
     },
     "canva": {
       "description": "Canva is an online design and publishing platform that empowers everyone to design anything and publish anywhere. Founded in 2013 in Sydney, Australia, Canva has grown into one of the world's most popular design tools, making professional-quality graphic design accessible to millions of non-designers and professionals alike.",
@@ -194,153 +182,21 @@
       "description": "Clerk is an authentication and user management platform that provides drop-in UI components, APIs, and admin dashboards for adding secure sign-up, sign-in, and user profiles to web applications. Founded in 2019 in San Francisco, Clerk enables developers to implement complete authentication flows in minutes rather than months.",
       "philosophy": "Clerk's brand identity reflects a developer-first approach to authentication, emphasizing simplicity and trust. The clean, minimal aesthetic with a dark palette and purple accents conveys technical sophistication while making complex security infrastructure feel approachable and modern."
     },
+    "cluely": {
+      "description": "Cluely is a real-time AI overlay that provides live answers and suggestions across meetings, interviews, sales calls, coding, and writing. Built for high-stakes moments, it operates invisibly on screen and is powered by large language models to help users perform at their best.",
+      "philosophy": "Clean, professional, and quietly confident. Cluely's identity pairs soft lavender tones with deep charcoal, projecting trustworthiness and discretion for a tool designed to assist invisibly during high-stakes conversations."
+    },
     "coca-cola": {
       "description": "Coca-Cola is the world's most recognized sparkling beverage, created in 1886 by Dr. John Pemberton in Atlanta, Georgia, and now sold in more than 200 countries and territories. The Coca-Cola Company delivers over 2.2 billion drink servings daily across a portfolio of 200+ brands through its global network of bottling partners. Its iconic contour bottle, Spencerian-script wordmark, and signature red are among the most reproduced visual assets in commercial history.",
       "philosophy": "Coca-Cola's purpose is to refresh the world and make a difference — a philosophy that fuses the simple pleasure of an ice-cold drink with the belief that small moments of happiness have collective global impact. The brand earns its iconic status through unwavering consistency, joy, and cultural relevance across every market it touches."
-    },
-    "apple": {
-      "description": "Apple designs, manufactures, and markets consumer electronics, software, and services. From the Macintosh to the iPhone, Apple has consistently redefined entire product categories through its obsession with design, simplicity, and user experience.",
-      "philosophy": "Simplicity is the ultimate sophistication. Apple's monochromatic identity strips away everything unnecessary, letting the iconic bitten apple speak with quiet confidence — a symbol of innovation, premium quality, and human-centered design."
-    },
-    "wise": {
-      "description": "Wise is a global financial technology company that makes international money transfers fast, cheap, and transparent. Originally known as TransferWise, it serves millions of customers moving money across borders with real exchange rates.",
-      "philosophy": "Transparent, bold, and borderless. Wise's identity uses a distinctive green and a flag motif to symbolize the movement of money across borders — straightforward design for a company that believes financial services should be fair and simple."
-    },
-    "whatsapp": {
-      "description": "WhatsApp is a globally ubiquitous messaging platform that enables text, voice, and video communication across devices. Owned by Meta, it serves over two billion users worldwide with end-to-end encrypted messaging, making it one of the most widely used communication tools on the planet.",
-      "philosophy": "Simple, reliable, and private. WhatsApp's identity centers on accessibility and trust — a clean, green speech bubble symbolizing direct, secure communication without barriers."
-    },
-    "figma": {
-      "description": "Figma is a collaborative interface design tool that enables teams to design, prototype, and develop products together in real time. An independent company headquartered in San Francisco, Figma has become the industry standard for UI/UX design, replacing traditional desktop tools with a browser-based platform.",
-      "philosophy": "Figma's identity celebrates the collaborative and creative nature of design through a vibrant, multi-colored logo that represents the diverse tools and perspectives that come together in the design process."
-    },
-    "google": {
-      "description": "Google is a global technology company specializing in internet services, search, cloud computing, and advertising. Known for its colorful, approachable identity, Google has shaped the modern web and continuously redefines how people access and interact with information.",
-      "philosophy": "Google's four-color wordmark reflects a playful, accessible brand that values simplicity and universality. The shift from serif to geometric sans-serif in 2015 signaled a modern, product-first identity built for screens of every size."
-    },
-    "notra": {
-      "description": "Notra is an AI-powered content automation platform that connects to developer tools like GitHub, Linear, and Slack to automatically generate publish-ready content from shipped work. It transforms merged PRs, features, and milestones into changelogs, blog posts, and social updates while matching your team's brand voice.",
-      "philosophy": "Notra's identity blends editorial warmth with technical precision. The hand-drawn quill mark evokes creative authorship, while the soft lavender accent and serif-meets-sans typography pairing signal a product that bridges the gap between engineering workflow and polished content output."
-    },
-    "notion": {
-      "description": "Notion is an all-in-one workspace that combines notes, docs, wikis, project management, and databases into a single connected platform. Founded in 2013 in San Francisco, Notion empowers teams and individuals to customize their workflows using modular building blocks.",
-      "philosophy": "Notion's identity embodies the principle that tools should be as flexible as the people using them. The minimal black-and-white palette and iconic page-with-N logomark reflect simplicity, modularity, and the idea that the best software gets out of your way."
-    },
-    "nvidia": {
-      "description": "NVIDIA is a global technology company that designs graphics processing units (GPUs) and system-on-chip units. A pioneer in accelerated computing, NVIDIA's platforms power everything from gaming and professional visualization to data centers and autonomous vehicles, and have become the backbone of modern artificial intelligence.",
-      "philosophy": "Bold, technical, and forward-driven. NVIDIA's identity is anchored by the iconic eye mark — a symbol of visual computing and vision — paired with the signature green that conveys energy, innovation, and the power of accelerated computing."
-    },
-    "slack": {
-      "description": "Slack is a business communication platform that brings teams together with channels, messaging, and integrations. Acquired by Salesforce in 2021, Slack has become the central hub for workplace collaboration, connecting people to the tools and information they need.",
-      "philosophy": "Slack's identity uses a vibrant four-color palette — blue, green, yellow, and red — arranged in a hashtag-inspired mark that represents connection and communication. The 2019 rebrand by Pentagram simplified the logo into a cohesive, geometric symbol anchored by the signature aubergine."
-    },
-    "snapchat": {
-      "description": "Snapchat is a multimedia messaging app known for its ephemeral photo and video sharing, augmented reality lenses, and Stories format. Developed by Snap Inc., it pioneered disappearing content and has become one of the most popular social platforms among younger demographics worldwide.",
-      "philosophy": "Snapchat's identity is built around the iconic Ghost — a playful, approachable symbol that represents the ephemeral nature of the platform. The bold yellow and minimal ghost silhouette create instant recognition, embodying creativity, spontaneity, and authentic self-expression."
-    },
-    "shopify": {
-      "description": "Shopify is a leading e-commerce platform that enables businesses of all sizes to create online stores, manage sales, and grow their brands. Founded in 2006 in Ottawa, Canada, Shopify powers millions of merchants in over 175 countries, providing tools for payments, shipping, marketing, and customer engagement.",
-      "philosophy": "Shopify's brand identity centers on empowering entrepreneurship and making commerce accessible to everyone. The iconic shopping bag symbol and vibrant green palette reflect growth and possibility, while clean typography ensures the brand feels trustworthy and modern across every merchant touchpoint."
-    },
-    "stripe": {
-      "description": "Stripe is a financial infrastructure platform that provides payment processing APIs and tools for internet businesses of every size. Founded in 2010, Stripe powers millions of companies worldwide, enabling them to accept payments and build financial products.",
-      "philosophy": "Stripe's identity is built around developer-first clarity and refined simplicity. The brand uses a distinctive purple palette and clean typography to convey trust and sophistication in financial technology."
-    },
-    "linear": {
-      "description": "Linear is a purpose-built project management platform for modern software teams, designed around speed, clarity, and craftsmanship. Founded in 2019, Linear streamlines issue tracking, sprint planning, and product development workflows for over 25,000 companies.",
-      "philosophy": "Linear's identity reflects relentless focus on speed, craftsmanship, and clarity. The brand uses a restrained indigo palette and clean geometric logomark to convey precision and purpose."
-    },
-    "lovable": {
-      "description": "Lovable is an AI-powered app builder that lets anyone create full-stack web applications through natural language prompts. Founded in Stockholm, it empowers non-technical builders to ship production-ready software without writing code.",
-      "philosophy": "Warm, vibrant, and approachable. Lovable's gradient-rich identity blends energetic orange, pink, and blue hues into a distinctive L-shaped mark, reflecting a platform that makes software creation feel joyful and accessible to everyone."
-    },
-    "microsoft": {
-      "description": "Microsoft is a global technology corporation that develops software, hardware, and cloud services powering businesses and consumers worldwide. From Windows and Office to Azure and Xbox, Microsoft's products touch billions of people, making it one of the most influential technology companies in history.",
-      "philosophy": "Microsoft's four-color window symbolizes openness and diversity — four distinct panes coming together as one. The clean, geometric grid and neutral Segoe wordmark communicate reliability, scale, and the company's evolution from software giant to cloud-first, AI-powered platform."
-    },
-    "mintlify": {
-      "description": "Mintlify is the intelligent knowledge platform that helps teams create, maintain, and optimize documentation for both humans and AI. Built for developer-first companies, Mintlify powers beautiful, AI-native documentation used by over 2 million developers monthly.",
-      "philosophy": "Mintlify's brand identity embodies the intersection of clarity and intelligence. Its signature mint green palette and clean, modern typography reflect the platform's mission to make documentation effortless and beautiful — transforming a traditionally neglected aspect of software into a competitive advantage."
-    },
-    "vercel": {
-      "description": "Vercel is a cloud platform for frontend developers that enables teams to build, deploy, and scale web applications with zero configuration. Founded in 2015, Vercel is the creator of Next.js and the Geist design system.",
-      "philosophy": "Vercel's brand identity centers on developer experience and the power of the frontend. Its stark black-and-white palette and iconic triangle symbol communicate speed, precision, and the cutting edge of web development."
     },
     "cursor": {
       "description": "Cursor is an AI-powered code editor built by Anysphere that enhances developer productivity through intelligent code completion, autonomous agents, and natural language editing. It positions itself as the best way to code with AI.",
       "philosophy": "Minimal, dark, and developer-centric. Cursor's identity pairs warm off-white tones with deep charcoal backgrounds, reflecting a tool built by developers for developers — fast, focused, and unapologetically technical."
     },
-    "github": {
-      "description": "GitHub is the world's leading software development platform, providing cloud-based Git repository hosting, collaboration tools, and CI/CD workflows. Founded in 2008 and acquired by Microsoft in 2018, GitHub is home to over 100 million developers and powers the open-source ecosystem.",
-      "philosophy": "GitHub's identity is built on the Invertocat — a minimal, universally recognized mark that represents the intersection of code and community. The brand emphasizes openness, developer empowerment, and the idea that great software is built together."
-    },
-    "instagram": {
-      "description": "Instagram is a photo and video sharing social networking platform owned by Meta Platforms. Launched in 2010, it has grown into one of the world's most popular social media apps with over 2 billion monthly active users, known for its focus on visual storytelling, Reels, and creator culture.",
-      "philosophy": "Instagram's 2022 rebrand embraces a vibrant, dynamic gradient palette and the custom Instagram Sans typeface — inspired by the iconic squircle glyph. The identity blends grotesque and geometric type styles with 3D-modeled color to celebrate global creativity and self-expression."
-    },
-    "vscode": {
-      "description": "Visual Studio Code is a free, open-source code editor by Microsoft that runs on Windows, macOS, and Linux. With built-in debugging, Git integration, and a vast extension ecosystem, it has become one of the most popular development environments worldwide.",
-      "philosophy": "Open, extensible, and developer-first. VS Code's identity centers on its signature blue bracket icon — a symbol of code editing that is instantly recognizable, conveying both technical precision and approachability."
-    },
-    "tesla": {
-      "description": "Tesla is a global electric vehicle and clean energy company that designs, manufactures, and sells electric cars, battery energy storage systems, and solar products. Founded in 2003, Tesla has redefined the automotive industry with its focus on sustainable energy and cutting-edge technology.",
-      "philosophy": "Tesla's identity centers on its iconic T emblem — a stylized cross-section of an electric motor rotor — that signals technology-driven disruption over traditional automotive heritage. The minimal, geometric mark positions Tesla as a Silicon Valley tech company that happens to make cars."
-    },
-    "toyota": {
-      "description": "Toyota Motor Corporation is the world's largest automobile manufacturer, producing approximately 10 million vehicles per year. Founded in 1937 by Kiichiro Toyoda, the company is headquartered in Toyota City, Japan, and is known for pioneering hybrid technology and the Toyota Production System.",
-      "philosophy": "Toyota's identity is anchored by its iconic three-overlapping-ellipses emblem, representing the unification of customer hearts and Toyota's heart, and the limitless possibilities of technology. The clean, geometric mark conveys trust, reliability, and global unity — core to Toyota's kaizen philosophy of continuous improvement."
-    },
-    "x": {
-      "description": "X (formerly Twitter) is a global social media platform for real-time conversation, news, and public discourse. Founded in 2006 by Jack Dorsey, Noah Glass, Biz Stone, and Evan Williams, it was rebranded to X in 2023 under Elon Musk's ownership, signaling a vision to become an everything app.",
-      "philosophy": "X's identity represents a radical departure from Twitter's friendly blue bird — a stark, monochrome X that signals ambition beyond social media. The minimalist mark embraces boldness and universality, designed to anchor an everything-app vision."
-    },
-    "meta": {
-      "description": "Meta Platforms is a global technology conglomerate that builds products and technologies to help people connect, find communities, and grow businesses. The company owns Facebook, Instagram, WhatsApp, and Threads, and is investing heavily in augmented and virtual reality through its Reality Labs division.",
-      "philosophy": "Meta's identity represents a shift beyond any single product. The infinity symbol — a continuous 3D loop that works across 2D and 3D contexts — embodies unlimited potential and connection, using a blue gradient that honors the company's heritage while signaling its future in immersive technology."
-    },
-    "netflix": {
-      "description": "Netflix is the world's leading streaming entertainment service with over 260 million paid memberships in more than 190 countries. Founded in 1997, Netflix revolutionized how people watch TV and movies by pioneering subscription-based streaming and investing heavily in original content.",
-      "philosophy": "Cinematic, bold, and unmistakable. Netflix's identity uses its signature red against deep black to create an immersive, theater-like experience — the wordmark commands attention while the custom Netflix Sans typeface brings consistency and personality across every screen."
-    },
-    "youtube": {
-      "description": "YouTube is the world's largest video-sharing platform, allowing users to upload, watch, and share videos. Founded in 2005 and acquired by Google in 2006, YouTube has become the go-to destination for video content, from music and education to entertainment and live streaming, serving over 2 billion logged-in users monthly.",
-      "philosophy": "Bold, playful, and universally accessible. YouTube's identity centers on the iconic red play button — a universal symbol for 'press play' — paired with clean typography that puts content first and invites everyone to broadcast themselves."
-    },
-    "tiktok": {
-      "description": "TikTok is the world's leading short-form video platform, where over a billion users create, discover, and share entertaining content. Launched internationally in 2017 by ByteDance, TikTok has redefined social media with its algorithm-driven feed and creative tools for music, comedy, education, and culture.",
-      "philosophy": "Energetic, youthful, and unmistakably digital. TikTok's identity pairs a bold note symbol with a glitch-inspired cyan-and-red offset effect, creating a sense of movement and creativity that mirrors the platform's endless stream of short-form content."
-    },
-    "twitch": {
-      "description": "Twitch is the world's leading live-streaming platform for gamers, creators, and communities. Launched in 2011 and acquired by Amazon in 2014, Twitch enables millions of streamers to broadcast live content — from gaming and music to talk shows and creative arts — to a passionate global audience.",
-      "philosophy": "Bold, energetic, and community-driven. Twitch's identity is anchored by the iconic Glitch — a speech-bubble-meets-gaming-controller mark rendered in unmistakable purple that signals live, interactive entertainment and the passionate communities built around it."
-    },
-    "pinterest": {
-      "description": "Pinterest is a visual discovery and bookmarking platform where users find and save creative ideas — from recipes and home decor to fashion and DIY projects. Founded in 2010, it serves over 550 million monthly active users as a personalized inspiration engine powered by visual search technology.",
-      "philosophy": "Pinterest's brand identity centers on its signature red badge — a stylized 'P' pin — symbolizing the act of pinning and saving inspiration. The custom Pinterest Sans typeface by Grilli Type balances warmth with modern clarity, designed to let pinned imagery shine while maintaining a distinctive, approachable brand voice."
-    },
-    "zoom": {
-      "description": "Zoom is a communications platform that brings teams together with video meetings, chat, phone, and collaboration tools. Founded in 2011, Zoom became the world's go-to platform for virtual communication, serving hundreds of millions of users across businesses, schools, and personal connections.",
-      "philosophy": "Zoom's identity is built on simplicity and connection, using a bold blue wordmark that conveys trust and clarity. The 2022 visual rebrand introduced custom typefaces Happy Display and Almaden Sans, evolving Zoom from a video app into a unified communications platform. In 2024, the company dropped 'Video' from its legal name — becoming Zoom Communications Inc. — reflecting its AI-first, multi-product ambition."
-    },
-    "uber": {
-      "description": "Uber is a global technology platform that connects riders with drivers, offering ride-hailing, food delivery, freight transportation, and micro-mobility services. Founded in 2009, Uber operates in over 70 countries and has fundamentally transformed urban transportation.",
-      "philosophy": "Uber's identity is built on bold simplicity and global recognition. The monochrome wordmark and custom Uber Move typeface reflect a commitment to clarity, efficiency, and seamless urban mobility."
-    },
-    "reddit": {
-      "description": "Reddit is a social news aggregation and discussion platform organized into communities called subreddits. Users share content, vote on posts and comments, and participate in conversations spanning virtually every topic. Reddit describes itself as 'the front page of the internet.'",
-      "philosophy": "Community-first and accessible. Reddit's identity centers on the Snoo mascot and Orangered color, balancing playfulness with the platform's role as a serious hub for authentic conversation and discovery."
-    },
-    "samsung": {
-      "description": "Samsung is a global technology leader spanning consumer electronics, mobile devices, semiconductors, and displays. Founded in 1969 in South Korea, Samsung Electronics has grown into one of the world's most valuable companies, driving innovation across smartphones, TVs, memory chips, and home appliances.",
-      "philosophy": "Samsung's identity is built on the belief that technology should serve humanity. The iconic blue wordmark — clean, geometric, and universally recognizable — embodies reliability, innovation, and a relentless pioneering spirit that drives the company to defy barriers and shape a better world."
-    },
-    "nike": {
-      "description": "Nike is the world's leading sportswear brand, designing and selling athletic footwear, apparel, and equipment for athletes at every level. Founded in 1964 as Blue Ribbon Sports and rebranded in 1971, Nike has built a global empire on the belief that if you have a body, you are an athlete — producing iconic products and campaigns that blend performance engineering with cultural relevance.",
-      "philosophy": "Just Do It. Nike's identity is anchored by the Swoosh — one of the most recognized symbols on earth — embodying motion, speed, and athletic aspiration. The stark black-and-white palette strips away distraction, letting performance and purpose speak for themselves."
-    },
-    "mcdonalds": {
-      "description": "McDonald's is the world's largest fast-food restaurant chain, serving nearly 70 million customers daily across more than 100 countries. Founded in 1940 by Richard and Maurice McDonald and expanded globally by Ray Kroc, McDonald's transformed the restaurant industry through the franchise model and standardized fast-food service.",
-      "philosophy": "Bold, warm, and instantly recognizable. The Golden Arches are among the most iconic symbols in the world — a simple geometric M in gleaming gold that transcends language and culture, embodying accessibility, consistency, and the universal appeal of a familiar meal."
+    "discord": {
+      "description": "Discord is a voice, video, and text communication platform designed for creating communities. Originally built for gamers, it has expanded to serve communities of all kinds — from study groups to art collectives to open-source projects. Discord's mission is to create space for everyone to find belonging.",
+      "philosophy": "Playful, approachable, and inclusive. Discord's identity balances youthful energy with the clarity needed for a communication platform, using the iconic Clyde mascot and Blurple as anchors of recognition."
     },
     "duolingo": {
       "description": "Duolingo is a free language-learning platform offering over 100 courses across 40+ languages, making education universally accessible through gamified lessons and streaks. Founded in 2011 by Luis von Ahn and Severin Hacker, it has grown into the world's most popular language-learning app with hundreds of millions of learners. Duolingo's mission is to develop the best education in the world and make it available to everyone.",
@@ -350,196 +206,354 @@
       "description": "ElevenLabs is an AI audio research company specializing in realistic text-to-speech synthesis, voice cloning, and conversational AI. Founded in 2022, the platform enables creators and developers to generate lifelike speech with natural emotion and intonation across 74 languages.",
       "philosophy": "ElevenLabs' brand identity is built on stark minimalism — a black-and-white palette that signals its research-driven foundation. The iconic double vertical lines abstract the number eleven while evoking a pause button, bridging the gap between audio technology and visual identity with elegant simplicity."
     },
-    "starbucks": {
-      "description": "Starbucks is the world's premier roaster and retailer of specialty coffee, operating over 38,000 locations in 85+ countries. Founded in 1971 at Seattle's Pike Place Market, Starbucks sources high-quality arabica coffee and has become a defining force in global coffeehouse culture, positioning itself as a welcoming 'third place' between home and work.",
-      "philosophy": "With every cup, with every conversation, with every community — Starbucks nurtures the limitless possibilities of human connection. The iconic white Siren on Starbucks Green is one of the most recognized symbols on earth, embodying warmth, craft, and the promise of a welcoming space."
+    "figma": {
+      "description": "Figma is a collaborative interface design tool that enables teams to design, prototype, and develop products together in real time. An independent company headquartered in San Francisco, Figma has become the industry standard for UI/UX design, replacing traditional desktop tools with a browser-based platform.",
+      "philosophy": "Figma's identity celebrates the collaborative and creative nature of design through a vibrant, multi-colored logo that represents the diverse tools and perspectives that come together in the design process."
     },
-    "cluely": {
-      "description": "Cluely is a real-time AI overlay that provides live answers and suggestions across meetings, interviews, sales calls, coding, and writing. Built for high-stakes moments, it operates invisibly on screen and is powered by large language models to help users perform at their best.",
-      "philosophy": "Clean, professional, and quietly confident. Cluely's identity pairs soft lavender tones with deep charcoal, projecting trustworthiness and discretion for a tool designed to assist invisibly during high-stakes conversations."
+    "github": {
+      "description": "GitHub is the world's leading software development platform, providing cloud-based Git repository hosting, collaboration tools, and CI/CD workflows. Founded in 2008 and acquired by Microsoft in 2018, GitHub is home to over 100 million developers and powers the open-source ecosystem.",
+      "philosophy": "GitHub's identity is built on the Invertocat — a minimal, universally recognized mark that represents the intersection of code and community. The brand emphasizes openness, developer empowerment, and the idea that great software is built together."
+    },
+    "google": {
+      "description": "Google is a global technology company specializing in internet services, search, cloud computing, and advertising. Known for its colorful, approachable identity, Google has shaped the modern web and continuously redefines how people access and interact with information.",
+      "philosophy": "Google's four-color wordmark reflects a playful, accessible brand that values simplicity and universality. The shift from serif to geometric sans-serif in 2015 signaled a modern, product-first identity built for screens of every size."
+    },
+    "instagram": {
+      "description": "Instagram is a photo and video sharing social networking platform owned by Meta Platforms. Launched in 2010, it has grown into one of the world's most popular social media apps with over 2 billion monthly active users, known for its focus on visual storytelling, Reels, and creator culture.",
+      "philosophy": "Instagram's 2022 rebrand embraces a vibrant, dynamic gradient palette and the custom Instagram Sans typeface — inspired by the iconic squircle glyph. The identity blends grotesque and geometric type styles with 3D-modeled color to celebrate global creativity and self-expression."
     },
     "interfere": {
       "description": "Interfere is building the self-healing layer of the internet — software that automatically detects, triages, and fixes bugs in real-time without human intervention. Backed by Y Combinator, Vercel, and Hummingbird, it monitors applications continuously and identifies behavioral changes before users report issues.",
       "philosophy": "Interfere's identity reflects a technical, precision-driven approach to software quality. The geometric logomark — a cascade of progressively larger blocks converging to a focal point — embodies the product's ability to detect and resolve issues at every scale. A bold serif-meets-sans pairing and vibrant gradient palette signal both authority and modernity."
     },
+    "linear": {
+      "description": "Linear is a purpose-built project management platform for modern software teams, designed around speed, clarity, and craftsmanship. Founded in 2019, Linear streamlines issue tracking, sprint planning, and product development workflows for over 25,000 companies.",
+      "philosophy": "Linear's identity reflects relentless focus on speed, craftsmanship, and clarity. The brand uses a restrained indigo palette and clean geometric logomark to convey precision and purpose."
+    },
+    "lovable": {
+      "description": "Lovable is an AI-powered app builder that lets anyone create full-stack web applications through natural language prompts. Founded in Stockholm, it empowers non-technical builders to ship production-ready software without writing code.",
+      "philosophy": "Warm, vibrant, and approachable. Lovable's gradient-rich identity blends energetic orange, pink, and blue hues into a distinctive L-shaped mark, reflecting a platform that makes software creation feel joyful and accessible to everyone."
+    },
+    "mcdonalds": {
+      "description": "McDonald's is the world's largest fast-food restaurant chain, serving nearly 70 million customers daily across more than 100 countries. Founded in 1940 by Richard and Maurice McDonald and expanded globally by Ray Kroc, McDonald's transformed the restaurant industry through the franchise model and standardized fast-food service.",
+      "philosophy": "Bold, warm, and instantly recognizable. The Golden Arches are among the most iconic symbols in the world — a simple geometric M in gleaming gold that transcends language and culture, embodying accessibility, consistency, and the universal appeal of a familiar meal."
+    },
+    "meta": {
+      "description": "Meta Platforms is a global technology conglomerate that builds products and technologies to help people connect, find communities, and grow businesses. The company owns Facebook, Instagram, WhatsApp, and Threads, and is investing heavily in augmented and virtual reality through its Reality Labs division.",
+      "philosophy": "Meta's identity represents a shift beyond any single product. The infinity symbol — a continuous 3D loop that works across 2D and 3D contexts — embodies unlimited potential and connection, using a blue gradient that honors the company's heritage while signaling its future in immersive technology."
+    },
+    "microsoft": {
+      "description": "Microsoft is a global technology corporation that develops software, hardware, and cloud services powering businesses and consumers worldwide. From Windows and Office to Azure and Xbox, Microsoft's products touch billions of people, making it one of the most influential technology companies in history.",
+      "philosophy": "Microsoft's four-color window symbolizes openness and diversity — four distinct panes coming together as one. The clean, geometric grid and neutral Segoe wordmark communicate reliability, scale, and the company's evolution from software giant to cloud-first, AI-powered platform."
+    },
+    "mintlify": {
+      "description": "Mintlify is the intelligent knowledge platform that helps teams create, maintain, and optimize documentation for both humans and AI. Built for developer-first companies, Mintlify powers beautiful, AI-native documentation used by over 2 million developers monthly.",
+      "philosophy": "Mintlify's brand identity embodies the intersection of clarity and intelligence. Its signature mint green palette and clean, modern typography reflect the platform's mission to make documentation effortless and beautiful — transforming a traditionally neglected aspect of software into a competitive advantage."
+    },
+    "netflix": {
+      "description": "Netflix is the world's leading streaming entertainment service with over 260 million paid memberships in more than 190 countries. Founded in 1997, Netflix revolutionized how people watch TV and movies by pioneering subscription-based streaming and investing heavily in original content.",
+      "philosophy": "Cinematic, bold, and unmistakable. Netflix's identity uses its signature red against deep black to create an immersive, theater-like experience — the wordmark commands attention while the custom Netflix Sans typeface brings consistency and personality across every screen."
+    },
+    "nike": {
+      "description": "Nike is the world's leading sportswear brand, designing and selling athletic footwear, apparel, and equipment for athletes at every level. Founded in 1964 as Blue Ribbon Sports and rebranded in 1971, Nike has built a global empire on the belief that if you have a body, you are an athlete — producing iconic products and campaigns that blend performance engineering with cultural relevance.",
+      "philosophy": "Just Do It. Nike's identity is anchored by the Swoosh — one of the most recognized symbols on earth — embodying motion, speed, and athletic aspiration. The stark black-and-white palette strips away distraction, letting performance and purpose speak for themselves."
+    },
+    "notion": {
+      "description": "Notion is an all-in-one workspace that combines notes, docs, wikis, project management, and databases into a single connected platform. Founded in 2013 in San Francisco, Notion empowers teams and individuals to customize their workflows using modular building blocks.",
+      "philosophy": "Notion's identity embodies the principle that tools should be as flexible as the people using them. The minimal black-and-white palette and iconic page-with-N logomark reflect simplicity, modularity, and the idea that the best software gets out of your way."
+    },
+    "notra": {
+      "description": "Notra is an AI-powered content automation platform that connects to developer tools like GitHub, Linear, and Slack to automatically generate publish-ready content from shipped work. It transforms merged PRs, features, and milestones into changelogs, blog posts, and social updates while matching your team's brand voice.",
+      "philosophy": "Notra's identity blends editorial warmth with technical precision. The hand-drawn quill mark evokes creative authorship, while the soft lavender accent and serif-meets-sans typography pairing signal a product that bridges the gap between engineering workflow and polished content output."
+    },
+    "nvidia": {
+      "description": "NVIDIA is a global technology company that designs graphics processing units (GPUs) and system-on-chip units. A pioneer in accelerated computing, NVIDIA's platforms power everything from gaming and professional visualization to data centers and autonomous vehicles, and have become the backbone of modern artificial intelligence.",
+      "philosophy": "Bold, technical, and forward-driven. NVIDIA's identity is anchored by the iconic eye mark — a symbol of visual computing and vision — paired with the signature green that conveys energy, innovation, and the power of accelerated computing."
+    },
+    "openai": {
+      "description": "OpenAI is an AI research and deployment company dedicated to ensuring that artificial general intelligence benefits all of humanity. Known for creating GPT and ChatGPT, it leads the development of large language models and AI systems.",
+      "philosophy": "Minimal, authoritative, and forward-looking. OpenAI's 2025 rebrand introduced OpenAI Sans, a bespoke typeface by ABC Dinamo, alongside a palette of greys and blues evoking openness and possibility — communicating technological sophistication while feeling distinctly human."
+    },
+    "pinterest": {
+      "description": "Pinterest is a visual discovery and bookmarking platform where users find and save creative ideas — from recipes and home decor to fashion and DIY projects. Founded in 2010, it serves over 550 million monthly active users as a personalized inspiration engine powered by visual search technology.",
+      "philosophy": "Pinterest's brand identity centers on its signature red badge — a stylized 'P' pin — symbolizing the act of pinning and saving inspiration. The custom Pinterest Sans typeface by Grilli Type balances warmth with modern clarity, designed to let pinned imagery shine while maintaining a distinctive, approachable brand voice."
+    },
     "planetscale": {
       "description": "PlanetScale is a cloud database platform offering managed MySQL (via Vitess) and PostgreSQL services, built by the creators of Vitess — the open-source sharding system that scaled YouTube. It provides non-blocking schema changes, branching workflows, and horizontal sharding for teams building high-performance applications.",
       "philosophy": "PlanetScale's brand identity reflects the power and precision of infrastructure-grade database technology. Its bold geometric logo — an abstract planet with intersecting orbital paths — conveys speed, scalability, and the interconnected nature of modern data systems."
-    },
-    "railway": {
-      "description": "Railway is an all-in-one intelligent cloud platform for deploying web applications, servers, and databases with automatic scaling, monitoring, and security. Founded in 2020, Railway simplifies infrastructure management with features like visual canvases, auto-configuration from code, and integrated observability — serving over 2.5 million developers worldwide.",
-      "philosophy": "Railway's brand identity is built around reducing shipping friction to zero. Its dark, developer-centric aesthetic with a distinctive train symbol embodies the idea of infrastructure as a journey — fast, reliable, and always moving forward toward a new golden age of software."
     },
     "polar": {
       "description": "Polar is an open-source billing and monetization platform designed for developers and AI companies. Headquartered in San Francisco, Polar enables businesses to implement usage-based billing, SaaS subscriptions, and flexible pricing models with a developer-first approach.",
       "philosophy": "Polar's identity is rooted in developer-first simplicity and open-source transparency. The brand uses a clean, geometric mark and a cool blue palette to convey trust and technical precision."
     },
+    "railway": {
+      "description": "Railway is an all-in-one intelligent cloud platform for deploying web applications, servers, and databases with automatic scaling, monitoring, and security. Founded in 2020, Railway simplifies infrastructure management with features like visual canvases, auto-configuration from code, and integrated observability — serving over 2.5 million developers worldwide.",
+      "philosophy": "Railway's brand identity is built around reducing shipping friction to zero. Its dark, developer-centric aesthetic with a distinctive train symbol embodies the idea of infrastructure as a journey — fast, reliable, and always moving forward toward a new golden age of software."
+    },
+    "raycast": {
+      "description": "Raycast is a powerful productivity launcher for macOS that lets you control your tools, shortcuts, and workflows from a single keyboard-first interface. Designed for speed and extensibility, Raycast replaces fragmented app-switching with a unified command bar trusted by developers and power users worldwide.",
+      "philosophy": "Raycast's identity embodies the belief that productivity is about flow, not saving time. The geometric logomark — a stylized cursor composed of radiating shapes — reflects speed, precision, and extensibility, all wrapped in a signature red that cuts through the dark, focused interface."
+    },
+    "reddit": {
+      "description": "Reddit is a social news aggregation and discussion platform organized into communities called subreddits. Users share content, vote on posts and comments, and participate in conversations spanning virtually every topic. Reddit describes itself as 'the front page of the internet.'",
+      "philosophy": "Community-first and accessible. Reddit's identity centers on the Snoo mascot and Orangered color, balancing playfulness with the platform's role as a serious hub for authentic conversation and discovery."
+    },
+    "samsung": {
+      "description": "Samsung is a global technology leader spanning consumer electronics, mobile devices, semiconductors, and displays. Founded in 1969 in South Korea, Samsung Electronics has grown into one of the world's most valuable companies, driving innovation across smartphones, TVs, memory chips, and home appliances.",
+      "philosophy": "Samsung's identity is built on the belief that technology should serve humanity. The iconic blue wordmark — clean, geometric, and universally recognizable — embodies reliability, innovation, and a relentless pioneering spirit that drives the company to defy barriers and shape a better world."
+    },
+    "scira": {
+      "description": "Scira is an open-source, AI-powered search engine that plans, retrieves, and cites information from the web. Built by Zaid Mukaddam and originally launched as MiniPerplx in 2024, it rebranded to Scira — from the Latin 'scire,' meaning 'to know' — offering 17 search modes and 28 integrated tools.",
+      "philosophy": "Research anything. Do anything. Scira's identity is rooted in minimalism and clarity, using a monochromatic palette and sparkle iconography to convey intelligent discovery and agentic capability."
+    },
+    "shopify": {
+      "description": "Shopify is a leading e-commerce platform that enables businesses of all sizes to create online stores, manage sales, and grow their brands. Founded in 2006 in Ottawa, Canada, Shopify powers millions of merchants in over 175 countries, providing tools for payments, shipping, marketing, and customer engagement.",
+      "philosophy": "Shopify's brand identity centers on empowering entrepreneurship and making commerce accessible to everyone. The iconic shopping bag symbol and vibrant green palette reflect growth and possibility, while clean typography ensures the brand feels trustworthy and modern across every merchant touchpoint."
+    },
+    "slack": {
+      "description": "Slack is a business communication platform that brings teams together with channels, messaging, and integrations. Acquired by Salesforce in 2021, Slack has become the central hub for workplace collaboration, connecting people to the tools and information they need.",
+      "philosophy": "Slack's identity uses a vibrant four-color palette — blue, green, yellow, and red — arranged in a hashtag-inspired mark that represents connection and communication. The 2019 rebrand by Pentagram simplified the logo into a cohesive, geometric symbol anchored by the signature aubergine."
+    },
+    "snapchat": {
+      "description": "Snapchat is a multimedia messaging app known for its ephemeral photo and video sharing, augmented reality lenses, and Stories format. Developed by Snap Inc., it pioneered disappearing content and has become one of the most popular social platforms among younger demographics worldwide.",
+      "philosophy": "Snapchat's identity is built around the iconic Ghost — a playful, approachable symbol that represents the ephemeral nature of the platform. The bold yellow and minimal ghost silhouette create instant recognition, embodying creativity, spontaneity, and authentic self-expression."
+    },
+    "solana": {
+      "description": "Solana is a high-performance blockchain platform designed for decentralized applications and crypto assets. Founded in 2018 in San Francisco, Solana uses a unique Proof of History consensus mechanism to achieve industry-leading transaction speeds and low costs.",
+      "philosophy": "Solana's identity centers on speed, scalability, and the democratization of financial infrastructure. The signature purple-to-green gradient and angular logomark of three stacked parallelograms convey momentum and building, reflecting the platform's mission to make decentralized technology fast and accessible for everyone."
+    },
+    "spotify": {
+      "description": "Spotify is the world's largest audio streaming platform, offering millions of songs, podcasts, and audiobooks. Founded in Sweden, it transformed how people discover and listen to music with personalized playlists and algorithmic recommendations.",
+      "philosophy": "Bold, vibrant, and accessible. Spotify's identity uses the iconic green and a clean geometric logo to represent the joy of music discovery, making audio content feel personal and universally inviting."
+    },
+    "starbucks": {
+      "description": "Starbucks is the world's premier roaster and retailer of specialty coffee, operating over 38,000 locations in 85+ countries. Founded in 1971 at Seattle's Pike Place Market, Starbucks sources high-quality arabica coffee and has become a defining force in global coffeehouse culture, positioning itself as a welcoming 'third place' between home and work.",
+      "philosophy": "With every cup, with every conversation, with every community — Starbucks nurtures the limitless possibilities of human connection. The iconic white Siren on Starbucks Green is one of the most recognized symbols on earth, embodying warmth, craft, and the promise of a welcoming space."
+    },
+    "stripe": {
+      "description": "Stripe is a financial infrastructure platform that provides payment processing APIs and tools for internet businesses of every size. Founded in 2010, Stripe powers millions of companies worldwide, enabling them to accept payments and build financial products.",
+      "philosophy": "Stripe's identity is built around developer-first clarity and refined simplicity. The brand uses a distinctive purple palette and clean typography to convey trust and sophistication in financial technology."
+    },
     "tailwind-css": {
       "description": "Tailwind CSS is a utility-first CSS framework that enables developers to rapidly build modern websites by composing utility classes directly in HTML markup. Created by Tailwind Labs, it has become one of the most popular CSS frameworks, powering millions of projects with its flexible, production-optimized approach to styling.",
       "philosophy": "Tailwind CSS believes that the best way to build modern interfaces is through utility-first composition — providing low-level building blocks that empower developers to create unique designs without fighting against opinionated frameworks."
+    },
+    "tesla": {
+      "description": "Tesla is a global electric vehicle and clean energy company that designs, manufactures, and sells electric cars, battery energy storage systems, and solar products. Founded in 2003, Tesla has redefined the automotive industry with its focus on sustainable energy and cutting-edge technology.",
+      "philosophy": "Tesla's identity centers on its iconic T emblem — a stylized cross-section of an electric motor rotor — that signals technology-driven disruption over traditional automotive heritage. The minimal, geometric mark positions Tesla as a Silicon Valley tech company that happens to make cars."
+    },
+    "tiktok": {
+      "description": "TikTok is the world's leading short-form video platform, where over a billion users create, discover, and share entertaining content. Launched internationally in 2017 by ByteDance, TikTok has redefined social media with its algorithm-driven feed and creative tools for music, comedy, education, and culture.",
+      "philosophy": "Energetic, youthful, and unmistakably digital. TikTok's identity pairs a bold note symbol with a glitch-inspired cyan-and-red offset effect, creating a sense of movement and creativity that mirrors the platform's endless stream of short-form content."
+    },
+    "toyota": {
+      "description": "Toyota Motor Corporation is the world's largest automobile manufacturer, producing approximately 10 million vehicles per year. Founded in 1937 by Kiichiro Toyoda, the company is headquartered in Toyota City, Japan, and is known for pioneering hybrid technology and the Toyota Production System.",
+      "philosophy": "Toyota's identity is anchored by its iconic three-overlapping-ellipses emblem, representing the unification of customer hearts and Toyota's heart, and the limitless possibilities of technology. The clean, geometric mark conveys trust, reliability, and global unity — core to Toyota's kaizen philosophy of continuous improvement."
+    },
+    "twitch": {
+      "description": "Twitch is the world's leading live-streaming platform for gamers, creators, and communities. Launched in 2011 and acquired by Amazon in 2014, Twitch enables millions of streamers to broadcast live content — from gaming and music to talk shows and creative arts — to a passionate global audience.",
+      "philosophy": "Bold, energetic, and community-driven. Twitch's identity is anchored by the iconic Glitch — a speech-bubble-meets-gaming-controller mark rendered in unmistakable purple that signals live, interactive entertainment and the passionate communities built around it."
+    },
+    "uber": {
+      "description": "Uber is a global technology platform that connects riders with drivers, offering ride-hailing, food delivery, freight transportation, and micro-mobility services. Founded in 2009, Uber operates in over 70 countries and has fundamentally transformed urban transportation.",
+      "philosophy": "Uber's identity is built on bold simplicity and global recognition. The monochrome wordmark and custom Uber Move typeface reflect a commitment to clarity, efficiency, and seamless urban mobility."
+    },
+    "vercel": {
+      "description": "Vercel is a cloud platform for frontend developers that enables teams to build, deploy, and scale web applications with zero configuration. Founded in 2015, Vercel is the creator of Next.js and the Geist design system.",
+      "philosophy": "Vercel's brand identity centers on developer experience and the power of the frontend. Its stark black-and-white palette and iconic triangle symbol communicate speed, precision, and the cutting edge of web development."
+    },
+    "vscode": {
+      "description": "Visual Studio Code is a free, open-source code editor by Microsoft that runs on Windows, macOS, and Linux. With built-in debugging, Git integration, and a vast extension ecosystem, it has become one of the most popular development environments worldwide.",
+      "philosophy": "Open, extensible, and developer-first. VS Code's identity centers on its signature blue bracket icon — a symbol of code editing that is instantly recognizable, conveying both technical precision and approachability."
+    },
+    "whatsapp": {
+      "description": "WhatsApp is a globally ubiquitous messaging platform that enables text, voice, and video communication across devices. Owned by Meta, it serves over two billion users worldwide with end-to-end encrypted messaging, making it one of the most widely used communication tools on the planet.",
+      "philosophy": "Simple, reliable, and private. WhatsApp's identity centers on accessibility and trust — a clean, green speech bubble symbolizing direct, secure communication without barriers."
+    },
+    "wise": {
+      "description": "Wise is a global financial technology company that makes international money transfers fast, cheap, and transparent. Originally known as TransferWise, it serves millions of customers moving money across borders with real exchange rates.",
+      "philosophy": "Transparent, bold, and borderless. Wise's identity uses a distinctive green and a flag motif to symbolize the movement of money across borders — straightforward design for a company that believes financial services should be fair and simple."
+    },
+    "x": {
+      "description": "X (formerly Twitter) is a global social media platform for real-time conversation, news, and public discourse. Founded in 2006 by Jack Dorsey, Noah Glass, Biz Stone, and Evan Williams, it was rebranded to X in 2023 under Elon Musk's ownership, signaling a vision to become an everything app.",
+      "philosophy": "X's identity represents a radical departure from Twitter's friendly blue bird — a stark, monochrome X that signals ambition beyond social media. The minimalist mark embraces boldness and universality, designed to anchor an everything-app vision."
+    },
+    "youtube": {
+      "description": "YouTube is the world's largest video-sharing platform, allowing users to upload, watch, and share videos. Founded in 2005 and acquired by Google in 2006, YouTube has become the go-to destination for video content, from music and education to entertainment and live streaming, serving over 2 billion logged-in users monthly.",
+      "philosophy": "Bold, playful, and universally accessible. YouTube's identity centers on the iconic red play button — a universal symbol for 'press play' — paired with clean typography that puts content first and invites everyone to broadcast themselves."
+    },
+    "zoom": {
+      "description": "Zoom is a communications platform that brings teams together with video meetings, chat, phone, and collaboration tools. Founded in 2011, Zoom became the world's go-to platform for virtual communication, serving hundreds of millions of users across businesses, schools, and personal connections.",
+      "philosophy": "Zoom's identity is built on simplicity and connection, using a bold blue wordmark that conveys trust and clarity. The 2022 visual rebrand introduced custom typefaces Happy Display and Almaden Sans, evolving Zoom from a video app into a unified communications platform. In 2024, the company dropped 'Video' from its legal name — becoming Zoom Communications Inc. — reflecting its AI-first, multi-product ambition."
     }
   },
   "tags": {
-    "communication": "Communication",
-    "community": "Community",
-    "gaming": "Gaming",
-    "search-engine": "Search Engine",
-    "voice-chat": "Voice Chat",
-    "messaging": "Messaging",
-    "music": "Music",
-    "streaming": "Streaming",
-    "audio": "Audio",
-    "podcasts": "Podcasts",
-    "playlists": "Playlists",
-    "artificial-intelligence": "Artificial Intelligence",
-    "machine-learning": "Machine Learning",
-    "research": "Research",
-    "chatgpt": "ChatGPT",
-    "gpt": "GPT",
-    "claude": "Claude",
-    "ai-safety": "AI Safety",
-    "hardware": "Hardware",
-    "electronics": "Electronics",
-    "displays": "Displays",
-    "manufacturing": "Manufacturing",
-    "hybrid": "Hybrid",
-    "software": "Software",
-    "design": "Design",
-    "innovation": "Innovation",
-    "ecosystem": "Ecosystem",
-    "payments": "Payments",
-    "money-transfer": "Money Transfer",
-    "banking": "Banking",
-    "international": "International",
-    "currency": "Currency",
-    "api": "API",
-    "developer-tools": "Developer Tools",
-    "financial-infrastructure": "Financial Infrastructure",
-    "e-commerce": "E-Commerce",
-    "collaboration": "Collaboration",
-    "prototyping": "Prototyping",
-    "ui-design": "UI Design",
-    "user-management": "User Management",
-    "travel": "Travel",
-    "hospitality": "Hospitality",
-    "marketplace": "Marketplace",
     "accommodation": "Accommodation",
-    "experiences": "Experiences",
-    "project-management": "Project Management",
-    "issue-tracking": "Issue Tracking",
-    "productivity": "Productivity",
-    "design-tools": "Design Tools",
-    "search": "Search",
-    "security": "Security",
     "advertising": "Advertising",
-    "cloud": "Cloud",
-    "hosting": "Hosting",
+    "agents": "Agents",
     "ai": "AI",
-    "frontend": "Frontend",
-    "notes": "Notes",
-    "workspace": "Workspace",
-    "code-editor": "Code Editor",
-    "open-source": "Open Source",
-    "version-control": "Version Control",
-    "code-hosting": "Code Hosting",
-    "microsoft": "Microsoft",
-    "workplace": "Workplace",
-    "microblogging": "Microblogging",
-    "real-time": "Real-Time",
-    "news": "News",
-    "social-network": "Social Network",
-    "electric-vehicles": "Electric Vehicles",
-    "clean-energy": "Clean Energy",
-    "social-media": "Social Media",
-    "virtual-reality": "Virtual Reality",
-    "authentication": "Authentication",
-    "augmented-reality": "Augmented Reality",
-    "metaverse": "Metaverse",
-    "logistics": "Logistics",
-    "live-streaming": "Live Streaming",
-    "gpu": "GPU",
-    "data-center": "Data Center",
-    "autonomous-vehicles": "Autonomous Vehicles",
-    "retail": "Retail",
-    "platform": "Platform",
-    "entertainment": "Entertainment",
-    "video": "Video",
-    "movies": "Movies",
-    "television": "Television",
-    "creative": "Creative",
-    "creators": "Creators",
-    "short-form-video": "Short-Form Video",
-    "photography": "Photography",
-    "camera": "Camera",
-    "ephemeral": "Ephemeral",
-    "social": "Social",
-    "visual-discovery": "Visual Discovery",
-    "bookmarking": "Bookmarking",
-    "shopping": "Shopping",
-    "video-conferencing": "Video Conferencing",
-    "remote-work": "Remote Work",
-    "ride-sharing": "Ride Sharing",
-    "delivery": "Delivery",
-    "mobility": "Mobility",
-    "transportation": "Transportation",
-    "forum": "Forum",
-    "discussion": "Discussion",
-    "encryption": "Encryption",
-    "mobile": "Mobile",
-    "publishing": "Publishing",
-    "templates": "Templates",
-    "creativity": "Creativity",
-    "fast-food": "Fast Food",
-    "restaurants": "Restaurants",
-    "food-service": "Food Service",
-    "global": "Global",
-    "iconic": "Iconic",
-    "identity": "Identity",
-    "athletic": "Athletic",
-    "footwear": "Footwear",
+    "ai-safety": "AI Safety",
+    "api": "API",
+    "app-builder": "App Builder",
     "apparel": "Apparel",
-    "sports": "Sports",
-    "lifestyle": "Lifestyle",
-    "performance": "Performance",
-    "sportswear": "Sportswear",
+    "artificial-intelligence": "Artificial Intelligence",
+    "athletic": "Athletic",
     "athletics": "Athletics",
-    "fashion": "Fashion",
-    "streetwear": "Streetwear",
-    "sustainability": "Sustainability",
-    "education": "Education",
-    "language-learning": "Language Learning",
-    "gamification": "Gamification",
-    "freemium": "Freemium",
-    "multiplayer": "Multiplayer",
-    "coffee": "Coffee",
-    "beverages": "Beverages",
-    "food-and-drink": "Food & Drink",
-    "soft-drinks": "Soft Drinks",
-    "consumer-goods": "Consumer Goods",
-    "meetings": "Meetings",
-    "debugging": "Debugging",
+    "audio": "Audio",
+    "augmented-reality": "Augmented Reality",
+    "authentication": "Authentication",
     "automation": "Automation",
     "automotive": "Automotive",
-    "monitoring": "Monitoring",
-    "quality-assurance": "Quality Assurance",
-    "database": "Database",
-    "infrastructure": "Infrastructure",
-    "content-automation": "Content Automation",
-    "no-code": "No-Code",
-    "app-builder": "App Builder",
-    "documentation": "Documentation",
-    "voice-ai": "Voice AI",
-    "ui-components": "UI Components",
-    "agents": "Agents",
-    "devops": "DevOps",
-    "launcher": "Launcher",
-    "macos": "macOS",
-    "keyboard-first": "Keyboard-First",
+    "autonomous-vehicles": "Autonomous Vehicles",
+    "banking": "Banking",
+    "beverages": "Beverages",
     "billing": "Billing",
-    "monetization": "Monetization",
+    "blockchain": "Blockchain",
+    "bookmarking": "Bookmarking",
+    "camera": "Camera",
+    "chatgpt": "ChatGPT",
+    "claude": "Claude",
+    "clean-energy": "Clean Energy",
+    "cloud": "Cloud",
+    "code-editor": "Code Editor",
+    "code-hosting": "Code Hosting",
+    "coffee": "Coffee",
+    "collaboration": "Collaboration",
+    "communication": "Communication",
+    "community": "Community",
+    "consumer-goods": "Consumer Goods",
+    "content-automation": "Content Automation",
+    "creative": "Creative",
+    "creativity": "Creativity",
+    "creators": "Creators",
+    "crypto": "Crypto",
+    "cryptocurrency": "Cryptocurrency",
     "css": "CSS",
+    "currency": "Currency",
+    "data-center": "Data Center",
+    "database": "Database",
+    "debugging": "Debugging",
+    "decentralized": "Decentralized",
+    "defi": "DeFi",
+    "delivery": "Delivery",
+    "design": "Design",
+    "design-tools": "Design Tools",
+    "developer-tools": "Developer Tools",
+    "devops": "DevOps",
+    "discussion": "Discussion",
+    "displays": "Displays",
+    "documentation": "Documentation",
+    "e-commerce": "E-Commerce",
+    "ecosystem": "Ecosystem",
+    "education": "Education",
+    "electric-vehicles": "Electric Vehicles",
+    "electronics": "Electronics",
+    "encryption": "Encryption",
+    "entertainment": "Entertainment",
+    "ephemeral": "Ephemeral",
+    "experiences": "Experiences",
+    "fashion": "Fashion",
+    "fast-food": "Fast Food",
+    "financial-infrastructure": "Financial Infrastructure",
+    "food-and-drink": "Food & Drink",
+    "food-service": "Food Service",
+    "footwear": "Footwear",
+    "forum": "Forum",
     "framework": "Framework",
-    "luxury": "Luxury"
+    "freemium": "Freemium",
+    "frontend": "Frontend",
+    "gamification": "Gamification",
+    "gaming": "Gaming",
+    "global": "Global",
+    "gpt": "GPT",
+    "gpu": "GPU",
+    "hardware": "Hardware",
+    "hospitality": "Hospitality",
+    "hosting": "Hosting",
+    "hybrid": "Hybrid",
+    "iconic": "Iconic",
+    "identity": "Identity",
+    "infrastructure": "Infrastructure",
+    "innovation": "Innovation",
+    "international": "International",
+    "issue-tracking": "Issue Tracking",
+    "keyboard-first": "Keyboard-First",
+    "language-learning": "Language Learning",
+    "launcher": "Launcher",
+    "lifestyle": "Lifestyle",
+    "live-streaming": "Live Streaming",
+    "logistics": "Logistics",
+    "luxury": "Luxury",
+    "machine-learning": "Machine Learning",
+    "macos": "macOS",
+    "manufacturing": "Manufacturing",
+    "marketplace": "Marketplace",
+    "meetings": "Meetings",
+    "messaging": "Messaging",
+    "metaverse": "Metaverse",
+    "microblogging": "Microblogging",
+    "microsoft": "Microsoft",
+    "mobile": "Mobile",
+    "mobility": "Mobility",
+    "monetization": "Monetization",
+    "money-transfer": "Money Transfer",
+    "monitoring": "Monitoring",
+    "movies": "Movies",
+    "multiplayer": "Multiplayer",
+    "music": "Music",
+    "news": "News",
+    "no-code": "No-Code",
+    "notes": "Notes",
+    "open-source": "Open Source",
+    "payments": "Payments",
+    "performance": "Performance",
+    "photography": "Photography",
+    "platform": "Platform",
+    "playlists": "Playlists",
+    "podcasts": "Podcasts",
+    "productivity": "Productivity",
+    "project-management": "Project Management",
+    "prototyping": "Prototyping",
+    "publishing": "Publishing",
+    "quality-assurance": "Quality Assurance",
+    "real-time": "Real-Time",
+    "remote-work": "Remote Work",
+    "research": "Research",
+    "restaurants": "Restaurants",
+    "retail": "Retail",
+    "ride-sharing": "Ride Sharing",
+    "search": "Search",
+    "search-engine": "Search Engine",
+    "security": "Security",
+    "shopping": "Shopping",
+    "short-form-video": "Short-Form Video",
+    "social": "Social",
+    "social-media": "Social Media",
+    "social-network": "Social Network",
+    "soft-drinks": "Soft Drinks",
+    "software": "Software",
+    "sports": "Sports",
+    "sportswear": "Sportswear",
+    "streaming": "Streaming",
+    "streetwear": "Streetwear",
+    "sustainability": "Sustainability",
+    "television": "Television",
+    "templates": "Templates",
+    "transportation": "Transportation",
+    "travel": "Travel",
+    "ui-components": "UI Components",
+    "ui-design": "UI Design",
+    "user-management": "User Management",
+    "version-control": "Version Control",
+    "video": "Video",
+    "video-conferencing": "Video Conferencing",
+    "virtual-reality": "Virtual Reality",
+    "visual-discovery": "Visual Discovery",
+    "voice-ai": "Voice AI",
+    "voice-chat": "Voice Chat",
+    "web3": "Web3",
+    "workplace": "Workplace",
+    "workspace": "Workspace"
   },
   "tag": {
     "title": "Brands tagged \"{tag}\"",
@@ -571,7 +585,8 @@
     "sans-serif": "Sans-Serif",
     "serif": "Serif",
     "monospace": "Monospace",
-    "script": "Script"
+    "script": "Script",
+    "display": "Display"
   },
   "browseBy": {
     "relatedCategories": "Related Categories",

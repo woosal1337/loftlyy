@@ -20,8 +20,7 @@ export const bmw: Brand = {
     {
       name: "BMW Blue",
       hex: "#0166B1",
-      usage:
-        "Primary brand color, logo roundel quadrants, key brand elements.",
+      usage: "Primary brand color, logo roundel quadrants, key brand elements.",
     },
     {
       name: "BMW Black",
@@ -31,7 +30,8 @@ export const bmw: Brand = {
     {
       name: "BMW White",
       hex: "#FFFFFF",
-      usage: "Logo roundel quadrants, light backgrounds, reversed applications.",
+      usage:
+        "Logo roundel quadrants, light backgrounds, reversed applications.",
     },
     {
       name: "BMW Dark Blue",
@@ -100,7 +100,8 @@ export const bmw: Brand = {
   philosophy:
     "Through engineering precision and a relentless pursuit of driving pleasure, BMW's identity is anchored by the iconic roundel — a symbol inspired by the Bavarian flag that has represented premium automotive excellence for over a century. The 2020 rebrand by BECC Agency stripped the logo to a flat, transparent design, and a 2025 refinement for the Neue Klasse era removed inner chrome rings entirely, achieving a cleaner, more contemporary expression.",
   legal: {
-    guidelinesUrl: "https://www.press.bmwgroup.com/global/article/search/category:2",
+    guidelinesUrl:
+      "https://www.press.bmwgroup.com/global/article/search/category:2",
     dos: [
       "Use only official BMW-provided logos and marks",
       "Maintain minimum clear space around the BMW roundel",

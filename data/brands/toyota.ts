@@ -8,13 +8,7 @@ export const toyota: Brand = {
   url: "https://toyota.com",
   industry: "automotive",
   categories: ["automotive", "technology", "geometric-logos"],
-  tags: [
-    "automotive",
-    "manufacturing",
-    "hybrid",
-    "innovation",
-    "hardware",
-  ],
+  tags: ["automotive", "manufacturing", "hybrid", "innovation", "hardware"],
   colors: [
     {
       name: "Toyota Red",

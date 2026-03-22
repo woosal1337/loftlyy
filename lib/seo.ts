@@ -14,11 +14,19 @@ export interface SeoFaqItem {
   answer: string
 }
 
+export type SummaryItemKind = "colors" | "typography" | "assets"
+
+export interface SummaryItem {
+  kind: SummaryItemKind
+  text: string
+}
+
 export interface BrandSeoContent {
   title: string
   description: string
   keywords: string[]
   summaryParagraphs: string[]
+  summaryItems: SummaryItem[]
   faqQuestions: SeoFaqItem[]
   imageUrls: string[]
   primaryImageUrl: string
@@ -198,31 +206,33 @@ export function composeBrandSeoContent({
   const description = takeWithinLimit(descriptionParts, DESCRIPTION_MAX_LENGTH)
 
   const summaryParagraphs: string[] = []
+  const summaryItems: SummaryItem[] = []
   if (hexCodes.length > 0) {
-    summaryParagraphs.push(
-      tSeo("summaryColors", {
-        brandName: brand.name,
-        colors: formatList(hexCodes, locale, "long"),
-      })
-    )
+    const text = tSeo("summaryColors", {
+      brandName: brand.name,
+      colors: formatList(hexCodes, locale, "long"),
+    })
+    summaryParagraphs.push(text)
+    summaryItems.push({ kind: "colors", text })
   }
   if (fontNames.length > 0) {
-    summaryParagraphs.push(
-      tSeo("summaryTypography", {
-        brandName: brand.name,
-        fonts: formatList(fontNames, locale, "long"),
-      })
-    )
+    const text = tSeo("summaryTypography", {
+      brandName: brand.name,
+      fonts: formatList(fontNames, locale, "long"),
+    })
+    summaryParagraphs.push(text)
+    summaryItems.push({ kind: "typography", text })
   }
   if (brand.assets.length > 0) {
-    summaryParagraphs.push(
+    const text =
       downloadFormats.length > 0
         ? tSeo("summaryLogoFormats", {
             brandName: brand.name,
             formats: formatList(downloadFormats, locale, "long"),
           })
         : tSeo("summaryLogoAvailable", { brandName: brand.name })
-    )
+    summaryParagraphs.push(text)
+    summaryItems.push({ kind: "assets", text })
   }
 
   const faqQuestions: SeoFaqItem[] = []
@@ -300,6 +310,7 @@ export function composeBrandSeoContent({
     description,
     keywords,
     summaryParagraphs,
+    summaryItems,
     faqQuestions,
     imageUrls,
     primaryImageUrl: imageUrls[0] ?? toAbsoluteUrl(brand.thumbnail.src),

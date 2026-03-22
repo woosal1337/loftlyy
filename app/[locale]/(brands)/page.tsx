@@ -41,14 +41,14 @@ function BrandsLanding({ brands }: { brands: SidebarBrand[] }) {
 
   return (
     <div className="flex min-h-full w-full flex-col items-center justify-center px-4 py-12 sm:px-6">
-        <a
-            href="https://github.com/preetsuthar17/loftlyy"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex w-full items-center justify-center gap-2 p-3 rounded-full bg-neutral-100  text-center font-semibold text-neutral-700 transition-colors hover:bg-neutral-200 sm:w-fit dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700 absolute top-0 right-0 m-4"
-          >
-            <IconBrandGithub/>
-          </a>
+      <a
+        href="https://github.com/preetsuthar17/loftlyy"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute top-0 right-0 m-4 flex w-full items-center justify-center gap-2 rounded-full bg-neutral-100 p-3 text-center font-semibold text-neutral-700 transition-colors hover:bg-neutral-200 sm:w-fit dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700"
+      >
+        <IconBrandGithub />
+      </a>
       {/* Hero */}
       <section className="flex flex-col items-center gap-6 text-center">
         <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-2xl bg-neutral-100 dark:bg-neutral-800">
@@ -83,7 +83,6 @@ function BrandsLanding({ brands }: { brands: SidebarBrand[] }) {
           >
             {t("home.sponsor")} &nbsp;❤️
           </a>
-        
         </div>
       </section>
 

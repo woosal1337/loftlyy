@@ -25,10 +25,10 @@ Before writing any code, gather:
 All brand assets are hosted on **Cloudflare R2**, NOT in the local `public/` directory.
 
 - **R2 bucket**: `loftlyy-assets`
-- **Public URL**: `https://pub-079f39a5918e4dde95387cd357e855f3.r2.dev`
+- **Public URL**: `$NEXT_PUBLIC_ASSET_BASE_URL`
 - **Key structure**: `brands/<slug>/<filename>`
 
-Assets are served at: `https://pub-079f39a5918e4dde95387cd357e855f3.r2.dev/brands/<slug>/<filename>`
+Assets are served at: `$NEXT_PUBLIC_ASSET_BASE_URL/brands/<slug>/<filename>`
 
 The app prepends `NEXT_PUBLIC_ASSET_BASE_URL` to all asset paths automatically.
 
@@ -267,10 +267,10 @@ Run these checks before considering the brand done:
 
 ```bash
 # 1. Verify assets uploaded to R2 (spot-check a few)
-curl -sI "https://pub-079f39a5918e4dde95387cd357e855f3.r2.dev/brands/<slug>/<filename>.svg" | head -5
+curl -sI "$NEXT_PUBLIC_ASSET_BASE_URL/brands/<slug>/<filename>.svg" | head -5
 # Should return 200 with content-type: image/svg+xml
 
-curl -sI "https://pub-079f39a5918e4dde95387cd357e855f3.r2.dev/brands/<slug>/fonts/<font>.woff2" | head -5
+curl -sI "$NEXT_PUBLIC_ASSET_BASE_URL/brands/<slug>/fonts/<font>.woff2" | head -5
 # Should return 200 with content-type: font/woff2
 
 # 2. Type check
