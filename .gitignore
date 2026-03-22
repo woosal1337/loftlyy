@@ -45,3 +45,11 @@ pnpm-debug.log*
 *.tsbuildinfo
 next-env.d.ts
 .claude/
+
+# mcp
+mcp/dist/
+mcp/node_modules/
+mcp/package-lock.json
+
+# ide
+.idea/

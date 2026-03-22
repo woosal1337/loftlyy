@@ -18,6 +18,7 @@
     "cli": "tsx cli/index.ts",
     "brands": "tsx cli/index.ts brands",
     "cli:build": "npm --prefix cli run build",
+    "mcp:build": "npm --prefix mcp run build",
     "translations:status": "tsx scripts/translation-agent.ts status",
     "translations:scaffold": "tsx scripts/translation-agent.ts scaffold",
     "prebuild": "tsx scripts/validate.ts",

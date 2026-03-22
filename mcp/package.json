@@ -1,0 +1,31 @@
+{
+  "name": "@loftlyy/mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Loftlyy brand identity data — search, explore, and generate branding guides",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "loftlyy-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "npx tsup --config tsup.config.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
