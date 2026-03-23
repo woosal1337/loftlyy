@@ -119,16 +119,26 @@ export function AdvertiseSpots() {
         </div>
 
         <div className="rounded-lg border border-neutral-200 bg-neutral-50 p-3 sm:p-4 dark:border-neutral-700 dark:bg-neutral-800">
-          <p className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
-            Pricing
-          </p>
-          <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
-            <span className="font-semibold text-neutral-900 dark:text-neutral-100">
-              Monthly rate:
-            </span>{" "}
-            $199/month
-          </p>
-          <p className="mt-0.5 text-sm text-neutral-500 dark:text-neutral-400">
+          <div className="flex items-center gap-2">
+            <p className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
+              Pricing
+            </p>
+            <span className="rounded-full bg-green-100 px-2 py-0.5 text-[10px] font-semibold text-green-700 dark:bg-green-900 dark:text-green-300">
+              60% OFF
+            </span>
+          </div>
+          <div className="mt-1.5 flex items-baseline gap-2">
+            <span className="text-lg font-bold text-neutral-900 dark:text-neutral-100">
+              $199
+            </span>
+            <span className="text-sm text-neutral-400 line-through dark:text-neutral-500">
+              $499
+            </span>
+            <span className="text-sm text-neutral-500 dark:text-neutral-400">
+              /month
+            </span>
+          </div>
+          <p className="mt-1 text-sm text-neutral-500 dark:text-neutral-400">
             {SPOTS_LEFT} spots available now. Cancel anytime.
           </p>
         </div>
