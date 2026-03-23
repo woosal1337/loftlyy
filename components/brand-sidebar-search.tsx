@@ -5,6 +5,7 @@ import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { useTranslations } from "next-intl"
 import {
+  IconBrandGithub,
   IconPalette,
   IconPlugConnected,
   IconTerminal2,
@@ -88,7 +89,7 @@ export function BrandSidebarSearch({
       </div>
 
       {/* Brand list */}
-      <div className="flex min-h-0 flex-1 flex-col gap-2">
+      <div className="flex min-h-0 flex-1 flex-col gap-0.5">
         <div className="flex items-center gap-1.5">
           <span className="text-[11px] font-medium tracking-widest text-neutral-500 uppercase dark:text-neutral-400">
             {t("explore")}
@@ -157,6 +158,21 @@ export function BrandSidebarSearch({
           </span>
           <span className="min-w-0 flex-1 truncate text-sm font-medium text-neutral-600 transition-colors group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-neutral-100">
             MCP
+          </span>
+        </a>
+
+        <a
+          href="https://github.com/preetsuthar17/loftlyy"
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={onNavigate}
+          className="group flex items-center gap-2 rounded-lg px-2 py-1.5 transition-colors hover:bg-neutral-50 dark:hover:bg-neutral-800/30"
+        >
+          <span className="flex size-7 shrink-0 items-center justify-center overflow-hidden rounded-[10px] border border-neutral-200/80 bg-white text-neutral-500 transition-colors group-hover:border-neutral-300 group-hover:text-neutral-800 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-400 dark:group-hover:border-neutral-700 dark:group-hover:text-neutral-100">
+            <IconBrandGithub className="size-4" />
+          </span>
+          <span className="min-w-0 flex-1 truncate text-sm font-medium text-neutral-600 transition-colors group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-neutral-100">
+            GitHub
           </span>
         </a>
 
