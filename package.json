@@ -1,6 +1,6 @@
 {
   "name": "loftlyy",
-  "version": "0.1.0",
+  "version": "0.1.0", 
   "license": "MIT",
   "type": "module",
   "scripts": {
@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "dev-performance-debug": "NEXT_TURBOPACK_TRACING=1 next dev --turbopack",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit",
     "optimize": "tsx scripts/optimize-images.ts",
