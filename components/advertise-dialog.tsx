@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import {
   IconExternalLink,
   IconEye,
@@ -18,8 +19,25 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 
+interface Ad {
+  name: string
+  description: string
+  url: string
+  favicon: string
+}
+
+const ads: Ad[] = [
+  {
+    name: "TurboStarter",
+    description:
+      "Ship your SaaS startup today with web, mobile and extension starter.",
+    url: "https://turbostarter.dev",
+    favicon: "https://turbostarter.dev/favicon.ico",
+  },
+]
+
 const TOTAL_SPOTS = 4
-const SPOTS_TAKEN = 0
+const SPOTS_TAKEN = ads.length
 const SPOTS_LEFT = TOTAL_SPOTS - SPOTS_TAKEN
 
 const stats = [
@@ -45,7 +63,31 @@ export function AdvertiseSpots() {
   return (
     <Dialog>
       <section className="grid w-full max-w-4xl grid-cols-2 gap-4 sm:grid-cols-4">
-        {Array.from({ length: TOTAL_SPOTS }).map((_, i) => (
+        {ads.map((ad) => (
+          <a
+            key={ad.name}
+            href={`${ad.url}?ref=loftlyy&utm_source=loftlyy&utm_medium=sponsorship&utm_campaign=ad_spot`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex aspect-[4/3] cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border border-neutral-200 bg-neutral-50 transition-all hover:border-neutral-300 hover:bg-neutral-100 dark:border-neutral-700 dark:bg-neutral-800/50 dark:hover:border-neutral-600 dark:hover:bg-neutral-800"
+          >
+            <Image
+              src={ad.favicon}
+              alt={ad.name}
+              width={28}
+              height={28}
+              className="rounded-md"
+              unoptimized
+            />
+            <span className="text-sm font-medium text-neutral-700 transition-colors group-hover:text-neutral-900 dark:text-neutral-300 dark:group-hover:text-neutral-100">
+              {ad.name}
+            </span>
+            <span className="line-clamp-2 max-w-[90%] text-center text-[10px] leading-tight text-neutral-400 dark:text-neutral-500">
+              {ad.description}
+            </span>
+          </a>
+        ))}
+        {Array.from({ length: SPOTS_LEFT }).map((_, i) => (
           <DialogTrigger
             key={`ad-spot-${i}`}
             className="group flex aspect-[4/3] cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed border-neutral-300 opacity-50 transition-all hover:border-neutral-400 hover:opacity-80 dark:border-neutral-600 dark:hover:border-neutral-500"

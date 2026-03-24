@@ -40,65 +40,65 @@ function BrandsLanding({ brands }: { brands: SidebarBrand[] }) {
   const t = useTranslations()
 
   return (
-    <div className="flex min-h-0 flex-1 w-full flex-col items-center overflow-hidden px-4 py-12 sm:px-6">
+    <div className="flex min-h-0 w-full flex-1 flex-col items-center overflow-hidden px-4 py-12 sm:px-6">
       {/* Hero + Marquee centered in remaining space */}
       <div className="flex w-full flex-1 flex-col items-center justify-center">
-      <section className="flex flex-col items-center gap-6 text-center">
-        <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-2xl bg-neutral-100 dark:bg-neutral-800">
-          <Image
-            src="/logo.webp"
-            alt="Loftly"
-            width={48}
-            height={48}
-            className="size-full rounded-xl object-contain"
-          />
-        </div>
+        <section className="flex flex-col items-center gap-6 text-center">
+          <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-2xl bg-neutral-100 dark:bg-neutral-800">
+            <Image
+              src="/logo.webp"
+              alt="Loftly"
+              width={48}
+              height={48}
+              className="size-full rounded-xl object-contain"
+            />
+          </div>
 
-        <h1 className="max-w-xl text-3xl font-semibold tracking-tighter text-neutral-900 sm:text-5xl dark:text-neutral-100">
-          {t("home.headline")}
-        </h1>
-        <p className="max-w-md text-sm text-neutral-500 sm:text-base dark:text-neutral-400">
-          {t("home.subheadline")}
-        </p>
-        <div className="flex w-full flex-col items-center gap-3 sm:w-auto sm:flex-row">
-          <Link
-            href={`/${brands[0].slug}`}
-            className="flex w-full items-center justify-center gap-2 rounded-full bg-neutral-900 px-6 py-3.5 text-center font-semibold text-white transition-colors hover:bg-neutral-700 sm:w-fit sm:py-4 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-300"
-          >
-            {t("home.cta")}
-            <IconArrowRight size={16} />
-          </Link>
-          <a
-            href="https://github.com/sponsors/preetsuthar17"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex w-full items-center justify-center gap-2 rounded-full bg-neutral-100 px-6 py-3.5 text-center font-semibold text-neutral-700 transition-colors hover:bg-neutral-200 sm:w-fit sm:py-4 dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700"
-          >
-            {t("home.sponsor")} &nbsp;❤️
-          </a>
-        </div>
-      </section>
-
-      {/* Forward marquee — below hero */}
-      <div className="relative mt-24 w-full max-w-3xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-        <div className="flex w-max animate-[marquee_50s_linear_infinite] gap-10">
-          {[...brands, ...brands].map((brand, i) => (
+          <h1 className="max-w-xl text-3xl font-semibold tracking-tighter text-neutral-900 sm:text-5xl dark:text-neutral-100">
+            {t("home.headline")}
+          </h1>
+          <p className="max-w-md text-sm text-neutral-500 sm:text-base dark:text-neutral-400">
+            {t("home.subheadline")}
+          </p>
+          <div className="flex w-full flex-col items-center gap-3 sm:w-auto sm:flex-row">
             <Link
-              key={`${brand.slug}-fwd-${i}`}
-              href={`/${brand.slug}`}
-              className="flex h-8 w-8 shrink-0 items-center justify-center transition-all hover:opacity-100 hover:grayscale-0"
+              href={`/${brands[0].slug}`}
+              className="flex w-full items-center justify-center gap-2 rounded-full bg-neutral-900 px-6 py-3.5 text-center font-semibold text-white transition-colors hover:bg-neutral-700 sm:w-fit sm:py-4 dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-neutral-300"
             >
-              <Image
-                src={brand.thumbnail.src}
-                alt={brand.name}
-                width={32}
-                height={32}
-                className="size-full object-contain"
-              />
+              {t("home.cta")}
+              <IconArrowRight size={16} />
             </Link>
-          ))}
+            <a
+              href="https://github.com/sponsors/preetsuthar17"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex w-full items-center justify-center gap-2 rounded-full bg-neutral-100 px-6 py-3.5 text-center font-semibold text-neutral-700 transition-colors hover:bg-neutral-200 sm:w-fit sm:py-4 dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700"
+            >
+              {t("home.sponsor")} &nbsp;❤️
+            </a>
+          </div>
+        </section>
+
+        {/* Forward marquee — below hero */}
+        <div className="relative mt-24 w-full max-w-3xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+          <div className="flex w-max animate-[marquee_50s_linear_infinite] gap-10">
+            {[...brands, ...brands].map((brand, i) => (
+              <Link
+                key={`${brand.slug}-fwd-${i}`}
+                href={`/${brand.slug}`}
+                className="flex h-8 w-8 shrink-0 items-center justify-center transition-all hover:opacity-100 hover:grayscale-0"
+              >
+                <Image
+                  src={brand.thumbnail.src}
+                  alt={brand.name}
+                  width={32}
+                  height={32}
+                  className="size-full object-contain"
+                />
+              </Link>
+            ))}
+          </div>
         </div>
-      </div>
       </div>
     </div>
   )
