@@ -19,11 +19,9 @@
     "allBrands": "すべてのブランド",
     "categories": "カテゴリ",
     "clearFilters": "すべてクリア",
-    "colorExplorer": "カラーエクスプローラー",
     "colorFamily": "カラー",
     "colorResults": "カラー結果",
     "explore": "探索",
-    "exploreColors": "{count}個のユニークスウォッチ",
     "filters": "フィルター",
     "fontResults": "フォント結果",
     "industry": "業界",
@@ -35,7 +33,8 @@
     "searchPlaceholder": "HEX、フォント、キーワードで検索",
     "styleTags": "スタイル",
     "theme": "テーマ",
-    "typographyStyle": "タイポグラフィ"
+    "typographyStyle": "タイポグラフィ",
+    "compareBrands": "比較"
   },
   "brand": {
     "assets": "アセット",
@@ -66,7 +65,8 @@
     "similarBrands": "類似ブランド",
     "typography": "タイポグラフィ",
     "viewGuidelines": "公式ブランドガイドラインを見る",
-    "visitWebsite": "ウェブサイトを訪問"
+    "visitWebsite": "ウェブサイトを訪問",
+    "compareBrand": "比較"
   },
   "brands": {
     "21st": {
@@ -121,6 +121,10 @@
       "description": "Clerkは、Webアプリケーションにセキュアなサインアップ、サインイン、ユーザープロフィールを追加するためのドロップインUIコンポーネント、API、管理ダッシュボードを提供する認証・ユーザー管理プラットフォームです。2019年にサンフランシスコで設立され、開発者が数ヶ月ではなく数分で完全な認証フローを実装できるようにします。",
       "philosophy": "Clerkのブランドアイデンティティは、認証に対する開発者ファーストのアプローチを反映し、シンプルさと信頼を重視しています。ダークパレットとパープルのアクセントを用いたクリーンでミニマルな美学は、技術的な洗練を伝えながら、複雑なセキュリティインフラストラクチャを親しみやすくモダンに感じさせます。"
     },
+    "cloudflare": {
+      "description": "Cloudflareは、あらゆる規模の企業に幅広いネットワークサービスを提供し、より安全で高速にするグローバルクラウドプラットフォームです。2009年にサンフランシスコで設立され、世界最大級のネットワークを運営し、数百万のウェブサイトを支え、月に数兆件のリクエストを処理しています。",
+      "philosophy": "Cloudflareのブランドアイデンティティは、より良いインターネットの構築を支援するという使命を反映しています。象徴的なクラウド＆フレアのマークは、温かみのあるオレンジとゴールドのトーンでエネルギー、信頼性、温かさを伝え、クリーンなサンセリフのワードマークは技術的な正確さと親しみやすさを表現しています。"
+    },
     "cluely": {
       "description": "Cluelyは、会議、面接、営業電話、コーディング、ライティングにおいてリアルタイムで回答や提案を提供するAIオーバーレイです。重要な場面のために設計され、画面上で目に見えない形で動作し、大規模言語モデルを活用してユーザーが最高のパフォーマンスを発揮できるよう支援します。",
       "philosophy": "クリーンでプロフェッショナル、そして静かな自信。Cluelyのアイデンティティは、柔らかなラベンダートーンと深いチャコールを組み合わせ、重要な会話で目に見えない形でアシストするツールにふさわしい信頼性と慎重さを表現しています。"
@@ -144,6 +148,10 @@
     "elevenlabs": {
       "description": "ElevenLabs（イレブンラボ）は、リアルなテキスト読み上げ合成、音声クローニング、会話型AIを専門とするAI音声研究企業です。2022年に設立され、クリエイターや開発者が74言語で自然な感情とイントネーションを持つリアルな音声を生成できるプラットフォームを提供しています。",
       "philosophy": "ElevenLabsのブランドアイデンティティは、研究主導の基盤を象徴するモノクロームのパレットによる徹底的なミニマリズムの上に構築されています。アイコニックな二本の縦線は数字の11を抽象化すると同時に一時停止ボタンを連想させ、音声技術と視覚的アイデンティティの間を優美なシンプルさで結んでいます。"
+    },
+    "ethereum": {
+      "description": "Ethereumは、スマートコントラクトと分散型アプリケーションを可能にする分散型オープンソースブロックチェーンプラットフォームです。Vitalik Buterin、Gavin Woodらによって共同設立され、2015年にネットワークが稼働開始。第2位の暗号通貨エコシステムを支え、DeFi、NFT、Web3の基盤インフラとして機能しています。",
+      "philosophy": "Ethereumのアイデンティティは、オープンで分散型のワールドコンピューターとしての使命を反映しています。象徴的なダイヤモンドのロゴマークは、強さ、明確さ、グローバルプラットフォームの多面的な性質を表し、重なり合うファセットで深みと透明性を伝え、落ち着いたパープルブルーのパレットは信頼、安定性、技術的洗練を示しています。"
     },
     "figma": {
       "description": "Figmaは、チームがリアルタイムで共同でデザイン、プロトタイプ、開発を行えるコラボレーティブなインターフェースデザインツールです。サンフランシスコに本拠を置く独立企業として、UI/UXデザインの業界標準となっています。",
@@ -229,6 +237,10 @@
       "description": "Perplexityは、大規模言語モデルとリアルタイムウェブ検索を組み合わせて、正確で引用付きの回答を提供するAI搭載の回答エンジンです。2022年に設立され、人々がオンラインで情報を発見し理解する方法を再定義しています。",
       "philosophy": "クリーンで明瞭、意図的に控えめ。Perplexityのアイデンティティは装飾よりもコンテンツを優先し、特徴的なターコイズパレットと幾何学的なシンボルで、AI駆動の検索における精度と信頼性を伝えています。"
     },
+    "phantom": {
+      "description": "Phantomは、すべての人にとって安全で使いやすい暗号通貨を実現するために設計されたマルチチェーン暗号ウォレットです。2021年にBrandon Millman、Chris Kalani、Francesco Agostiによって設立され、Solana、Ethereum、Bitcoin、Base、Polygon、Suiをサポートし、2000万人以上のユーザーにデジタルアセット、NFT、DeFiを管理するための直感的なインターフェースを提供しています。",
+      "philosophy": "Phantomのアイデンティティは、暗号通貨をすべての人にとってアクセスしやすくフレンドリーにすることを中心に据えています。象徴的なゴーストマスコットと鮮やかなパープルパレットは、複雑に見られがちな空間で親しみやすさを伝え、F37がデザインしたカスタム書体はあらゆるタッチポイントで信頼感と明瞭さを強化しています。"
+    },
     "pinterest": {
       "description": "Pinterestは、レシピやインテリアからファッション、DIYプロジェクトまで、クリエイティブなアイデアを発見・保存できるビジュアルディスカバリー＆ブックマークプラットフォームです。2010年に設立され、ビジュアル検索技術を活用したパーソナライズされたインスピレーションエンジンとして、5億5,000万人以上の月間アクティブユーザーにサービスを提供しています。",
       "philosophy": "Pinterestのブランドアイデンティティは、ピン留めとインスピレーションの保存を象徴する、スタイライズされた「P」ピン型の赤いバッジを中心としています。Grilli Typeによるカスタム書体Pinterest Sansは、温かみとモダンな明瞭さを両立し、ピン留めされた画像を引き立てながら、独自で親しみやすいブランドボイスを維持するようデザインされています。"
@@ -240,6 +252,10 @@
     "polar": {
       "description": "Polarは、開発者やAI企業向けに設計されたオープンソースの請求・収益化プラットフォームです。サンフランシスコに本社を置くPolarは、開発者ファーストのアプローチで、使用量ベースの請求、SaaSサブスクリプション、柔軟な価格モデルの実装を可能にします。",
       "philosophy": "Polarのアイデンティティは、開発者ファーストのシンプルさとオープンソースの透明性に根ざしています。クリーンな幾何学的マークとクールなブルーのパレットで、信頼と技術的精度を表現しています。"
+    },
+    "pump-fun": {
+      "description": "pump.funは、ボンディングカーブメカニズムにより、誰でもミームコインを即座に作成・取引できるSolanaベースのプラットフォームです。2024年1月にローンチされ、Solanaエコシステムで最も人気のあるプラットフォームの一つとなりました。",
+      "philosophy": "pump.funのアイデンティティは、象徴的な薬用カプセルを中心に構築されています。ミームコイン取引のスリルを表す遊び心のあるシンボルです。ミントグリーンとダークフォレストのカラーパレットは、エネルギー、成長、Solanaエコシステムを象徴しています。"
     },
     "railway": {
       "description": "Railwayは、Webアプリケーション、サーバー、データベースを自動スケーリング、監視、セキュリティ機能付きでデプロイできるオールインワンのインテリジェントクラウドプラットフォームです。2020年に設立され、ビジュアルキャンバス、コードからの自動設定、統合オブザーバビリティなどの機能でインフラ管理を簡素化し、世界中の250万人以上の開発者にサービスを提供しています。",
@@ -317,6 +333,10 @@
       "description": "Uberは、ライダーとドライバーをつなぐグローバルなテクノロジープラットフォームで、配車サービス、フードデリバリー、貨物輸送、マイクロモビリティサービスを提供しています。2009年に設立され、70カ国以上で展開し、都市交通を根本的に変革しました。",
       "philosophy": "Uberのアイデンティティは、大胆なシンプルさとグローバルな認知度に基づいています。モノクロのワードマークとカスタムフォントUber Moveは、明快さ、効率性、シームレスな都市モビリティへの取り組みを反映しています。"
     },
+    "uniswap": {
+      "description": "Uniswapは、Ethereum上に構築された最大の分散型取引所（DEX）であり、自動マーケットメーカープロトコルを通じてトラストレスなトークンスワップを実現しています。2018年にヘイデン・アダムスによりニューヨークで設立され、AMMモデルのパイオニアとして3兆ドル以上の取引量を処理してきました。",
+      "philosophy": "Uniswapのアイデンティティは、象徴的なユニコーンマスコットと鮮やかなピンクのカラーパレットを中心に構築されており、分散型トークン交換の魔法のような摩擦のない性質を象徴しています。遊び心がありながらも洗練されたブランディングは、金融市場をオープンで透明性があり、誰もがアクセスできるものにするというプロトコルの使命を反映しています。"
+    },
     "vercel": {
       "description": "Vercelは、フロントエンド開発者向けのクラウドプラットフォームで、チームがゼロ設定でWebアプリケーションを構築、デプロイ、スケーリングできます。2015年設立、Next.jsとGeistデザインシステムの開発元です。",
       "philosophy": "Vercelのブランドアイデンティティは、開発者体験とフロントエンドの力に焦点を当てています。鮮明な白黒のパレットとアイコニックな三角形のシンボルが、スピード、精密さ、Web開発の最先端を伝えています。"
@@ -381,68 +401,6 @@
     "exploreFamily": "この色ファミリーをカラーエクスプローラーで開く",
     "noBrands": "この色のブランドは見つかりませんでした。",
     "title": "{color}ブランド"
-  },
-  "colorExplorer": {
-    "addHexes": "色を追加",
-    "addToPalette": "パレットに追加",
-    "allColors": "すべての色",
-    "allIndustries": "すべての業界",
-    "clearPalette": "パレットをクリア",
-    "closestColorsTitle": "カタログ内の近い色",
-    "colorContextDescription": "現在確認中のスウォッチを使っているブランドと、その使われ方を確認できます。",
-    "colorContextEmptyDescription": "エクスプローラーまたはパレットから色を選ぶと、ブランドごとの使用メモを確認できます。",
-    "colorContextEmptyTitle": "スウォッチを確認",
-    "colorContextTitle": "カラーコンテキスト",
-    "coverage": "{count}件カバー",
-    "ctaDescription": "{color}の各スウォッチをブランド横断で比較し、合うパレットを作成できます。",
-    "ctaLabel": "エクスプローラーを開く",
-    "description": "2〜5色を選んで、近いパレットを持つブランドを探します。",
-    "exact": "完全一致",
-    "exactCount": "{count}件一致",
-    "eyebrow": "パレットインテリジェンス",
-    "family": "ファミリー",
-    "familyCount": "{count}件ファミリー",
-    "familyFilterDescription": "1つ以上のファミリーを使って、パレット作成前に一覧を絞り込みます。",
-    "familyFilterTitle": "色を絞り込む",
-    "familySwatchCount": "{count}個のスウォッチ",
-    "heroCardDescription": "スウォッチをクリックしてパレットを作成し、カタログ全体で完全一致とファミリー一致を比較できます。",
-    "heroCardTitle": "パレットからブランドを探す",
-    "heroHint": "2〜5色を選んで一致するブランドを順位付けします。",
-    "industryFilterLabel": "業界",
-    "inspectColor": "{hex}を確認",
-    "manualHexHelp": "カンマ、スペース、改行で区切って最大5つの16進カラーを貼り付けできます。",
-    "manualHexPlaceholder": "#4285F4, #EA4335, #FBBC05",
-    "matchCount": "{count}件の一致するブランド",
-    "matchingBrandsDescription": "ブランドはまず完全一致、その後に色ファミリーの近さで順位付けされます。",
-    "matchingBrandsEmptyDescription": "色数を減らすか、別のファミリーを混ぜてみてください。",
-    "matchingBrandsEmptyTitle": "近い一致がありません",
-    "matchingBrandsIdleDescription": "色を選択すると、完全一致とファミリー一致を含むブランドがここに表示されます。",
-    "matchingBrandsIdleTitle": "パレットを作成してブランドを比較",
-    "matchingBrandsTitle": "一致するブランド",
-    "metaDescription": "パレットを作成して、Loftlyy上で似た配色システムのブランドを見つけられます。",
-    "metaTitle": "カラーエクスプローラー | Loftlyy",
-    "missing": "不足",
-    "moreBrands": "さらに{count}",
-    "paletteBuilderDescription": "選択した色はURLに保持されるため、この表示を共有したり再読み込みしたりできます。",
-    "paletteBuilderTitle": "あなたのパレット",
-    "paletteEmptyDescription": "2〜5色を選ぶと、近いパレットのブランドを順位付けできます。",
-    "paletteEmptyTitle": "色を選んで始める",
-    "paletteLimit": "最大{count}色",
-    "removeColor": "{hex}を削除",
-    "removeFromPalette": "パレットから削除",
-    "score": "スコア {count}",
-    "sortAlphabetical": "A–Z",
-    "sortBest": "最適一致",
-    "sortExact": "完全一致順",
-    "starterSwatchesDescription": "使いやすい色から始めて、あとでフィルターで絞り込みます。",
-    "starterSwatchesTitle": "開始用スウォッチ",
-    "stats": {
-      "brands": "ブランド",
-      "colorEntries": "カラー項目",
-      "uniqueColors": "ユニークカラー"
-    },
-    "title": "カラーエクスプローラー",
-    "usedByBrands": "{count}ブランドで使用"
   },
   "colorFamilies": {
     "blue": "ブルー",
@@ -514,6 +472,7 @@
     "agents": "エージェント",
     "ai": "AI",
     "ai-safety": "AI安全性",
+    "answer-engine": "回答エンジン",
     "api": "API",
     "app-builder": "アプリビルダー",
     "apparel": "アパレル",
@@ -535,10 +494,12 @@
     "bookmarking": "ブックマーク",
     "browser": "ブラウザ",
     "camera": "カメラ",
+    "cdn": "CDN",
     "chatgpt": "ChatGPT",
     "claude": "Claude",
     "clean-energy": "クリーンエネルギー",
     "cloud": "クラウド",
+    "cloud-infrastructure": "クラウドインフラ",
     "code-editor": "コードエディタ",
     "code-hosting": "コードホスティング",
     "coffee": "コーヒー",
@@ -556,6 +517,7 @@
     "cryptocurrency": "暗号通貨",
     "css": "CSS",
     "currency": "通貨",
+    "cybersecurity": "サイバーセキュリティ",
     "data-center": "データセンター",
     "database": "データベース",
     "debugging": "デバッグ",
@@ -568,6 +530,7 @@
     "devops": "DevOps",
     "discussion": "ディスカッション",
     "displays": "ディスプレイ",
+    "dns": "DNS",
     "documentation": "ドキュメンテーション",
     "e-commerce": "Eコマース",
     "ecosystem": "エコシステム",
@@ -577,6 +540,7 @@
     "encryption": "暗号化",
     "entertainment": "エンターテインメント",
     "ephemeral": "エフェメラル",
+    "exchange": "取引所",
     "experiences": "体験",
     "fashion": "ファッション",
     "fast-food": "ファストフード",
@@ -617,6 +581,7 @@
     "markdown": "Markdown",
     "marketplace": "マーケットプレイス",
     "meetings": "ミーティング",
+    "meme-coins": "ミームコイン",
     "messaging": "メッセージング",
     "metaverse": "メタバース",
     "microblogging": "マイクロブログ",
@@ -627,6 +592,7 @@
     "money-transfer": "送金",
     "monitoring": "モニタリング",
     "movies": "映画",
+    "multichain": "マルチチェーン",
     "multiplayer": "マルチプレイヤー",
     "music": "音楽",
     "news": "ニュース",
@@ -656,11 +622,13 @@
     "security": "セキュリティ",
     "shopping": "ショッピング",
     "short-form-video": "ショート動画",
+    "smart-contracts": "スマートコントラクト",
     "social": "ソーシャル",
     "social-media": "ソーシャルメディア",
     "social-network": "ソーシャルネットワーク",
     "soft-drinks": "清涼飲料",
     "software": "ソフトウェア",
+    "solana": "Solana",
     "sports": "スポーツ",
     "sportswear": "スポーツウェア",
     "streaming": "ストリーミング",
@@ -669,6 +637,7 @@
     "sustainability": "サステナビリティ",
     "television": "テレビ",
     "templates": "テンプレート",
+    "token-launch": "トークンローンチ",
     "transportation": "交通",
     "travel": "旅行",
     "ui-components": "UIコンポーネント",
@@ -681,10 +650,10 @@
     "visual-discovery": "ビジュアルディスカバリー",
     "voice-ai": "音声AI",
     "voice-chat": "ボイスチャット",
+    "wallet": "ウォレット",
     "web3": "Web3",
     "workplace": "ワークプレイス",
-    "workspace": "ワークスペース",
-    "answer-engine": "回答エンジン"
+    "workspace": "ワークスペース"
   },
   "typographyPage": {
     "description": "{style}フォントを使用する{count}ブランドを探索",
@@ -697,5 +666,28 @@
     "sans-serif": "サンセリフ",
     "script": "スクリプト",
     "serif": "セリフ"
+  },
+  "compare": {
+    "title": "ブランド比較",
+    "metaTitle": "ブランド比較 | Loftlyy",
+    "metaDescription": "ブランドアイデンティティを並べて比較 — カラー、タイポグラフィ、デザインの詳細",
+    "description": "2-3のブランドを選んでビジュアルアイデンティティを比較",
+    "addBrand": "ブランドを追加",
+    "addAnother": "別のブランドを追加",
+    "optional": "任意",
+    "removeBrand": "ブランドを削除",
+    "clearAll": "すべてクリア",
+    "searchBrands": "比較するブランドを検索...",
+    "noBrandsFound": "ブランドが見つかりません",
+    "maxReached": "最大3ブランドに達しました",
+    "quickStats": "概要",
+    "colorsCount": "{count} カラー",
+    "fontsCount": "{count} フォント",
+    "founded": "設立",
+    "headquarters": "本社",
+    "shareComparison": "共有",
+    "linkCopied": "リンクをコピーしました！",
+    "emptyTitle": "比較するブランドを選択",
+    "emptyDescription": "2-3のブランドを選んでビジュアルアイデンティティを比較してください"
   }
 }

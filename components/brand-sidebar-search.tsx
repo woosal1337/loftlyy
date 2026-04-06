@@ -5,8 +5,8 @@ import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { useTranslations } from "next-intl"
 import {
+  IconArrowsShuffle2,
   IconBrandGithub,
-  IconPalette,
   IconPlugConnected,
   IconTerminal2,
 } from "@tabler/icons-react"
@@ -32,11 +32,9 @@ function getVerticalMask(canScrollUp: boolean, canScrollDown: boolean) {
 
 export function BrandSidebarSearch({
   brands,
-  colorExplorerCount,
   onNavigate,
 }: {
   brands: SidebarBrand[]
-  colorExplorerCount: number
   onNavigate?: () => void
 }) {
   const pathname = usePathname()
@@ -73,7 +71,7 @@ export function BrandSidebarSearch({
   }, [canScrollUp, canScrollDown])
 
   const filtered = filterBrands(brands, { ...filters, query: "" })
-  const isColorExplorerActive = pathname.endsWith("/colors")
+  const isCompareActive = pathname.endsWith("/compare")
 
   return (
     <div className="flex h-full min-h-0 flex-col gap-3 px-5 lg:px-0">
@@ -98,11 +96,11 @@ export function BrandSidebarSearch({
           </div>
 
           <Link
-            href="/colors"
+            href="/compare"
             onClick={onNavigate}
             className={cn(
               "flex items-center gap-2 rounded-lg px-2 py-1.5 transition-colors",
-              isColorExplorerActive
+              isCompareActive
                 ? "bg-neutral-100/70 dark:bg-neutral-800/50"
                 : "hover:bg-neutral-50 dark:hover:bg-neutral-800/30"
             )}
@@ -110,25 +108,22 @@ export function BrandSidebarSearch({
             <span
               className={cn(
                 "flex size-7 shrink-0 items-center justify-center rounded-[10px]",
-                isColorExplorerActive
+                isCompareActive
                   ? "bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-950"
                   : "bg-neutral-100 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300"
               )}
             >
-              <IconPalette className="size-4" />
+              <IconArrowsShuffle2 className="size-4" />
             </span>
             <span
               className={cn(
                 "min-w-0 flex-1 truncate text-sm font-medium",
-                isColorExplorerActive
+                isCompareActive
                   ? "text-neutral-900 dark:text-neutral-100"
                   : "text-neutral-600 dark:text-neutral-400"
               )}
             >
-              {t("colorExplorer")}
-            </span>
-            <span className="text-[11px] font-medium text-neutral-400 dark:text-neutral-500">
-              {colorExplorerCount}
+              {t("compareBrands")}
             </span>
           </Link>
 
@@ -139,14 +134,7 @@ export function BrandSidebarSearch({
             onClick={onNavigate}
             className="group flex items-center gap-2 rounded-lg px-2 py-1.5 transition-colors hover:bg-neutral-50 dark:hover:bg-neutral-800/30"
           >
-            <span
-              className={cn(
-                "flex size-7 shrink-0 items-center justify-center rounded-[10px]",
-                isColorExplorerActive
-                  ? "bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-950"
-                  : "bg-neutral-100 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300"
-              )}
-            >
+            <span className="flex size-7 shrink-0 items-center justify-center rounded-[10px] bg-neutral-100 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300">
               <IconTerminal2 className="size-4" />
             </span>
             <span className="min-w-0 flex-1 truncate text-sm font-medium text-neutral-600 transition-colors group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-neutral-100">
@@ -161,14 +149,7 @@ export function BrandSidebarSearch({
             onClick={onNavigate}
             className="group flex items-center gap-2 rounded-lg px-2 py-1.5 transition-colors hover:bg-neutral-50 dark:hover:bg-neutral-800/30"
           >
-            <span
-              className={cn(
-                "flex size-7 shrink-0 items-center justify-center rounded-[10px]",
-                isColorExplorerActive
-                  ? "bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-950"
-                  : "bg-neutral-100 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300"
-              )}
-            >
+            <span className="flex size-7 shrink-0 items-center justify-center rounded-[10px] bg-neutral-100 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300">
               <IconPlugConnected className="size-4" />
             </span>
             <span className="min-w-0 flex-1 truncate text-sm font-medium text-neutral-600 transition-colors group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-neutral-100">
@@ -183,14 +164,7 @@ export function BrandSidebarSearch({
             onClick={onNavigate}
             className="group flex items-center gap-2 rounded-lg px-2 py-1.5 transition-colors hover:bg-neutral-50 dark:hover:bg-neutral-800/30"
           >
-            <span
-              className={cn(
-                "flex size-7 shrink-0 items-center justify-center rounded-[10px]",
-                isColorExplorerActive
-                  ? "bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-950"
-                  : "bg-neutral-100 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300"
-              )}
-            >
+            <span className="flex size-7 shrink-0 items-center justify-center rounded-[10px] bg-neutral-100 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300">
               <IconBrandGithub className="size-4" />
             </span>
             <span className="min-w-0 flex-1 truncate text-sm font-medium text-neutral-600 transition-colors group-hover:text-neutral-900 dark:text-neutral-400 dark:group-hover:text-neutral-100">

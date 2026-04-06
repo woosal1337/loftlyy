@@ -19,11 +19,9 @@
     "allBrands": "Toutes les marques",
     "categories": "Catégories",
     "clearFilters": "Tout effacer",
-    "colorExplorer": "Explorateur de couleurs",
     "colorFamily": "Couleur",
     "colorResults": "Résultats couleur",
     "explore": "Explorer",
-    "exploreColors": "{count} échantillons uniques",
     "filters": "Filtres",
     "fontResults": "Résultats typographie",
     "industry": "Industrie",
@@ -35,7 +33,8 @@
     "searchPlaceholder": "Rechercher par hex, police ou mot-clé",
     "styleTags": "Style",
     "theme": "Thème",
-    "typographyStyle": "Typographie"
+    "typographyStyle": "Typographie",
+    "compareBrands": "Comparer"
   },
   "brand": {
     "assets": "Ressources",
@@ -66,7 +65,8 @@
     "similarBrands": "Marques similaires",
     "typography": "Typographie",
     "viewGuidelines": "Voir les directives officielles de la marque",
-    "visitWebsite": "Visiter le site"
+    "visitWebsite": "Visiter le site",
+    "compareBrand": "Comparer"
   },
   "brands": {
     "21st": {
@@ -121,6 +121,10 @@
       "description": "Clerk est une plateforme d'authentification et de gestion des utilisateurs qui fournit des composants d'interface prêts à l'emploi, des API et des tableaux de bord d'administration pour ajouter l'inscription sécurisée, la connexion et les profils utilisateurs aux applications web. Fondée en 2019 à San Francisco, Clerk permet aux développeurs d'implémenter des flux d'authentification complets en minutes plutôt qu'en mois.",
       "philosophy": "L'identité de marque de Clerk reflète une approche axée sur le développeur en matière d'authentification, en mettant l'accent sur la simplicité et la confiance. L'esthétique épurée et minimaliste avec une palette sombre et des accents violets transmet une sophistication technique tout en rendant l'infrastructure de sécurité complexe accessible et moderne."
     },
+    "cloudflare": {
+      "description": "Cloudflare est une plateforme cloud mondiale qui fournit une large gamme de services réseau aux entreprises de toutes tailles, les rendant plus sécurisées et plus rapides. Fondée en 2009 à San Francisco, Cloudflare exploite l'un des plus grands réseaux au monde, alimentant des millions de sites web et traitant des billions de requêtes par mois.",
+      "philosophy": "L'identité de marque de Cloudflare reflète sa mission d'aider à construire un Internet meilleur. Le logo emblématique nuage-et-éclat utilise des tons chauds d'orange et d'or pour transmettre énergie, fiabilité et chaleur, tandis que la typographie sans-serif épurée communique précision technique et accessibilité."
+    },
     "cluely": {
       "description": "Cluely est une surcouche IA en temps réel qui fournit des réponses et des suggestions en direct pendant les réunions, entretiens, appels commerciaux, sessions de code et rédaction. Conçu pour les moments à forts enjeux, il fonctionne de manière invisible à l’écran grâce à des modèles de langage avancés pour aider les utilisateurs à donner le meilleur d’eux-mêmes.",
       "philosophy": "Épuré, professionnel et discrètement confiant. L'identité de Cluely associe des tons lavande doux à un charbon profond, projetant fiabilité et discrétion pour un outil conçu pour assister invisiblement lors de conversations importantes."
@@ -144,6 +148,10 @@
     "elevenlabs": {
       "description": "ElevenLabs est une entreprise de recherche en audio par IA spécialisée dans la synthèse vocale réaliste, le clonage de voix et l'IA conversationnelle. Fondée en 2022, la plateforme permet aux créateurs et développeurs de générer une parole naturelle avec émotion et intonation authentiques dans 74 langues.",
       "philosophy": "L'identité de marque d'ElevenLabs repose sur un minimalisme radical — une palette noir et blanc qui reflète ses fondements axés sur la recherche. Les iconiques doubles lignes verticales abstraient le nombre onze tout en évoquant un bouton pause, reliant technologie audio et identité visuelle avec une élégante simplicité."
+    },
+    "ethereum": {
+      "description": "Ethereum est une plateforme blockchain décentralisée et open source qui permet les contrats intelligents et les applications décentralisées. Cofondée par Vitalik Buterin, Gavin Wood et d'autres, le réseau a été lancé en 2015 et alimente le deuxième plus grand écosystème de cryptomonnaies, servant d'infrastructure fondamentale pour la DeFi, les NFTs et le Web3.",
+      "philosophy": "L'identité d'Ethereum reflète sa mission en tant qu'ordinateur mondial ouvert et décentralisé. L'emblématique logo en diamant — représentant la force, la clarté et la nature multifacette d'une plateforme mondiale — utilise des facettes superposées pour transmettre profondeur et transparence, tandis que la palette violet-bleu évoque confiance, stabilité et sophistication technique."
     },
     "figma": {
       "description": "Figma est un outil de conception d'interfaces collaboratif qui permet aux équipes de concevoir, prototyper et développer des produits ensemble en temps réel. Entreprise indépendante dont le siège est à San Francisco, Figma est devenu la référence pour la conception UI/UX.",
@@ -229,6 +237,10 @@
       "description": "Perplexity est un moteur de réponses alimenté par l'IA qui combine des modèles de langage avec la recherche web en temps réel pour fournir des réponses précises et sourcées. Fondée en 2022, elle réinvente la façon dont les gens découvrent et comprennent l'information en ligne.",
       "philosophy": "Épuré, clair et volontairement sobre. L'identité de Perplexity privilégie le contenu sur l'apparence, utilisant une palette turquoise distinctive et un symbole géométrique pour communiquer précision et fiabilité dans la recherche pilotée par l'IA."
     },
+    "phantom": {
+      "description": "Phantom est un portefeuille crypto multichain conçu pour rendre les cryptomonnaies sûres et faciles à utiliser pour tous. Fondé en 2021 par Brandon Millman, Chris Kalani et Francesco Agosti, Phantom prend en charge Solana, Ethereum, Bitcoin, Base, Polygon et Sui, au service de plus de 20 millions d'utilisateurs avec une interface intuitive pour gérer les actifs numériques, les NFTs et la DeFi.",
+      "philosophy": "L'identité de Phantom est centrée sur rendre la crypto accessible et conviviale pour tous. La mascotte fantôme emblématique et la palette violette vibrante véhiculent une approche chaleureuse dans un espace souvent perçu comme complexe, tandis que la typographie personnalisée conçue par F37 renforce la confiance et la clarté à chaque point de contact."
+    },
     "pinterest": {
       "description": "Pinterest est une plateforme de découverte visuelle et de signets où les utilisateurs trouvent et enregistrent des idées créatives — des recettes et la décoration intérieure à la mode et aux projets DIY. Fondée en 2010, elle sert plus de 550 millions d'utilisateurs actifs mensuels en tant que moteur d'inspiration personnalisé alimenté par la technologie de recherche visuelle.",
       "philosophy": "L'identité de marque de Pinterest est centrée sur son emblématique badge rouge — un 'P' stylisé en forme d'épingle — symbolisant l'acte d'épingler et de sauvegarder l'inspiration. La typographie personnalisée Pinterest Sans de Grilli Type équilibre chaleur et clarté moderne, conçue pour laisser les images épinglées briller tout en maintenant une voix de marque distinctive et accessible."
@@ -240,6 +252,10 @@
     "polar": {
       "description": "Polar est une plateforme open source de facturation et de monétisation conçue pour les développeurs et les entreprises d'IA. Basée à San Francisco, Polar permet aux entreprises de mettre en place une facturation à l'usage, des abonnements SaaS et des modèles de tarification flexibles avec une approche axée sur les développeurs.",
       "philosophy": "L'identité de Polar repose sur la simplicité orientée développeur et la transparence open source. La marque utilise une marque géométrique épurée et une palette bleue froide pour véhiculer confiance et précision technique."
+    },
+    "pump-fun": {
+      "description": "pump.fun est une plateforme basée sur Solana qui permet à quiconque de créer et d'échanger des meme coins instantanément grâce à un mécanisme de courbe de liaison. Lancée en janvier 2024, elle est devenue l'une des plateformes les plus populaires de l'écosystème Solana.",
+      "philosophy": "L'identité de pump.fun est centrée sur l'iconique capsule pharmaceutique — un symbole ludique représentant le frisson spéculatif du trading de meme coins. La palette de couleurs vert menthe et vert forêt évoque l'énergie, la croissance et l'écosystème Solana."
     },
     "railway": {
       "description": "Railway est une plateforme cloud intelligente tout-en-un pour déployer des applications web, des serveurs et des bases de données avec mise à l'échelle automatique, surveillance et sécurité. Fondée en 2020, Railway simplifie la gestion d'infrastructure avec des fonctionnalités telles que les canevas visuels, l'autoconfiguration à partir du code et l'observabilité intégrée — au service de plus de 2,5 millions de développeurs dans le monde.",
@@ -317,6 +333,10 @@
       "description": "Uber est une plateforme technologique mondiale qui met en relation passagers et chauffeurs, proposant des services de VTC, de livraison de repas, de transport de fret et de micro-mobilité. Fondée en 2009, Uber opère dans plus de 70 pays et a fondamentalement transformé le transport urbain.",
       "philosophy": "L'identité d'Uber repose sur une simplicité audacieuse et une reconnaissance mondiale. Le logotype monochrome et la typographie Uber Move reflètent un engagement envers la clarté, l'efficacité et une mobilité urbaine fluide."
     },
+    "uniswap": {
+      "description": "Uniswap est le plus grand exchange décentralisé (DEX) construit sur Ethereum, permettant des échanges de tokens sans intermédiaire grâce à un protocole de teneur de marché automatisé. Fondé en 2018 par Hayden Adams à New York, Uniswap a été le pionnier du modèle AMM et a traité plus de 3 000 milliards de dollars en volume d'échanges.",
+      "philosophy": "L'identité d'Uniswap est construite autour de sa mascotte licorne emblématique et de sa palette rose vibrante, symbolisant la nature magique et sans friction de l'échange décentralisé de tokens. Le branding à la fois ludique et sophistiqué reflète la mission du protocole de rendre les marchés financiers ouverts, transparents et accessibles à tous."
+    },
     "vercel": {
       "description": "Vercel est une plateforme cloud pour les développeurs frontend qui permet aux équipes de construire, déployer et faire évoluer des applications web sans configuration. Fondée en 2015, Vercel est la créatrice de Next.js et du système de design Geist.",
       "philosophy": "L'identité de marque de Vercel est centrée sur l'expérience développeur et la puissance du frontend. Sa palette noir et blanc et son iconique symbole triangulaire communiquent vitesse, précision et l'avant-garde du développement web."
@@ -381,68 +401,6 @@
     "exploreFamily": "Ouvrir cette famille de couleurs dans l’explorateur",
     "noBrands": "Aucune marque trouvée avec cette couleur.",
     "title": "Marques {color}"
-  },
-  "colorExplorer": {
-    "addHexes": "Ajouter des couleurs",
-    "addToPalette": "Ajouter à la palette",
-    "allColors": "Toutes les couleurs",
-    "allIndustries": "Tous les secteurs",
-    "clearPalette": "Effacer la palette",
-    "closestColorsTitle": "Couleurs les plus proches du catalogue",
-    "colorContextDescription": "Voyez chaque marque qui utilise l’échantillon inspecté et la façon dont elle l’emploie.",
-    "colorContextEmptyDescription": "Choisissez une couleur depuis l’explorateur ou votre palette pour voir les notes d’usage par marque.",
-    "colorContextEmptyTitle": "Inspecter un échantillon",
-    "colorContextTitle": "Contexte couleur",
-    "coverage": "{count} couvertes",
-    "ctaDescription": "Comparez chaque échantillon {color} entre les marques et construisez une palette correspondante.",
-    "ctaLabel": "Ouvrir l’explorateur",
-    "description": "Choisissez 2 à 5 couleurs pour trouver des marques aux palettes proches.",
-    "exact": "Exact",
-    "exactCount": "{count} exactes",
-    "eyebrow": "Intelligence de palette",
-    "family": "Famille",
-    "familyCount": "{count} famille",
-    "familyFilterDescription": "Utilisez une ou plusieurs familles pour réduire la grille avant de composer une palette.",
-    "familyFilterTitle": "Filtrer les couleurs",
-    "familySwatchCount": "{count} échantillons",
-    "heroCardDescription": "Cliquez sur des échantillons pour créer une palette, puis comparez les correspondances exactes et par famille dans tout le catalogue.",
-    "heroCardTitle": "Trouver des marques par palette",
-    "heroHint": "Choisissez 2 à 5 couleurs pour classer des marques proches.",
-    "industryFilterLabel": "Secteur",
-    "inspectColor": "Inspecter {hex}",
-    "manualHexHelp": "Collez jusqu’à 5 couleurs hexadécimales séparées par des virgules, espaces ou retours à la ligne.",
-    "manualHexPlaceholder": "#4285F4, #EA4335, #FBBC05",
-    "matchCount": "{count} marques correspondantes",
-    "matchingBrandsDescription": "Les marques sont classées d’abord par correspondance exacte, puis par proximité de famille.",
-    "matchingBrandsEmptyDescription": "Essayez avec moins de couleurs ou mélangez davantage de familles.",
-    "matchingBrandsEmptyTitle": "Aucune correspondance proche",
-    "matchingBrandsIdleDescription": "Une fois vos couleurs choisies, les marques correspondantes apparaîtront ici avec les correspondances exactes et par famille.",
-    "matchingBrandsIdleTitle": "Composez une palette pour classer les marques",
-    "matchingBrandsTitle": "Marques correspondantes",
-    "metaDescription": "Composez une palette et trouvez des marques avec des systèmes colorés similaires sur Loftlyy.",
-    "metaTitle": "Explorateur de couleurs | Loftlyy",
-    "missing": "Manquantes",
-    "moreBrands": "+{count} de plus",
-    "paletteBuilderDescription": "Les couleurs sélectionnées restent dans l’URL pour que vous puissiez partager ou recharger cette vue.",
-    "paletteBuilderTitle": "Votre palette",
-    "paletteEmptyDescription": "Sélectionnez 2 à 5 couleurs pour classer les marques aux palettes proches.",
-    "paletteEmptyTitle": "Choisissez des couleurs pour commencer",
-    "paletteLimit": "Jusqu’à {count} couleurs",
-    "removeColor": "Retirer {hex}",
-    "removeFromPalette": "Retirer de la palette",
-    "score": "Score {count}",
-    "sortAlphabetical": "A–Z",
-    "sortBest": "Meilleur match",
-    "sortExact": "Plus exactes",
-    "starterSwatchesDescription": "Commencez avec les couleurs les plus utiles, puis affinez avec les filtres.",
-    "starterSwatchesTitle": "Échantillons de départ",
-    "stats": {
-      "brands": "Marques",
-      "colorEntries": "Entrées couleur",
-      "uniqueColors": "Couleurs uniques"
-    },
-    "title": "Explorateur de couleurs",
-    "usedByBrands": "Utilisé par {count} marques"
   },
   "colorFamilies": {
     "blue": "Bleu",
@@ -514,6 +472,7 @@
     "agents": "Agents",
     "ai": "IA",
     "ai-safety": "Sécurité de l'IA",
+    "answer-engine": "Moteur de Réponses",
     "api": "API",
     "app-builder": "Créateur d'apps",
     "apparel": "Vêtements",
@@ -535,10 +494,12 @@
     "bookmarking": "Signets",
     "browser": "Navigateur",
     "camera": "Appareil photo",
+    "cdn": "CDN",
     "chatgpt": "ChatGPT",
     "claude": "Claude",
     "clean-energy": "Énergie Propre",
     "cloud": "Cloud",
+    "cloud-infrastructure": "Infrastructure Cloud",
     "code-editor": "Éditeur de Code",
     "code-hosting": "Hébergement de Code",
     "coffee": "Café",
@@ -556,6 +517,7 @@
     "cryptocurrency": "Cryptomonnaie",
     "css": "CSS",
     "currency": "Devise",
+    "cybersecurity": "Cybersécurité",
     "data-center": "Centre de Données",
     "database": "Base de données",
     "debugging": "Débogage",
@@ -568,6 +530,7 @@
     "devops": "DevOps",
     "discussion": "Discussion",
     "displays": "Écrans",
+    "dns": "DNS",
     "documentation": "Documentation",
     "e-commerce": "Commerce Électronique",
     "ecosystem": "Écosystème",
@@ -577,6 +540,7 @@
     "encryption": "Chiffrement",
     "entertainment": "Divertissement",
     "ephemeral": "Éphémère",
+    "exchange": "Échange",
     "experiences": "Expériences",
     "fashion": "Mode",
     "fast-food": "Restauration rapide",
@@ -617,6 +581,7 @@
     "markdown": "Markdown",
     "marketplace": "Place de marché",
     "meetings": "Réunions",
+    "meme-coins": "Meme Coins",
     "messaging": "Messagerie",
     "metaverse": "Métavers",
     "microblogging": "Microblogging",
@@ -627,6 +592,7 @@
     "money-transfer": "Transferts d'argent",
     "monitoring": "Surveillance",
     "movies": "Films",
+    "multichain": "Multichaîne",
     "multiplayer": "Multijoueur",
     "music": "Musique",
     "news": "Actualités",
@@ -656,11 +622,13 @@
     "security": "Sécurité",
     "shopping": "Shopping",
     "short-form-video": "Vidéo Courte",
+    "smart-contracts": "Contrats Intelligents",
     "social": "Social",
     "social-media": "Réseaux Sociaux",
     "social-network": "Réseau Social",
     "soft-drinks": "Boissons Gazeuses",
     "software": "Logiciel",
+    "solana": "Solana",
     "sports": "Sports",
     "sportswear": "Vêtements de sport",
     "streaming": "Streaming",
@@ -669,6 +637,7 @@
     "sustainability": "Durabilité",
     "television": "Télévision",
     "templates": "Modèles",
+    "token-launch": "Lancement de Token",
     "transportation": "Transport",
     "travel": "Voyage",
     "ui-components": "Composants UI",
@@ -681,10 +650,10 @@
     "visual-discovery": "Découverte Visuelle",
     "voice-ai": "IA Vocale",
     "voice-chat": "Chat vocal",
+    "wallet": "Portefeuille",
     "web3": "Web3",
     "workplace": "Lieu de Travail",
-    "workspace": "Espace de Travail",
-    "answer-engine": "Moteur de Réponses"
+    "workspace": "Espace de Travail"
   },
   "typographyPage": {
     "description": "Explorez {count} marques utilisant des polices {style}",
@@ -697,5 +666,28 @@
     "sans-serif": "Sans-Serif",
     "script": "Script",
     "serif": "Serif"
+  },
+  "compare": {
+    "title": "Comparer les Marques",
+    "metaTitle": "Comparer les Marques | Loftlyy",
+    "metaDescription": "Comparez les identités de marque côte à côte — couleurs, typographie et détails de design",
+    "description": "Sélectionnez 2-3 marques pour comparer leurs identités visuelles",
+    "addBrand": "Ajouter une marque",
+    "addAnother": "Ajouter une autre marque",
+    "optional": "optionnel",
+    "removeBrand": "Supprimer la marque",
+    "clearAll": "Tout effacer",
+    "searchBrands": "Rechercher des marques à comparer...",
+    "noBrandsFound": "Aucune marque trouvée",
+    "maxReached": "Maximum de 3 marques atteint",
+    "quickStats": "Statistiques",
+    "colorsCount": "{count} couleurs",
+    "fontsCount": "{count} polices",
+    "founded": "Fondée",
+    "headquarters": "Siège",
+    "shareComparison": "Partager",
+    "linkCopied": "Lien copié !",
+    "emptyTitle": "Choisir des marques à comparer",
+    "emptyDescription": "Choisissez 2-3 marques pour voir leurs identités visuelles comparées"
   }
 }

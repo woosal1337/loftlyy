@@ -19,11 +19,9 @@
     "allBrands": "모든 브랜드",
     "categories": "카테고리",
     "clearFilters": "모두 지우기",
-    "colorExplorer": "컬러 익스플로러",
     "colorFamily": "색상",
     "colorResults": "색상 결과",
     "explore": "탐색",
-    "exploreColors": "{count}개의 고유 스와치",
     "filters": "필터",
     "fontResults": "폰트 결과",
     "industry": "산업",
@@ -35,7 +33,8 @@
     "searchPlaceholder": "HEX, 폰트 또는 키워드로 검색",
     "styleTags": "스타일",
     "theme": "테마",
-    "typographyStyle": "타이포그래피"
+    "typographyStyle": "타이포그래피",
+    "compareBrands": "비교"
   },
   "brand": {
     "assets": "에셋",
@@ -66,7 +65,8 @@
     "similarBrands": "유사한 브랜드",
     "typography": "타이포그래피",
     "viewGuidelines": "공식 브랜드 가이드라인 보기",
-    "visitWebsite": "웹사이트 방문"
+    "visitWebsite": "웹사이트 방문",
+    "compareBrand": "비교"
   },
   "brands": {
     "21st": {
@@ -121,6 +121,10 @@
       "description": "Clerk는 웹 애플리케이션에 안전한 회원가입, 로그인 및 사용자 프로필을 추가하기 위한 드롭인 UI 컴포넌트, API 및 관리자 대시보드를 제공하는 인증 및 사용자 관리 플랫폼입니다. 2019년 샌프란시스코에서 설립되었으며, 개발자가 수개월이 아닌 수분 만에 완전한 인증 플로우를 구현할 수 있도록 합니다.",
       "philosophy": "Clerk의 브랜드 아이덴티티는 인증에 대한 개발자 우선 접근 방식을 반영하며, 단순함과 신뢰를 강조합니다. 다크 팔레트와 퍼플 액센트의 깔끔하고 미니멀한 미학은 기술적 정교함을 전달하면서 복잡한 보안 인프라를 친근하고 현대적으로 느끼게 합니다."
     },
+    "cloudflare": {
+      "description": "Cloudflare는 모든 규모의 기업에 광범위한 네트워크 서비스를 제공하여 더 안전하고 빠르게 만드는 글로벌 클라우드 플랫폼입니다. 2009년 샌프란시스코에서 설립된 Cloudflare는 세계 최대 규모의 네트워크 중 하나를 운영하며, 수백만 개의 웹사이트를 지원하고 월 수조 건의 요청을 처리합니다.",
+      "philosophy": "Cloudflare의 브랜드 아이덴티티는 더 나은 인터넷 구축을 돕겠다는 사명을 반영합니다. 상징적인 구름과 빛의 마크는 따뜻한 오렌지와 골드 톤으로 에너지, 신뢰성, 온기를 전달하며, 깔끔한 산세리프 워드마크는 기술적 정밀함과 친근함을 표현합니다."
+    },
     "cluely": {
       "description": "Cluely는 회의, 면접, 영업 전화, 코딩, 글쓰기 전반에 걸쳐 실시간으로 답변과 제안을 제공하는 AI 오버레이입니다. 중요한 순간을 위해 설계되었으며, 화면에서 보이지 않게 작동하고 대규모 언어 모델을 활용하여 사용자가 최고의 성과를 낼 수 있도록 지원합니다.",
       "philosophy": "깔끔하고 전문적이며 조용한 자신감. Cluely의 아이덴티티는 부드러운 라벤더 톤과 깊은 차콜을 결합하여, 중요한 대화에서 보이지 않게 도와주는 도구에 어울리는 신뢰성과 신중함을 표현합니다."
@@ -144,6 +148,10 @@
     "elevenlabs": {
       "description": "ElevenLabs는 사실적인 텍스트 음성 변환, 음성 복제, 대화형 AI를 전문으로 하는 AI 오디오 연구 기업입니다. 2022년에 설립되어 크리에이터와 개발자가 74개 언어로 자연스러운 감정과 억양을 담은 생생한 음성을 생성할 수 있는 플랫폼을 제공합니다.",
       "philosophy": "ElevenLabs의 브랜드 아이덴티티는 연구 중심의 기반을 상징하는 흑백 팔레트의 극도의 미니멀리즘 위에 구축되어 있습니다. 상징적인 이중 수직선은 숫자 11을 추상화하면서 동시에 일시정지 버튼을 연상시키며, 오디오 기술과 시각적 정체성 사이를 우아한 단순함으로 연결합니다."
+    },
+    "ethereum": {
+      "description": "이더리움은 스마트 계약과 분산형 애플리케이션을 가능하게 하는 탈중앙화 오픈소스 블록체인 플랫폼입니다. 비탈릭 부테린, 개빈 우드 등이 공동 설립했으며, 2015년 네트워크가 가동되어 두 번째로 큰 암호화폐 생태계를 지원하며 DeFi, NFT, Web3의 기반 인프라로 기능합니다.",
+      "philosophy": "이더리움의 아이덴티티는 개방적이고 탈중앙화된 월드 컴퓨터로서의 사명을 반영합니다. 상징적인 다이아몬드 로고마크는 강함, 명확함, 글로벌 플랫폼의 다면적 특성을 나타내며, 겹겹이 쌓인 면으로 깊이와 투명성을 전달하고, 차분한 퍼플-블루 팔레트는 신뢰, 안정성, 기술적 정교함을 상징합니다."
     },
     "figma": {
       "description": "Figma는 팀이 실시간으로 함께 디자인하고 프로토타입을 만들며 제품을 개발할 수 있게 해주는 협업형 인터페이스 디자인 도구입니다. 샌프란시스코에 본사를 둔 독립 기업으로서 UI/UX 디자인 업계의 표준이 되었습니다.",
@@ -229,6 +237,10 @@
       "description": "Perplexity는 대규모 언어 모델과 실시간 웹 검색을 결합하여 정확하고 출처가 명시된 답변을 제공하는 AI 기반 답변 엔진입니다. 2022년에 설립되어 사람들이 온라인에서 정보를 발견하고 이해하는 방식을 재정의하고 있습니다.",
       "philosophy": "깔끔하고 명확하며 의도적으로 절제된. Perplexity의 아이덴티티는 장식보다 콘텐츠를 우선시하며, 독특한 터쿼이즈 팔레트와 기하학적 심볼로 AI 기반 검색에서의 정밀함과 신뢰성을 전달합니다."
     },
+    "phantom": {
+      "description": "Phantom은 모든 사람을 위해 암호화폐를 안전하고 사용하기 쉽게 만들기 위해 설계된 멀티체인 암호화 지갑입니다. 2021년 Brandon Millman, Chris Kalani, Francesco Agosti가 설립한 Phantom은 Solana, Ethereum, Bitcoin, Base, Polygon, Sui를 지원하며, 2,000만 명 이상의 사용자에게 디지털 자산, NFT 및 DeFi를 관리하기 위한 직관적인 인터페이스를 제공합니다.",
+      "philosophy": "Phantom의 정체성은 암호화폐를 모든 사람에게 접근 가능하고 친근하게 만드는 데 중점을 두고 있습니다. 상징적인 유령 마스코트와 생생한 퍼플 팔레트는 종종 복잡하게 인식되는 공간에서 친근함을 전달하며, F37이 디자인한 맞춤 서체는 모든 접점에서 신뢰와 명확성을 강화합니다."
+    },
     "pinterest": {
       "description": "Pinterest는 레시피와 인테리어부터 패션, DIY 프로젝트까지 창의적인 아이디어를 발견하고 저장하는 비주얼 디스커버리 및 북마크 플랫폼입니다. 2010년에 설립되어 비주얼 검색 기술로 구동되는 개인화된 영감 엔진으로 5억 5천만 명 이상의 월간 활성 사용자에게 서비스를 제공합니다.",
       "philosophy": "Pinterest의 브랜드 아이덴티티는 핀으로 고정하고 영감을 저장하는 행위를 상징하는 양식화된 'P' 핀 형태의 시그니처 레드 배지를 중심으로 합니다. Grilli Type의 커스텀 서체 Pinterest Sans는 따뜻함과 현대적 명료함을 균형 있게 조화시켜, 핀된 이미지가 돋보이도록 하면서 독특하고 친근한 브랜드 보이스를 유지하도록 디자인되었습니다."
@@ -240,6 +252,10 @@
     "polar": {
       "description": "Polar는 개발자와 AI 기업을 위해 설계된 오픈소스 빌링 및 수익화 플랫폼입니다. 샌프란시스코에 본사를 둔 Polar는 개발자 우선 접근 방식으로 사용량 기반 빌링, SaaS 구독, 유연한 가격 모델 구현을 가능하게 합니다.",
       "philosophy": "Polar의 정체성은 개발자 우선의 간결함과 오픈소스 투명성에 뿌리를 두고 있습니다. 깔끔한 기하학적 마크와 시원한 블루 팔레트로 신뢰와 기술적 정밀함을 전달합니다."
+    },
+    "pump-fun": {
+      "description": "pump.fun은 본딩 커브 메커니즘을 통해 누구나 밈 코인을 즉시 생성하고 거래할 수 있는 솔라나 기반 플랫폼입니다. 2024년 1월에 출시되어 솔라나 생태계에서 가장 인기 있는 플랫폼 중 하나가 되었습니다.",
+      "philosophy": "pump.fun의 정체성은 상징적인 약용 캡슐을 중심으로 구축되어 있습니다. 밈 코인 거래의 투기적 스릴을 나타내는 재미있는 상징입니다. 민트 그린과 다크 포레스트 색상 팔레트는 에너지, 성장, 솔라나 생태계를 상징합니다."
     },
     "railway": {
       "description": "Railway는 자동 확장, 모니터링, 보안 기능을 갖춘 웹 애플리케이션, 서버, 데이터베이스를 배포할 수 있는 올인원 지능형 클라우드 플랫폼입니다. 2020년에 설립된 Railway는 비주얼 캔버스, 코드 기반 자동 구성, 통합 관측성 등의 기능으로 인프라 관리를 간소화하며, 전 세계 250만 명 이상의 개발자에게 서비스를 제공합니다.",
@@ -317,6 +333,10 @@
       "description": "Uber는 승객과 운전자를 연결하는 글로벌 기술 플랫폼으로, 차량 호출, 음식 배달, 화물 운송 및 마이크로 모빌리티 서비스를 제공합니다. 2009년에 설립되어 70개 이상의 국가에서 운영되며 도시 교통을 근본적으로 변화시켰습니다.",
       "philosophy": "Uber의 아이덴티티는 대담한 단순함과 글로벌 인지도를 기반으로 합니다. 단색 워드마크와 맞춤 서체 Uber Move는 명확성, 효율성, 원활한 도시 이동성에 대한 헌신을 반영합니다."
     },
+    "uniswap": {
+      "description": "유니스왑은 이더리움 기반의 최대 탈중앙화 거래소(DEX)로, 자동화된 마켓 메이커 프로토콜을 통해 신뢰가 필요 없는 토큰 스왑을 가능하게 합니다. 2018년 헤이든 아담스에 의해 뉴욕에서 설립되었으며, AMM 모델의 선구자로서 3조 달러 이상의 거래량을 처리해 왔습니다.",
+      "philosophy": "유니스왑의 아이덴티티는 상징적인 유니콘 마스코트와 선명한 핑크 색상 팔레트를 중심으로 구축되어 있으며, 탈중앙화 토큰 교환의 마법 같고 마찰 없는 본질을 상징합니다. 장난스러우면서도 세련된 브랜딩은 금융 시장을 개방적이고 투명하며 모두가 접근할 수 있도록 만들겠다는 프로토콜의 사명을 반영합니다."
+    },
     "vercel": {
       "description": "Vercel은 프론트엔드 개발자를 위한 클라우드 플랫폼으로, 팀이 별도 설정 없이 웹 애플리케이션을 구축, 배포, 확장할 수 있게 합니다. 2015년에 설립되었으며, Next.js와 Geist 디자인 시스템의 제작사입니다.",
       "philosophy": "Vercel의 브랜드 아이덴티티는 개발자 경험과 프론트엔드의 힘에 초점을 맞춥니다. 강한 흑백 팔레트와 상징적인 삼각형 심볼은 속도, 정밀함, 웹 개발의 최전선을 전달합니다."
@@ -381,68 +401,6 @@
     "exploreFamily": "이 색상 계열을 컬러 익스플로러에서 열기",
     "noBrands": "이 색상의 브랜드를 찾을 수 없습니다.",
     "title": "{color} 브랜드"
-  },
-  "colorExplorer": {
-    "addHexes": "색상 추가",
-    "addToPalette": "팔레트에 추가",
-    "allColors": "모든 색상",
-    "allIndustries": "모든 산업",
-    "clearPalette": "팔레트 지우기",
-    "closestColorsTitle": "카탈로그의 가까운 색상",
-    "colorContextDescription": "현재 보고 있는 스와치를 어떤 브랜드가 어떻게 사용하는지 확인하세요.",
-    "colorContextEmptyDescription": "익스플로러나 팔레트에서 색상을 선택하면 브랜드별 사용 메모를 볼 수 있습니다.",
-    "colorContextEmptyTitle": "스와치 살펴보기",
-    "colorContextTitle": "색상 맥락",
-    "coverage": "{count}개 커버",
-    "ctaDescription": "{color} 스와치를 브랜드 전반에서 비교하고 어울리는 팔레트를 만드세요.",
-    "ctaLabel": "익스플로러 열기",
-    "description": "Loftlyy의 모든 큐레이션된 브랜드 색상을 탐색하세요. 계열별로 필터링하고 실제 사용 맥락을 확인하며, 비슷한 색상 시스템을 가진 브랜드를 찾기 위한 팔레트를 만들 수 있습니다.",
-    "exact": "정확 일치",
-    "exactCount": "{count}개 정확",
-    "eyebrow": "팔레트 인텔리전스",
-    "family": "계열",
-    "familyCount": "{count}개 계열",
-    "familyFilterDescription": "하나 이상의 계열을 사용해 팔레트를 만들기 전에 보기를 좁힐 수 있습니다.",
-    "familyFilterTitle": "색상 계열로 필터링",
-    "familySwatchCount": "{count}개의 스와치",
-    "heroCardDescription": "스와치를 클릭해 팔레트를 만들고, 카탈로그 전반에서 정확한 일치와 계열 기반 일치를 비교하세요.",
-    "heroCardTitle": "팔레트로 브랜드 찾기",
-    "heroHint": "스와치를 골라 비슷한 브랜드 찾기를 시작하세요.",
-    "industryFilterLabel": "산업",
-    "inspectColor": "{hex} 살펴보기",
-    "manualHexHelp": "쉼표, 공백, 줄바꿈으로 구분해 최대 5개의 hex 색상을 붙여넣을 수 있습니다.",
-    "manualHexPlaceholder": "#4285F4, #EA4335, #FBBC05",
-    "matchCount": "{count}개의 일치하는 브랜드",
-    "matchingBrandsDescription": "브랜드는 먼저 정확한 hex 일치, 그다음 더 넓은 계열 커버리지 기준으로 정렬됩니다.",
-    "matchingBrandsEmptyDescription": "더 넓은 계열 조합을 시도하거나 너무 구체적인 스와치를 제거해 보세요.",
-    "matchingBrandsEmptyTitle": "일치하는 브랜드가 없습니다",
-    "matchingBrandsIdleDescription": "색상을 선택하면 정확 일치와 계열 일치가 포함된 브랜드가 여기 나타납니다.",
-    "matchingBrandsIdleTitle": "브랜드 순위를 보려면 팔레트를 만드세요",
-    "matchingBrandsTitle": "일치하는 브랜드",
-    "metaDescription": "Loftlyy의 모든 브랜드 색상을 탐색하고, 색상 계열로 필터링하고, 어울리는 브랜드 아이덴티티를 찾기 위한 팔레트를 만들 수 있습니다.",
-    "metaTitle": "컬러 익스플로러 | Loftlyy",
-    "missing": "부족",
-    "moreBrands": "+{count}개 더",
-    "paletteBuilderDescription": "선택한 색상은 URL에 유지되므로 이 화면을 공유하거나 다시 불러올 수 있습니다.",
-    "paletteBuilderTitle": "팔레트 빌더",
-    "paletteEmptyDescription": "왼쪽의 스와치를 클릭해 여기에 추가하세요. 최대 5가지 색상을 조합할 수 있습니다.",
-    "paletteEmptyTitle": "아직 팔레트가 없습니다",
-    "paletteLimit": "최대 {count}가지 색상",
-    "removeColor": "{hex} 제거",
-    "removeFromPalette": "팔레트에서 제거",
-    "score": "점수 {count}",
-    "sortAlphabetical": "A–Z",
-    "sortBest": "최적 일치",
-    "sortExact": "정확 일치순",
-    "starterSwatchesDescription": "가장 유용한 색부터 시작하고 필터로 더 좁혀 보세요.",
-    "starterSwatchesTitle": "시작용 스와치",
-    "stats": {
-      "brands": "브랜드",
-      "colorEntries": "색상 항목",
-      "uniqueColors": "고유 색상"
-    },
-    "title": "컬러 익스플로러",
-    "usedByBrands": "{count}개 브랜드에서 사용"
   },
   "colorFamilies": {
     "blue": "블루",
@@ -514,6 +472,7 @@
     "agents": "에이전트",
     "ai": "AI",
     "ai-safety": "AI 안전성",
+    "answer-engine": "답변 엔진",
     "api": "API",
     "app-builder": "앱 빌더",
     "apparel": "의류",
@@ -535,10 +494,12 @@
     "bookmarking": "북마크",
     "browser": "브라우저",
     "camera": "카메라",
+    "cdn": "CDN",
     "chatgpt": "ChatGPT",
     "claude": "Claude",
     "clean-energy": "클린 에너지",
     "cloud": "클라우드",
+    "cloud-infrastructure": "클라우드 인프라",
     "code-editor": "코드 편집기",
     "code-hosting": "코드 호스팅",
     "coffee": "커피",
@@ -556,6 +517,7 @@
     "cryptocurrency": "암호화폐",
     "css": "CSS",
     "currency": "통화",
+    "cybersecurity": "사이버 보안",
     "data-center": "데이터 센터",
     "database": "데이터베이스",
     "debugging": "디버깅",
@@ -568,6 +530,7 @@
     "devops": "DevOps",
     "discussion": "토론",
     "displays": "디스플레이",
+    "dns": "DNS",
     "documentation": "문서화",
     "e-commerce": "이커머스",
     "ecosystem": "생태계",
@@ -577,6 +540,7 @@
     "encryption": "암호화",
     "entertainment": "엔터테인먼트",
     "ephemeral": "일시적",
+    "exchange": "거래소",
     "experiences": "체험",
     "fashion": "패션",
     "fast-food": "패스트푸드",
@@ -617,6 +581,7 @@
     "markdown": "Markdown",
     "marketplace": "마켓플레이스",
     "meetings": "미팅",
+    "meme-coins": "밈 코인",
     "messaging": "메시징",
     "metaverse": "메타버스",
     "microblogging": "마이크로블로깅",
@@ -627,6 +592,7 @@
     "money-transfer": "송금",
     "monitoring": "모니터링",
     "movies": "영화",
+    "multichain": "멀티체인",
     "multiplayer": "멀티플레이어",
     "music": "음악",
     "news": "뉴스",
@@ -656,11 +622,13 @@
     "security": "보안",
     "shopping": "쇼핑",
     "short-form-video": "숏폼 동영상",
+    "smart-contracts": "스마트 계약",
     "social": "소셜",
     "social-media": "소셜 미디어",
     "social-network": "소셜 네트워크",
     "soft-drinks": "청량음료",
     "software": "소프트웨어",
+    "solana": "솔라나",
     "sports": "스포츠",
     "sportswear": "스포츠웨어",
     "streaming": "스트리밍",
@@ -669,6 +637,7 @@
     "sustainability": "지속가능성",
     "television": "텔레비전",
     "templates": "템플릿",
+    "token-launch": "토큰 런칭",
     "transportation": "교통",
     "travel": "여행",
     "ui-components": "UI 컴포넌트",
@@ -681,10 +650,10 @@
     "visual-discovery": "비주얼 디스커버리",
     "voice-ai": "음성 AI",
     "voice-chat": "음성 채팅",
+    "wallet": "지갑",
     "web3": "Web3",
     "workplace": "직장",
-    "workspace": "워크스페이스",
-    "answer-engine": "답변 엔진"
+    "workspace": "워크스페이스"
   },
   "typographyPage": {
     "description": "{style} 폰트를 사용하는 {count}개 브랜드 탐색",
@@ -697,5 +666,28 @@
     "sans-serif": "산세리프",
     "script": "스크립트",
     "serif": "세리프"
+  },
+  "compare": {
+    "title": "브랜드 비교",
+    "metaTitle": "브랜드 비교 | Loftlyy",
+    "metaDescription": "브랜드 아이덴티티를 나란히 비교 — 색상, 타이포그래피, 디자인 세부사항",
+    "description": "2-3개의 브랜드를 선택하여 비주얼 아이덴티티를 비교하세요",
+    "addBrand": "브랜드 추가",
+    "addAnother": "다른 브랜드 추가",
+    "optional": "선택사항",
+    "removeBrand": "브랜드 제거",
+    "clearAll": "모두 지우기",
+    "searchBrands": "비교할 브랜드 검색...",
+    "noBrandsFound": "브랜드를 찾을 수 없습니다",
+    "maxReached": "최대 3개 브랜드에 도달했습니다",
+    "quickStats": "요약",
+    "colorsCount": "{count} 색상",
+    "fontsCount": "{count} 폰트",
+    "founded": "설립",
+    "headquarters": "본사",
+    "shareComparison": "공유",
+    "linkCopied": "링크가 복사되었습니다!",
+    "emptyTitle": "비교할 브랜드 선택",
+    "emptyDescription": "2-3개의 브랜드를 선택하여 비주얼 아이덴티티를 비교하세요"
   }
 }

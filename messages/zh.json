@@ -19,11 +19,9 @@
     "allBrands": "所有品牌",
     "categories": "分类",
     "clearFilters": "全部清除",
-    "colorExplorer": "颜色探索器",
     "colorFamily": "颜色",
     "colorResults": "颜色结果",
     "explore": "探索",
-    "exploreColors": "{count} 个唯一色板",
     "filters": "筛选",
     "fontResults": "字体结果",
     "industry": "行业",
@@ -35,7 +33,8 @@
     "searchPlaceholder": "按 HEX、字体或关键词搜索",
     "styleTags": "风格",
     "theme": "主题",
-    "typographyStyle": "字体风格"
+    "typographyStyle": "字体风格",
+    "compareBrands": "比较"
   },
   "brand": {
     "assets": "资源",
@@ -66,7 +65,8 @@
     "similarBrands": "相似品牌",
     "typography": "字体",
     "viewGuidelines": "查看官方品牌指南",
-    "visitWebsite": "访问网站"
+    "visitWebsite": "访问网站",
+    "compareBrand": "比较"
   },
   "brands": {
     "21st": {
@@ -121,6 +121,10 @@
       "description": "Clerk 是一个身份认证和用户管理平台，提供即插即用的 UI 组件、API 和管理仪表板，用于在 Web 应用中添加安全的注册、登录和用户资料功能。2019 年在旧金山成立，Clerk 使开发者能够在数分钟而非数月内实现完整的认证流程。",
       "philosophy": "Clerk 的品牌形象体现了以开发者为中心的认证理念，强调简洁与信任。以深色调为主、紫色为点缀的干净极简美学传达出技术上的精致感，同时让复杂的安全基础设施显得平易近人且具有现代感。"
     },
+    "cloudflare": {
+      "description": "Cloudflare是一个全球云平台，为各种规模的企业提供广泛的网络服务，使其更安全、更快速。Cloudflare于2009年在旧金山成立，运营着世界上最大的网络之一，为数百万个网站提供支持，每月处理数万亿次请求。",
+      "philosophy": "Cloudflare的品牌标识反映了其帮助建设更好互联网的使命。标志性的云与光芒标志使用温暖的橙色和金色调传达能量、可靠性和温暖，而简洁的无衬线字体则传达技术精确性和亲和力。"
+    },
     "cluely": {
       "description": "Cluely是一款实时AI叠加工具，在会议、面试、销售电话、编程和写作中提供即时答案和建议。专为关键时刻打造，它在屏幕上以不可见的方式运行，由大语言模型驱动，帮助用户发挥最佳表现。",
       "philosophy": "简洁、专业且低调自信。Cluely的品牌形象将柔和的薰衣草色调与深邃的炭色相结合，为一款在重要对话中隐形辅助的工具传递可信赖与审慎的品质。"
@@ -144,6 +148,10 @@
     "elevenlabs": {
       "description": "ElevenLabs是一家专注于逼真文本转语音合成、语音克隆和对话式AI的人工智能音频研究公司。成立于2022年，该平台让创作者和开发者能够在74种语言中生成带有自然情感和语调的逼真语音。",
       "philosophy": "ElevenLabs的品牌形象建立在极致的极简主义之上——黑白配色彰显其以研究为驱动的根基。标志性的双竖线将数字十一抽象化，同时唤起暂停按钮的联想，以优雅的简洁在音频技术与视觉识别之间架起桥梁。"
+    },
+    "ethereum": {
+      "description": "以太坊是一个去中心化的开源区块链平台，支持智能合约和去中心化应用。由Vitalik Buterin、Gavin Wood等人共同创立，网络于2015年上线，支撑着第二大加密货币生态系统，是DeFi、NFT和Web3的基础设施。",
+      "philosophy": "以太坊的身份认同反映了其作为开放、去中心化世界计算机的使命。标志性的钻石图标——代表着力量、清晰和全球平台的多面性——通过层叠的切面传达深度和透明度，而柔和的紫蓝色调传递信任、稳定和技术精密。"
     },
     "figma": {
       "description": "Figma 是一款协作式界面设计工具，使团队能够实时共同设计、制作原型并开发产品。作为一家总部位于旧金山的独立公司，Figma 已成为 UI/UX 设计领域的行业标准。",
@@ -229,6 +237,10 @@
       "description": "Perplexity是一个AI驱动的答案引擎，将大型语言模型与实时网络搜索相结合，提供准确且带有引用的回答。成立于2022年，它重新定义了人们在线发现和理解信息的方式。",
       "philosophy": "简洁、清晰、有意克制。Perplexity的品牌标识将内容置于形式之上，通过独特的青绿色调色板和几何符号传达AI驱动搜索中的精准与可信赖。"
     },
+    "phantom": {
+      "description": "Phantom是一款多链加密钱包，旨在让每个人都能安全、轻松地使用加密货币。Phantom由Brandon Millman、Chris Kalani和Francesco Agosti于2021年创立，支持Solana、Ethereum、Bitcoin、Base、Polygon和Sui，为超过2000万用户提供直观的界面来管理数字资产、NFT和DeFi。",
+      "philosophy": "Phantom的品牌标识以让加密货币对每个人都友好且易于访问为核心。标志性的幽灵吉祥物和充满活力的紫色调色板在一个常被认为复杂的领域中传达了亲和力，而F37设计的定制字体则在每个接触点上强化了信心和清晰度。"
+    },
     "pinterest": {
       "description": "Pinterest是一个视觉发现和书签平台，用户可以在这里发现和保存创意灵感——从食谱和家居装饰到时尚和DIY项目。Pinterest成立于2010年，凭借视觉搜索技术驱动的个性化灵感引擎，为超过5.5亿月活跃用户提供服务。",
       "philosophy": "Pinterest的品牌标识以其标志性的红色徽章为核心——一个风格化的'P'图钉造型——象征着钉选和保存灵感的行为。由Grilli Type设计的定制字体Pinterest Sans在温暖感与现代清晰度之间取得平衡，旨在让钉选的图片脱颖而出，同时保持独特且平易近人的品牌调性。"
@@ -240,6 +252,10 @@
     "polar": {
       "description": "Polar是一个为开发者和AI公司设计的开源计费和变现平台。总部位于旧金山，Polar以开发者优先的理念，帮助企业实现基于用量的计费、SaaS订阅和灵活的定价模型。",
       "philosophy": "Polar的品牌形象根植于开发者优先的简洁性和开源透明度。品牌采用简洁的几何标志和冷色调蓝色调色板，传达信任感和技术精准度。"
+    },
+    "pump-fun": {
+      "description": "pump.fun是一个基于Solana的平台，通过联合曲线机制让任何人都能即时创建和交易模因币。2024年1月推出，已成为Solana生态系统中最受欢迎的平台之一。",
+      "philosophy": "pump.fun的品牌形象以标志性的药用胶囊为核心——一个富有趣味的符号，代表着模因币交易的投机刺激。薄荷绿和深森林绿的配色方案象征着活力、增长和Solana生态系统。"
     },
     "railway": {
       "description": "Railway是一个全能智能云平台，用于部署具有自动扩展、监控和安全功能的Web应用、服务器和数据库。Railway成立于2020年，通过可视化画布、代码自动配置和集成可观测性等功能简化基础设施管理，为全球超过250万开发者提供服务。",
@@ -317,6 +333,10 @@
       "description": "Uber是一个全球性技术平台，连接乘客与司机，提供网约车、外卖配送、货运和微出行服务。Uber成立于2009年，在70多个国家运营，从根本上改变了城市交通方式。",
       "philosophy": "Uber的品牌标识建立在大胆简约和全球认知度之上。单色文字标识和定制字体Uber Move体现了对清晰、高效和无缝城市出行的承诺。"
     },
+    "uniswap": {
+      "description": "Uniswap是建立在以太坊上的最大去中心化交易所（DEX），通过自动做市商协议实现无需信任的代币交换。2018年由Hayden Adams在纽约创立，Uniswap开创了AMM模式，已处理超过3万亿美元的交易量。",
+      "philosophy": "Uniswap的品牌识别以其标志性的独角兽吉祥物和充满活力的粉色调色板为核心，象征着去中心化代币交换的神奇和无摩擦本质。既活泼又精致的品牌形象反映了该协议的使命：让金融市场对所有人开放、透明和可访问。"
+    },
     "vercel": {
       "description": "Vercel 是一个面向前端开发者的云平台，使团队能够以零配置方式构建、部署并扩展 Web 应用。它创立于 2015 年，是 Next.js 和 Geist 设计系统的创造者。",
       "philosophy": "Vercel 的品牌识别聚焦于开发者体验以及前端的力量。其鲜明的黑白配色和标志性的三角形符号传达出速度、精确性以及 Web 开发的前沿感。"
@@ -381,68 +401,6 @@
     "exploreFamily": "在颜色探索器中打开这个颜色家族",
     "noBrands": "未找到此颜色的品牌。",
     "title": "{color}品牌"
-  },
-  "colorExplorer": {
-    "addHexes": "添加颜色",
-    "addToPalette": "添加到调色板",
-    "allColors": "全部颜色",
-    "allIndustries": "全部行业",
-    "clearPalette": "清空调色板",
-    "closestColorsTitle": "目录中最接近的颜色",
-    "colorContextDescription": "查看当前色板被哪些品牌使用，以及它们如何使用它。",
-    "colorContextEmptyDescription": "从探索器或你的调色板中选择一种颜色，即可查看按品牌整理的使用说明。",
-    "colorContextEmptyTitle": "查看一个色板",
-    "colorContextTitle": "颜色上下文",
-    "coverage": "覆盖 {count}",
-    "ctaDescription": "跨品牌比较每个 {color} 色板，并构建匹配的调色板。",
-    "ctaLabel": "打开探索器",
-    "description": "浏览 Loftlyy 中所有精选品牌颜色。按家族筛选，查看真实使用场景，并构建调色板来寻找拥有相似色彩系统的品牌。",
-    "exact": "精确",
-    "exactCount": "{count} 个精确",
-    "eyebrow": "调色板智能",
-    "family": "家族",
-    "familyCount": "{count} 个家族",
-    "familyFilterDescription": "使用一个或多个颜色家族，在构建调色板之前缩小浏览范围。",
-    "familyFilterTitle": "按颜色家族筛选",
-    "familySwatchCount": "{count} 个色板",
-    "heroCardDescription": "点击色板构建调色板，然后在整个目录中比较精确重合与颜色家族级别的匹配。",
-    "heroCardTitle": "按调色板寻找品牌",
-    "heroHint": "选择一个色板，开始寻找匹配品牌。",
-    "industryFilterLabel": "行业",
-    "inspectColor": "查看 {hex}",
-    "manualHexHelp": "可粘贴最多 5 个十六进制颜色，用逗号、空格或换行分隔。",
-    "manualHexPlaceholder": "#4285F4, #EA4335, #FBBC05",
-    "matchCount": "{count} 个匹配品牌",
-    "matchingBrandsDescription": "品牌会先按精确 hex 重合排序，再按更宽泛的颜色家族覆盖排序。",
-    "matchingBrandsEmptyDescription": "尝试更宽泛的颜色家族组合，或移除过于具体的色板。",
-    "matchingBrandsEmptyTitle": "没有匹配品牌",
-    "matchingBrandsIdleDescription": "选择颜色后，匹配的品牌会显示在这里，并包含精确匹配和家族匹配。",
-    "matchingBrandsIdleTitle": "构建调色板以排序品牌",
-    "matchingBrandsTitle": "匹配品牌",
-    "metaDescription": "浏览 Loftlyy 上的所有品牌颜色，按颜色家族筛选，并构建调色板以寻找相似的品牌视觉识别。",
-    "metaTitle": "颜色探索器 | Loftlyy",
-    "missing": "缺失",
-    "moreBrands": "另外 {count} 个",
-    "paletteBuilderDescription": "所选颜色会保留在 URL 中，方便你分享或重新加载这个视图。",
-    "paletteBuilderTitle": "调色板构建器",
-    "paletteEmptyDescription": "点击左侧任意色板即可添加到这里。你最多可以组合 5 种颜色。",
-    "paletteEmptyTitle": "还没有调色板",
-    "paletteLimit": "最多 {count} 种颜色",
-    "removeColor": "移除 {hex}",
-    "removeFromPalette": "从调色板移除",
-    "score": "得分 {count}",
-    "sortAlphabetical": "A–Z",
-    "sortBest": "最佳匹配",
-    "sortExact": "精确匹配优先",
-    "starterSwatchesDescription": "先从最有用的颜色开始，再用筛选继续细化。",
-    "starterSwatchesTitle": "起始色板",
-    "stats": {
-      "brands": "品牌",
-      "colorEntries": "颜色条目",
-      "uniqueColors": "唯一颜色"
-    },
-    "title": "颜色探索器",
-    "usedByBrands": "被 {count} 个品牌使用"
   },
   "colorFamilies": {
     "blue": "蓝色",
@@ -514,6 +472,7 @@
     "agents": "智能体",
     "ai": "人工智能",
     "ai-safety": "AI 安全",
+    "answer-engine": "答案引擎",
     "api": "API",
     "app-builder": "应用构建器",
     "apparel": "服装",
@@ -535,10 +494,12 @@
     "bookmarking": "书签",
     "browser": "浏览器",
     "camera": "相机",
+    "cdn": "CDN",
     "chatgpt": "ChatGPT",
     "claude": "Claude",
     "clean-energy": "清洁能源",
     "cloud": "云",
+    "cloud-infrastructure": "云基础设施",
     "code-editor": "代码编辑器",
     "code-hosting": "代码托管",
     "coffee": "咖啡",
@@ -556,6 +517,7 @@
     "cryptocurrency": "加密货币",
     "css": "CSS",
     "currency": "货币",
+    "cybersecurity": "网络安全",
     "data-center": "数据中心",
     "database": "数据库",
     "debugging": "调试",
@@ -568,6 +530,7 @@
     "devops": "DevOps",
     "discussion": "讨论",
     "displays": "显示器",
+    "dns": "DNS",
     "documentation": "文档",
     "e-commerce": "电子商务",
     "ecosystem": "生态系统",
@@ -577,6 +540,7 @@
     "encryption": "加密",
     "entertainment": "娱乐",
     "ephemeral": "即时消失",
+    "exchange": "交易所",
     "experiences": "体验",
     "fashion": "时尚",
     "fast-food": "快餐",
@@ -617,6 +581,7 @@
     "markdown": "Markdown",
     "marketplace": "平台市场",
     "meetings": "会议",
+    "meme-coins": "模因币",
     "messaging": "消息",
     "metaverse": "元宇宙",
     "microblogging": "微博客",
@@ -627,6 +592,7 @@
     "money-transfer": "汇款",
     "monitoring": "监控",
     "movies": "电影",
+    "multichain": "多链",
     "multiplayer": "多人游戏",
     "music": "音乐",
     "news": "新闻",
@@ -656,11 +622,13 @@
     "security": "安全",
     "shopping": "购物",
     "short-form-video": "短视频",
+    "smart-contracts": "智能合约",
     "social": "社交",
     "social-media": "社交媒体",
     "social-network": "社交网络",
     "soft-drinks": "软饮料",
     "software": "软件",
+    "solana": "Solana",
     "sports": "体育",
     "sportswear": "运动服饰",
     "streaming": "流媒体",
@@ -669,6 +637,7 @@
     "sustainability": "可持续性",
     "television": "电视",
     "templates": "模板",
+    "token-launch": "代币发射",
     "transportation": "交通",
     "travel": "旅行",
     "ui-components": "UI 组件",
@@ -681,10 +650,10 @@
     "visual-discovery": "视觉发现",
     "voice-ai": "语音AI",
     "voice-chat": "语音聊天",
+    "wallet": "钱包",
     "web3": "Web3",
     "workplace": "工作场所",
-    "workspace": "工作空间",
-    "answer-engine": "答案引擎"
+    "workspace": "工作空间"
   },
   "typographyPage": {
     "description": "探索{count}个使用{style}字体的品牌",
@@ -697,5 +666,28 @@
     "sans-serif": "无衬线体",
     "script": "手写体",
     "serif": "衬线体"
+  },
+  "compare": {
+    "title": "品牌比较",
+    "metaTitle": "品牌比较 | Loftlyy",
+    "metaDescription": "并排比较品牌标识 — 颜色、排版和设计细节",
+    "description": "选择2-3个品牌来比较它们的视觉标识",
+    "addBrand": "添加品牌",
+    "addAnother": "添加另一个品牌",
+    "optional": "可选",
+    "removeBrand": "移除品牌",
+    "clearAll": "清除全部",
+    "searchBrands": "搜索要比较的品牌...",
+    "noBrandsFound": "未找到品牌",
+    "maxReached": "已达到最多3个品牌",
+    "quickStats": "概览",
+    "colorsCount": "{count} 种颜色",
+    "fontsCount": "{count} 种字体",
+    "founded": "成立",
+    "headquarters": "总部",
+    "shareComparison": "分享",
+    "linkCopied": "链接已复制！",
+    "emptyTitle": "选择要比较的品牌",
+    "emptyDescription": "选择2-3个品牌来并排比较它们的视觉标识"
   }
 }

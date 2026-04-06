@@ -1,5 +1,7 @@
 import Image from "next/image"
 import { useTranslations } from "next-intl"
+import { IconArrowsShuffle2 } from "@tabler/icons-react"
+import { Link } from "@/i18n/navigation"
 import { cn, buildUtmUrl } from "@/lib/utils"
 import type { Brand } from "@/lib/types"
 
@@ -78,6 +80,14 @@ export function BrandHeader({
             </a>
           </>
         )}
+        <span className="text-neutral-400 dark:text-neutral-600">&middot;</span>
+        <Link
+          href={`/compare?brands=${brand.slug}`}
+          className="flex items-center gap-1 text-neutral-500 transition-colors hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-200"
+        >
+          <IconArrowsShuffle2 className="size-3" />
+          <span>{t("compareBrand")}</span>
+        </Link>
       </div>
     </section>
   )

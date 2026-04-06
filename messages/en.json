@@ -19,11 +19,9 @@
     "allBrands": "All Brands",
     "categories": "Categories",
     "clearFilters": "Clear all",
-    "colorExplorer": "Color Explorer",
     "colorFamily": "Color",
     "colorResults": "Color Results",
     "explore": "Explore",
-    "exploreColors": "{count} unique swatches",
     "filters": "Filters",
     "fontResults": "Font Results",
     "industry": "Industry",
@@ -35,7 +33,8 @@
     "searchPlaceholder": "Search by hex, font, or keyword",
     "styleTags": "Style",
     "theme": "Theme",
-    "typographyStyle": "Typography"
+    "typographyStyle": "Typography",
+    "compareBrands": "Compare"
   },
   "brand": {
     "assets": "Assets",
@@ -66,7 +65,8 @@
     "similarBrands": "Similar Brands",
     "typography": "Typography",
     "viewGuidelines": "View official brand guidelines",
-    "visitWebsite": "Visit Website"
+    "visitWebsite": "Visit Website",
+    "compareBrand": "Compare"
   },
   "brands": {
     "21st": {
@@ -121,6 +121,10 @@
       "description": "Clerk is an authentication and user management platform that provides drop-in UI components, APIs, and admin dashboards for adding secure sign-up, sign-in, and user profiles to web applications. Founded in 2019 in San Francisco, Clerk enables developers to implement complete authentication flows in minutes rather than months.",
       "philosophy": "Clerk's brand identity reflects a developer-first approach to authentication, emphasizing simplicity and trust. The clean, minimal aesthetic with a dark palette and purple accents conveys technical sophistication while making complex security infrastructure feel approachable and modern."
     },
+    "cloudflare": {
+      "description": "Cloudflare is a global cloud platform that provides a broad range of network services to businesses of all sizes, making them more secure and faster. Founded in 2009 in San Francisco, Cloudflare operates one of the world's largest networks, powering millions of websites and serving trillions of requests per month.",
+      "philosophy": "Cloudflare's brand identity reflects its mission to help build a better Internet. The iconic cloud-and-flare mark uses warm orange and gold tones to convey energy, reliability, and warmth, while the clean sans-serif wordmark communicates technical precision and approachability."
+    },
     "cluely": {
       "description": "Cluely is a real-time AI overlay that provides live answers and suggestions across meetings, interviews, sales calls, coding, and writing. Built for high-stakes moments, it operates invisibly on screen and is powered by large language models to help users perform at their best.",
       "philosophy": "Clean, professional, and quietly confident. Cluely's identity pairs soft lavender tones with deep charcoal, projecting trustworthiness and discretion for a tool designed to assist invisibly during high-stakes conversations."
@@ -144,6 +148,10 @@
     "elevenlabs": {
       "description": "ElevenLabs is an AI audio research company specializing in realistic text-to-speech synthesis, voice cloning, and conversational AI. Founded in 2022, the platform enables creators and developers to generate lifelike speech with natural emotion and intonation across 74 languages.",
       "philosophy": "ElevenLabs' brand identity is built on stark minimalism — a black-and-white palette that signals its research-driven foundation. The iconic double vertical lines abstract the number eleven while evoking a pause button, bridging the gap between audio technology and visual identity with elegant simplicity."
+    },
+    "ethereum": {
+      "description": "Ethereum is a decentralized, open-source blockchain platform that enables smart contracts and decentralized applications. Co-founded by Vitalik Buterin, Gavin Wood, and others, the network went live in 2015 and powers the second-largest cryptocurrency ecosystem, serving as foundational infrastructure for DeFi, NFTs, and Web3.",
+      "philosophy": "Ethereum's identity reflects its mission as an open, decentralized world computer. The iconic diamond logomark — representing strength, clarity, and the multifaceted nature of a global platform — uses layered facets to convey depth and transparency, while the muted purple-blue palette signals trust, stability, and technical sophistication."
     },
     "figma": {
       "description": "Figma is a collaborative interface design tool that enables teams to design, prototype, and develop products together in real time. An independent company headquartered in San Francisco, Figma has become the industry standard for UI/UX design, replacing traditional desktop tools with a browser-based platform.",
@@ -241,6 +249,10 @@
       "description": "Polar is an open-source billing and monetization platform designed for developers and AI companies. Headquartered in San Francisco, Polar enables businesses to implement usage-based billing, SaaS subscriptions, and flexible pricing models with a developer-first approach.",
       "philosophy": "Polar's identity is rooted in developer-first simplicity and open-source transparency. The brand uses a clean, geometric mark and a cool blue palette to convey trust and technical precision."
     },
+    "pump-fun": {
+      "description": "pump.fun is a Solana-based platform that enables anyone to create and trade meme coins instantly with a bonding curve mechanism. Launched in January 2024, it became one of the most popular platforms in the Solana ecosystem.",
+      "philosophy": "pump.fun's identity centers on the iconic pharmaceutical capsule — a playful symbol representing the speculative thrill of meme coin trading. The mint-green and dark-forest color palette evokes energy, growth, and the Solana ecosystem."
+    },
     "railway": {
       "description": "Railway is an all-in-one intelligent cloud platform for deploying web applications, servers, and databases with automatic scaling, monitoring, and security. Founded in 2020, Railway simplifies infrastructure management with features like visual canvases, auto-configuration from code, and integrated observability — serving over 2.5 million developers worldwide.",
       "philosophy": "Railway's brand identity is built around reducing shipping friction to zero. Its dark, developer-centric aesthetic with a distinctive train symbol embodies the idea of infrastructure as a journey — fast, reliable, and always moving forward toward a new golden age of software."
@@ -317,6 +329,10 @@
       "description": "Uber is a global technology platform that connects riders with drivers, offering ride-hailing, food delivery, freight transportation, and micro-mobility services. Founded in 2009, Uber operates in over 70 countries and has fundamentally transformed urban transportation.",
       "philosophy": "Uber's identity is built on bold simplicity and global recognition. The monochrome wordmark and custom Uber Move typeface reflect a commitment to clarity, efficiency, and seamless urban mobility."
     },
+    "uniswap": {
+      "description": "Uniswap is the largest decentralized exchange (DEX) built on Ethereum, enabling trustless token swaps through an automated market maker protocol. Founded in 2018 by Hayden Adams in New York City, Uniswap pioneered the AMM model and has facilitated over $3 trillion in trading volume.",
+      "philosophy": "Uniswap's identity is built around its iconic unicorn mascot and vibrant pink palette, symbolizing the magical, frictionless nature of decentralized token exchange. The playful yet sophisticated branding reflects the protocol's mission to make financial markets open, transparent, and accessible to everyone."
+    },
     "vercel": {
       "description": "Vercel is a cloud platform for frontend developers that enables teams to build, deploy, and scale web applications with zero configuration. Founded in 2015, Vercel is the creator of Next.js and the Geist design system.",
       "philosophy": "Vercel's brand identity centers on developer experience and the power of the frontend. Its stark black-and-white palette and iconic triangle symbol communicate speed, precision, and the cutting edge of web development."
@@ -344,6 +360,10 @@
     "zoom": {
       "description": "Zoom is a communications platform that brings teams together with video meetings, chat, phone, and collaboration tools. Founded in 2011, Zoom became the world's go-to platform for virtual communication, serving hundreds of millions of users across businesses, schools, and personal connections.",
       "philosophy": "Zoom's identity is built on simplicity and connection, using a bold blue wordmark that conveys trust and clarity. The 2022 visual rebrand introduced custom typefaces Happy Display and Almaden Sans, evolving Zoom from a video app into a unified communications platform. In 2024, the company dropped 'Video' from its legal name — becoming Zoom Communications Inc. — reflecting its AI-first, multi-product ambition."
+    },
+    "phantom": {
+      "description": "Phantom is a multichain crypto wallet designed to make cryptocurrency safe and easy-to-use for everyone. Founded in 2021 by Brandon Millman, Chris Kalani, and Francesco Agosti, Phantom supports Solana, Ethereum, Bitcoin, Base, Polygon, and Sui, serving over 20 million users with an intuitive interface for managing digital assets, NFTs, and DeFi.",
+      "philosophy": "Phantom's identity centers on making crypto accessible and friendly for everyone. The signature ghost mascot and vibrant purple palette convey approachability in a space often perceived as complex, while the custom F37-designed typeface reinforces confidence and clarity across every touchpoint."
     }
   },
   "browseBy": {
@@ -381,68 +401,6 @@
     "exploreFamily": "Open this color family in Color Explorer",
     "noBrands": "No brands found with this color.",
     "title": "{color} Brands"
-  },
-  "colorExplorer": {
-    "addHexes": "Add colors",
-    "addToPalette": "Add to palette",
-    "allColors": "All colors",
-    "allIndustries": "All industries",
-    "clearPalette": "Clear palette",
-    "closestColorsTitle": "Closest colors in catalog",
-    "colorContextDescription": "See every brand that uses the currently inspected swatch and how it is applied.",
-    "colorContextEmptyDescription": "Choose a color from the explorer or your palette to view brand-by-brand usage notes.",
-    "colorContextEmptyTitle": "Inspect a swatch",
-    "colorContextTitle": "Color Context",
-    "coverage": "{count} covered",
-    "ctaDescription": "Compare every {color} swatch across brands and build a matching palette.",
-    "ctaLabel": "Open Explorer",
-    "description": "Pick 2–5 colors to find brands with similar palettes.",
-    "exact": "Exact",
-    "exactCount": "{count} exact",
-    "eyebrow": "Palette intelligence",
-    "family": "Family",
-    "familyCount": "{count} family",
-    "familyFilterDescription": "Use one or more families to narrow the wall before building a palette.",
-    "familyFilterTitle": "Filter colors",
-    "familySwatchCount": "{count} swatches",
-    "heroCardDescription": "Click swatches to build a palette, then compare exact overlaps and family-level matches across the catalog.",
-    "heroCardTitle": "Find brands by palette",
-    "heroHint": "Pick 2–5 colors to rank matching brands.",
-    "industryFilterLabel": "Industry",
-    "inspectColor": "Inspect {hex}",
-    "manualHexHelp": "Paste up to 5 hex colors separated by commas, spaces, or new lines.",
-    "manualHexPlaceholder": "#4285F4, #EA4335, #FBBC05",
-    "matchCount": "{count} matching brands",
-    "matchingBrandsDescription": "Brands rank by exact color overlap first, then by broader family overlap.",
-    "matchingBrandsEmptyDescription": "Try fewer colors or mix more families.",
-    "matchingBrandsEmptyTitle": "No close matches",
-    "matchingBrandsIdleDescription": "Once you select colors, matching brands will appear here with exact and family-level hits.",
-    "matchingBrandsIdleTitle": "Build a palette to rank brands",
-    "matchingBrandsTitle": "Matching Brands",
-    "metaDescription": "Build a palette and find brands with similar color systems on Loftlyy.",
-    "metaTitle": "Color Explorer | Loftlyy",
-    "missing": "Missing",
-    "moreBrands": "+{count} more",
-    "paletteBuilderDescription": "Selected colors stay in the URL so you can share and reload this view.",
-    "paletteBuilderTitle": "Your palette",
-    "paletteEmptyDescription": "Select 2–5 colors to rank brands with similar palettes.",
-    "paletteEmptyTitle": "Pick colors to start",
-    "paletteLimit": "Up to {count} colors",
-    "removeColor": "Remove {hex}",
-    "removeFromPalette": "Remove from palette",
-    "score": "Score {count}",
-    "sortAlphabetical": "A–Z",
-    "sortBest": "Best match",
-    "sortExact": "Most exact",
-    "starterSwatchesDescription": "Begin with the most useful colors, then refine with filters.",
-    "starterSwatchesTitle": "Starter swatches",
-    "stats": {
-      "brands": "Brands",
-      "colorEntries": "Color entries",
-      "uniqueColors": "Unique colors"
-    },
-    "title": "Color Explorer",
-    "usedByBrands": "Used by {count} brands"
   },
   "colorFamilies": {
     "blue": "Blue",
@@ -535,10 +493,12 @@
     "bookmarking": "Bookmarking",
     "browser": "Browser",
     "camera": "Camera",
+    "cdn": "CDN",
     "chatgpt": "ChatGPT",
     "claude": "Claude",
     "clean-energy": "Clean Energy",
     "cloud": "Cloud",
+    "cloud-infrastructure": "Cloud Infrastructure",
     "code-editor": "Code Editor",
     "code-hosting": "Code Hosting",
     "coffee": "Coffee",
@@ -556,6 +516,7 @@
     "cryptocurrency": "Cryptocurrency",
     "css": "CSS",
     "currency": "Currency",
+    "cybersecurity": "Cybersecurity",
     "data-center": "Data Center",
     "database": "Database",
     "debugging": "Debugging",
@@ -568,6 +529,7 @@
     "devops": "DevOps",
     "discussion": "Discussion",
     "displays": "Displays",
+    "dns": "DNS",
     "documentation": "Documentation",
     "e-commerce": "E-Commerce",
     "ecosystem": "Ecosystem",
@@ -577,6 +539,7 @@
     "encryption": "Encryption",
     "entertainment": "Entertainment",
     "ephemeral": "Ephemeral",
+    "exchange": "Exchange",
     "experiences": "Experiences",
     "fashion": "Fashion",
     "fast-food": "Fast Food",
@@ -618,6 +581,7 @@
     "marketplace": "Marketplace",
     "meetings": "Meetings",
     "messaging": "Messaging",
+    "meme-coins": "Meme Coins",
     "metaverse": "Metaverse",
     "microblogging": "Microblogging",
     "microsoft": "Microsoft",
@@ -656,11 +620,13 @@
     "security": "Security",
     "shopping": "Shopping",
     "short-form-video": "Short-Form Video",
+    "smart-contracts": "Smart Contracts",
     "social": "Social",
     "social-media": "Social Media",
     "social-network": "Social Network",
     "soft-drinks": "Soft Drinks",
     "software": "Software",
+    "solana": "Solana",
     "sports": "Sports",
     "sportswear": "Sportswear",
     "streaming": "Streaming",
@@ -668,6 +634,7 @@
     "subscriptions": "Subscriptions",
     "sustainability": "Sustainability",
     "television": "Television",
+    "token-launch": "Token Launch",
     "templates": "Templates",
     "transportation": "Transportation",
     "travel": "Travel",
@@ -684,7 +651,9 @@
     "web3": "Web3",
     "workplace": "Workplace",
     "workspace": "Workspace",
-    "answer-engine": "Answer Engine"
+    "answer-engine": "Answer Engine",
+    "wallet": "Wallet",
+    "multichain": "Multichain"
   },
   "typographyPage": {
     "description": "Explore {count} brands that use {style} fonts in their identity",
@@ -697,5 +666,28 @@
     "sans-serif": "Sans-Serif",
     "script": "Script",
     "serif": "Serif"
+  },
+  "compare": {
+    "title": "Compare Brands",
+    "metaTitle": "Compare Brands",
+    "metaDescription": "Compare brand identities side by side — colors, typography, and design details",
+    "description": "Select 2-3 brands to compare their visual identities side by side",
+    "addBrand": "Add a brand",
+    "addAnother": "Add another brand",
+    "optional": "optional",
+    "removeBrand": "Remove brand",
+    "clearAll": "Clear all",
+    "searchBrands": "Search brands to compare...",
+    "noBrandsFound": "No brands found",
+    "maxReached": "Maximum of 3 brands reached",
+    "quickStats": "Quick Stats",
+    "colorsCount": "{count} colors",
+    "fontsCount": "{count} fonts",
+    "founded": "Founded",
+    "headquarters": "Headquarters",
+    "shareComparison": "Share",
+    "linkCopied": "Link copied!",
+    "emptyTitle": "Pick brands to compare",
+    "emptyDescription": "Choose 2-3 brands from the picker above to see their visual identities compared side by side"
   }
 }
