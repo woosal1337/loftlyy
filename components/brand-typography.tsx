@@ -27,7 +27,9 @@ function useFontLoader(font: BrandTypographyType) {
       .catch(() => {})
   }, [font.fontUrl, font.name])
 
-  return loaded ? `"${fontFamilyName(font.name)}"` : undefined
+  const generic = font.category ?? "sans-serif"
+  if (loaded) return `"${fontFamilyName(font.name)}", ${generic}`
+  return generic
 }
 
 export function BrandTypography({
@@ -120,7 +122,7 @@ function TypeSpecimen({ font }: { font: BrandTypographyType }) {
       {/* Type scale specimen */}
       <div
         className="flex min-w-0 flex-col gap-1 overflow-hidden"
-        style={fontFamily ? { fontFamily } : undefined}
+        style={{ fontFamily }}
       >
         <p className="text-[28px] leading-[1.1] tracking-tight text-neutral-800 sm:text-[36px] dark:text-neutral-200">
           The quick brown fox jumps
