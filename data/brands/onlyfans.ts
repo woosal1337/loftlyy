@@ -44,21 +44,12 @@ export const onlyfans: Brand = {
   typography: [
     {
       name: "Roboto",
-      role: "Primary / UI",
+      role: "Primary / UI / Headings",
       weights: ["400", "700"],
       category: "sans-serif",
       designer: "Christian Robertson",
       foundry: "Google",
-      fontUrl: "/brands/onlyfans/fonts/roboto-regular.woff2",
-    },
-    {
-      name: "Roboto Bold",
-      role: "Headings / Emphasis",
-      weights: ["700"],
-      category: "sans-serif",
-      designer: "Christian Robertson",
-      foundry: "Google",
-      fontUrl: "/brands/onlyfans/fonts/roboto-bold.woff2",
+      fontUrl: "/brands/onlyfans/fonts/roboto.woff2",
     },
   ],
   assets: [

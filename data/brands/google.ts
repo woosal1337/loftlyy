@@ -50,6 +50,15 @@ export const google: Brand = {
       foundry: "Google",
       fontUrl: "/brands/google/fonts/roboto.woff2",
     },
+    {
+      name: "Google Sans Code",
+      role: "Code / Monospace",
+      weights: ["400", "700"],
+      category: "monospace",
+      designer: "Google Design",
+      foundry: "Google",
+      fontUrl: "/brands/google/fonts/google-sans-code.woff2",
+    },
   ],
   assets: [
     {

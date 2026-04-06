@@ -1,7 +1,6 @@
 import { assetUrl } from "@/lib/assets"
-import { colorFamilyOrder } from "@/lib/color-explorer"
 import { hexToColorFamily, normalizeHex } from "@/lib/filters"
-import type { Brand, ColorExplorerEntry, SidebarBrand } from "@/lib/types"
+import type { Brand, SidebarBrand } from "@/lib/types"
 import { twentyFirst } from "./21st"
 import { abode } from "./abode"
 import { adidas } from "./adidas"
@@ -14,6 +13,7 @@ import { bags } from "./bags"
 import { bmw } from "./bmw"
 import { canva } from "./canva"
 import { clerk } from "./clerk"
+import { cloudflare } from "./cloudflare"
 import { cocaCola } from "./coca-cola"
 import { cluely } from "./cluely"
 import { cursor } from "./cursor"
@@ -21,6 +21,7 @@ import { apple } from "./apple"
 import { discord } from "./discord"
 import { duolingo } from "./duolingo"
 import { elevenlabs } from "./elevenlabs"
+import { ethereum } from "./ethereum"
 import { notra } from "./notra"
 import { notion } from "./notion"
 import { figma } from "./figma"
@@ -42,8 +43,10 @@ import { onlyfans } from "./onlyfans"
 import { openai } from "./openai"
 import { planetscale } from "./planetscale"
 import { polar } from "./polar"
+import { pumpFun } from "./pump-fun"
 import { railway } from "./railway"
 import { raycast } from "./raycast"
+import { phantom } from "./phantom"
 import { perplexity } from "./perplexity"
 import { pinterest } from "./pinterest"
 import { reddit } from "./reddit"
@@ -62,6 +65,7 @@ import { tesla } from "./tesla"
 import { toyota } from "./toyota"
 import { tiktok } from "./tiktok"
 import { uber } from "./uber"
+import { uniswap } from "./uniswap"
 import { twitch } from "./twitch"
 import { wise } from "./wise"
 import { whatsapp } from "./whatsapp"
@@ -85,12 +89,14 @@ const rawBrands: Brand[] = [
   bmw,
   canva,
   clerk,
+  cloudflare,
   apple,
   cluely,
   cursor,
   discord,
   duolingo,
   elevenlabs,
+  ethereum,
   figma,
   github,
   interfere,
@@ -112,8 +118,10 @@ const rawBrands: Brand[] = [
   openai,
   planetscale,
   polar,
+  pumpFun,
   railway,
   raycast,
+  phantom,
   perplexity,
   pinterest,
   reddit,
@@ -132,6 +140,7 @@ const rawBrands: Brand[] = [
   tiktok,
   twitch,
   uber,
+  uniswap,
   vercel,
   vscode,
   cocaCola,
@@ -238,92 +247,8 @@ const sidebarBrands: SidebarBrand[] = brands.map((b) => ({
   searchIndex: buildSidebarSearchIndex(b),
 }))
 
-const colorFamilyRank = new Map(
-  colorFamilyOrder.map((family, index) => [family, index])
-)
-
-function buildColorExplorerEntries(brands: Brand[]): ColorExplorerEntry[] {
-  const entryMap = new Map<
-    string,
-    ColorExplorerEntry & {
-      brandMap: Map<string, { slug: string; name: string }>
-    }
-  >()
-
-  for (const brand of brands) {
-    for (const color of brand.colors) {
-      const normalizedHex = normalizeHex(color.hex)
-      if (!normalizedHex) continue
-
-      const existingEntry = entryMap.get(normalizedHex)
-      const entry = existingEntry ?? {
-        hex: normalizedHex,
-        family: hexToColorFamily(normalizedHex),
-        brandCount: 0,
-        brands: [],
-        occurrences: [],
-        brandMap: new Map<string, { slug: string; name: string }>(),
-      }
-
-      entry.occurrences.push({
-        brandSlug: brand.slug,
-        brandName: brand.name,
-        colorName: color.name,
-        usage: color.usage,
-      })
-      entry.brandMap.set(brand.slug, {
-        slug: brand.slug,
-        name: brand.name,
-      })
-
-      if (!existingEntry) {
-        entryMap.set(normalizedHex, entry)
-      }
-    }
-  }
-
-  return Array.from(entryMap.values())
-    .map(({ brandMap, ...entry }) => ({
-      ...entry,
-      brands: Array.from(brandMap.values()).sort((a, b) =>
-        a.name.localeCompare(b.name)
-      ),
-      brandCount: brandMap.size,
-      occurrences: entry.occurrences.toSorted(
-        (a, b) =>
-          a.brandName.localeCompare(b.brandName) ||
-          a.colorName.localeCompare(b.colorName)
-      ),
-    }))
-    .sort(
-      (a, b) =>
-        (colorFamilyRank.get(a.family) ?? Number.MAX_SAFE_INTEGER) -
-          (colorFamilyRank.get(b.family) ?? Number.MAX_SAFE_INTEGER) ||
-        b.brandCount - a.brandCount ||
-        a.hex.localeCompare(b.hex)
-    )
-}
-
-const colorExplorerEntries = buildColorExplorerEntries(brands)
-const colorExplorerStats = {
-  brandCount: brands.length,
-  uniqueColorCount: colorExplorerEntries.length,
-  colorEntryCount: brands.reduce(
-    (total, brand) => total + brand.colors.length,
-    0
-  ),
-}
-
 export function getAllSidebarBrands() {
   return sidebarBrands
-}
-
-export function getColorExplorerEntries(): ColorExplorerEntry[] {
-  return colorExplorerEntries
-}
-
-export function getColorExplorerStats() {
-  return colorExplorerStats
 }
 
 export function getBrandBySlug(slug: string) {

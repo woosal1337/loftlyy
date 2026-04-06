@@ -1,0 +1,158 @@
+import type { Brand } from "@/lib/types"
+
+export const phantom: Brand = {
+  slug: "phantom",
+  name: "Phantom",
+  description:
+    "Phantom is a multichain crypto wallet designed to make cryptocurrency safe and easy-to-use for everyone. Founded in 2021 by Brandon Millman, Chris Kalani, and Francesco Agosti, Phantom supports Solana, Ethereum, Bitcoin, Base, Polygon, and Sui, serving over 20 million users with an intuitive interface for managing digital assets, NFTs, and DeFi.",
+  url: "https://phantom.com",
+  industry: "fintech",
+  categories: ["fintech", "technology", "minimal-logos", "geometric-logos"],
+  tags: [
+    "blockchain",
+    "cryptocurrency",
+    "web3",
+    "defi",
+    "crypto",
+    "wallet",
+    "multichain",
+  ],
+  colors: [
+    {
+      name: "Phantom Purple",
+      hex: "#AB9FF2",
+      usage: "Primary brand color, app icon background, interactive elements.",
+    },
+    {
+      name: "Phantom Deep Purple",
+      hex: "#3C315B",
+      usage: "Dark accents, secondary backgrounds, depth elements.",
+    },
+    {
+      name: "Phantom Lavender",
+      hex: "#E2DFFE",
+      usage: "Light accents, hover states, subtle backgrounds.",
+    },
+    {
+      name: "Phantom Cream",
+      hex: "#FFFDF8",
+      usage: "Light backgrounds, ghost icon fill, text on dark surfaces.",
+    },
+    {
+      name: "Phantom Lime",
+      hex: "#F1FF52",
+      usage: "Accent highlights, success states, CTAs.",
+    },
+    {
+      name: "Phantom Black",
+      hex: "#191919",
+      usage: "Dark mode backgrounds, text, dark UI surfaces.",
+    },
+  ],
+  typography: [
+    {
+      name: "Phantom",
+      role: "Primary / Headings & Body",
+      weights: ["300", "400"],
+      category: "sans-serif",
+      designer: "Rick Banks & Ryan Williamson",
+      foundry: "F37 Foundry",
+      fontUrl: "/brands/phantom/fonts/phantom-regular.woff2",
+    },
+  ],
+  assets: [
+    {
+      label: "Phantom App Icon — Purple",
+      src: "/brands/phantom/phantom-icon-purple.svg",
+      width: 128,
+      height: 128,
+      format: "svg",
+    },
+    {
+      label: "Phantom App Icon — Black",
+      src: "/brands/phantom/phantom-icon-black.svg",
+      width: 128,
+      height: 128,
+      format: "svg",
+    },
+    {
+      label: "Phantom Ghost — Black",
+      src: "/brands/phantom/phantom-ghost-black.svg",
+      width: 128,
+      height: 128,
+      format: "svg",
+    },
+    {
+      label: "Phantom Ghost — White",
+      src: "/brands/phantom/phantom-ghost-white.svg",
+      width: 128,
+      height: 128,
+      format: "svg",
+    },
+    {
+      label: "Phantom Ghost — Purple",
+      src: "/brands/phantom/phantom-ghost-purple.svg",
+      width: 128,
+      height: 128,
+      format: "svg",
+    },
+    {
+      label: "Phantom Wordmark — Black",
+      src: "/brands/phantom/phantom-wordmark-black.svg",
+      width: 456,
+      height: 90,
+      format: "svg",
+    },
+    {
+      label: "Phantom Wordmark — White",
+      src: "/brands/phantom/phantom-wordmark-white.svg",
+      width: 456,
+      height: 90,
+      format: "svg",
+    },
+    {
+      label: "Phantom Wordmark — Purple",
+      src: "/brands/phantom/phantom-wordmark-purple.svg",
+      width: 456,
+      height: 90,
+      format: "svg",
+    },
+  ],
+  thumbnail: {
+    label: "Phantom App Icon — Purple",
+    src: "/brands/phantom/phantom-icon-purple.svg",
+    width: 128,
+    height: 128,
+    format: "svg",
+  },
+  thumbnailDark: {
+    label: "Phantom Ghost — White",
+    src: "/brands/phantom/phantom-ghost-white.svg",
+    width: 128,
+    height: 128,
+    format: "svg",
+  },
+  dateAdded: "2026-04-06",
+  founded: 2021,
+  headquarters: "San Francisco, California",
+  designer: "Bakken & Baeck",
+  lastRebranded: "2023",
+  philosophy:
+    "Phantom's identity centers on making crypto accessible and friendly for everyone. The signature ghost mascot and vibrant purple palette convey approachability in a space often perceived as complex, while the custom F37-designed typeface reinforces confidence and clarity across every touchpoint.",
+  legal: {
+    guidelinesUrl: "https://docs.phantom.com/resources/assets",
+    dos: [
+      "Use official Phantom brand assets from the documentation page",
+      "Maintain required clearspace around the ghost icon and wordmark",
+      "Use approved color variants on clean backgrounds",
+      "Refer to the product as 'Phantom' (capitalized) in text",
+    ],
+    donts: [
+      "Modify or distort the ghost icon in any way",
+      "Use outdated logo versions from before the 2023 rebrand",
+      "Place the logo on low-contrast or busy backgrounds",
+      "Imply official partnership or endorsement without permission",
+      "Recreate the wordmark using a different typeface",
+    ],
+  },
+}

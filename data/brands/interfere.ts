@@ -50,13 +50,13 @@ export const interfere: Brand = {
   ],
   typography: [
     {
-      name: "Heldane Text",
-      role: "Display / Headings",
-      weights: ["400", "500", "700"],
+      name: "Redaction Serif",
+      role: "Wordmark / Display",
+      weights: ["400", "700"],
       category: "serif",
-      designer: "Kris Sowersby",
-      foundry: "Klim Type Foundry",
-      fontUrl: "/brands/interfere/fonts/heldane-text-regular.woff2",
+      designer: "Jeremy Mickel",
+      foundry: "MCKL Type",
+      fontUrl: "/brands/interfere/fonts/redaction-serif-regular.woff2",
     },
     {
       name: "Inter",

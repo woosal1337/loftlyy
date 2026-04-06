@@ -20,7 +20,8 @@ export const loom: Brand = {
     {
       name: "Loom Blue",
       hex: "#1868DB",
-      usage: "Primary brand color, icon backgrounds, CTAs, key interactive elements.",
+      usage:
+        "Primary brand color, icon backgrounds, CTAs, key interactive elements.",
     },
     {
       name: "Blue Light",

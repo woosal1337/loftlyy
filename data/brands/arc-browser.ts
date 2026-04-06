@@ -13,22 +13,26 @@ export const arcBrowser: Brand = {
     {
       name: "Arc Blue",
       hex: "#3139FB",
-      usage: "Primary brand color, used in hero sections, backgrounds, and key brand moments.",
+      usage:
+        "Primary brand color, used in hero sections, backgrounds, and key brand moments.",
     },
     {
       name: "Arc Red",
       hex: "#FF5060",
-      usage: "Secondary accent, used in the logo, CTAs, and interactive highlights.",
+      usage:
+        "Secondary accent, used in the logo, CTAs, and interactive highlights.",
     },
     {
       name: "Deep Indigo",
       hex: "#2702C2",
-      usage: "Dark accent for banners, gradient overlays, and deep backgrounds.",
+      usage:
+        "Dark accent for banners, gradient overlays, and deep backgrounds.",
     },
     {
       name: "Arc Pink",
       hex: "#FF9999",
-      usage: "Soft accent for illustrations, logo elements, and decorative touches.",
+      usage:
+        "Soft accent for illustrations, logo elements, and decorative touches.",
     },
     {
       name: "Brand Off-White",

@@ -1,0 +1,151 @@
+import type { Brand } from "@/lib/types"
+
+export const pumpFun: Brand = {
+  slug: "pump-fun",
+  name: "pump.fun",
+  description:
+    "pump.fun is a Solana-based platform that enables anyone to create and trade meme coins instantly with a bonding curve mechanism. Launched in January 2024, it democratized token creation by removing the technical barriers to launching crypto tokens, becoming one of the most popular and revenue-generating platforms in the Solana ecosystem.",
+  url: "https://pump.fun",
+  industry: "fintech",
+  categories: ["fintech", "technology", "wordmark-logos"],
+  tags: [
+    "blockchain",
+    "cryptocurrency",
+    "web3",
+    "defi",
+    "crypto",
+    "meme-coins",
+    "solana",
+    "token-launch",
+  ],
+  colors: [
+    {
+      name: "Pump Mint",
+      hex: "#5FCB88",
+      usage: "Primary brand color, capsule accent, CTAs.",
+    },
+    {
+      name: "Pump Forest",
+      hex: "#1D3934",
+      usage: "Dark green, logo outlines, text, borders.",
+    },
+    {
+      name: "Pump Teal",
+      hex: "#629393",
+      usage: "Secondary accent, overlays, muted elements.",
+    },
+    {
+      name: "Pump Deep Green",
+      hex: "#248F66",
+      usage: "Secondary green, highlights, interactive states.",
+    },
+    {
+      name: "Pump Dark",
+      hex: "#1B1D27",
+      usage: "Backgrounds, dark surfaces, app chrome.",
+    },
+    {
+      name: "Pump White",
+      hex: "#FFFFFF",
+      usage: "Capsule fill, light backgrounds, text on dark.",
+    },
+  ],
+  typography: [
+    {
+      name: "Inter",
+      role: "Primary / UI & Body",
+      weights: ["400", "500", "600", "700"],
+      category: "sans-serif",
+      designer: "Rasmus Andersson",
+      foundry: "Google Fonts",
+      fontUrl: "/brands/pump-fun/fonts/inter-regular.woff2",
+    },
+  ],
+  assets: [
+    {
+      label: "pump.fun Logomark — Color",
+      src: "/brands/pump-fun/pump-fun-logomark-color.svg",
+      width: 200,
+      height: 200,
+      format: "svg",
+    },
+    {
+      label: "pump.fun Logomark — Black",
+      src: "/brands/pump-fun/pump-fun-logomark-black.svg",
+      width: 200,
+      height: 200,
+      format: "svg",
+    },
+    {
+      label: "pump.fun Logomark — White",
+      src: "/brands/pump-fun/pump-fun-logomark-white.svg",
+      width: 200,
+      height: 200,
+      format: "svg",
+    },
+    {
+      label: "pump.fun Logomark — Green",
+      src: "/brands/pump-fun/pump-fun-logomark-green.svg",
+      width: 200,
+      height: 200,
+      format: "svg",
+    },
+    {
+      label: "pump.fun Wordmark — Black",
+      src: "/brands/pump-fun/pump-fun-wordmark-black.svg",
+      width: 365,
+      height: 80,
+      format: "svg",
+    },
+    {
+      label: "pump.fun Wordmark — White",
+      src: "/brands/pump-fun/pump-fun-wordmark-white.svg",
+      width: 365,
+      height: 80,
+      format: "svg",
+    },
+    {
+      label: "pump.fun Wordmark — Dark",
+      src: "/brands/pump-fun/pump-fun-wordmark-dark.svg",
+      width: 365,
+      height: 80,
+      format: "svg",
+    },
+  ],
+  thumbnail: {
+    label: "pump.fun Logomark — Color",
+    src: "/brands/pump-fun/pump-fun-logomark-color.svg",
+    width: 200,
+    height: 200,
+    format: "svg",
+  },
+  thumbnailDark: {
+    label: "pump.fun Logomark — White",
+    src: "/brands/pump-fun/pump-fun-logomark-white.svg",
+    width: 200,
+    height: 200,
+    format: "svg",
+  },
+  dateAdded: "2026-04-06",
+  founded: 2024,
+  headquarters: "London, United Kingdom",
+  designer: "pump.fun Design Team",
+  philosophy:
+    "pump.fun's identity centers on the iconic pharmaceutical capsule — a playful symbol representing the speculative thrill of meme coin trading. The mint-green and dark-forest color palette evokes energy, growth, and the Solana ecosystem, while the tilted pill shape communicates fun, approachability, and a lighthearted take on decentralized finance.",
+  legal: {
+    guidelinesUrl: "https://pump.fun",
+    dos: [
+      "Use the official capsule logomark from pump.fun",
+      "Maintain the pill shape proportions and tilt angle",
+      "Use approved color variants on appropriate backgrounds",
+      "Refer to the platform as 'pump.fun' (lowercase) in text",
+    ],
+    donts: [
+      "Rotate or flip the capsule orientation",
+      "Alter the internal details of the capsule design",
+      "Place the logo on clashing green backgrounds",
+      "Use the logo to imply official endorsement without permission",
+      "Recreate the wordmark with custom typography",
+    ],
+  },
+}
